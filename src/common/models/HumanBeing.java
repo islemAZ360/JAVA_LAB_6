@@ -1,4 +1,5 @@
-package main.objects;
+package common.models;
+
 import main.utils.HumanBeingChecker;
 import main.utils.HumanBeingReader;
 
@@ -6,7 +7,12 @@ import java.time.LocalDateTime;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
-public class HumanBeing implements Comparable<HumanBeing> {
+import java.io.Serializable;
+
+public class HumanBeing implements Serializable, Comparable<HumanBeing> {
+
+    private static final long serialVersionUID = 1L;
+
     private static AtomicLong humanCount = new AtomicLong(0); // The first ID is 1
     private long id; //Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
     private java.time.LocalDateTime creationDate; //Поле не может быть null, Значение этого поля должно генерироваться автоматически

@@ -1,9 +1,9 @@
 package main.utils;
 
-import main.objects.Car;
-import main.objects.Coordinates;
-import main.objects.HumanBeing;
-import main.objects.WeaponType;
+import common.models.HumanBeing;
+import common.models.Car;
+import common.models.Coordinates;
+import common.models.WeaponType;
 
 /**
  * Преобразует HumanBeing в CSV строку и обратно.

@@ -1,13 +1,15 @@
 package main;
 
 import main.objects.Const;
-import main.objects.HumanBeing;
-import main.utils.*;
+import common.models.HumanBeing;
+import main.utils.CollectionManager;
+import main.utils.CommandManager;
+import main.utils.HumanBeingFileManager;
+import main.utils.InputManager;
 import main.utils.commands.*;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
-import java.util.logging.Logger;
 
 /**
  * Главный класс приложения (Main).

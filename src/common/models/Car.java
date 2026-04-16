@@ -1,6 +1,10 @@
-package main.objects;
+package common.models;
 
-public class Car {
+import java.io.Serializable;
+
+
+public class Car implements Serializable {
+
     private Boolean cool; //Поле не может быть null
 
     /**

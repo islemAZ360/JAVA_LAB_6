@@ -1,7 +1,13 @@
-package main.objects;
+package common.models;
+
 import main.objects.Const;
 
-public class Coordinates {
+import java.io.Serializable;
+
+
+public class Coordinates implements Serializable {
+
+
     private int x; //Значение поля должно быть больше -162
     private long y; //Максимальное значение поля: 440
 

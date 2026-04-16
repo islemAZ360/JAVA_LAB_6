@@ -1,6 +1,6 @@
 package main.utils.commands;
 
-import main.objects.HumanBeing;
+import common.models.HumanBeing;
 import main.utils.CollectionManager;
 import main.utils.Command;
 import main.utils.HumanBeingReader;
