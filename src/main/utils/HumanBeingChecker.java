@@ -1,9 +1,9 @@
 package main.utils;
 
-import main.objects.Car;
+import common.models.Car;
+import common.models.Coordinates;
+import common.models.WeaponType;
 import main.objects.Const;
-import main.objects.Coordinates;
-import main.objects.WeaponType;
 
 /**
  * Проверяет корректность полей HumanBeing.

@@ -1,7 +1,7 @@
 package main.utils.commands;
 
-import main.objects.Car;
-import main.objects.HumanBeing;
+import common.models.Car;
+import common.models.HumanBeing;
 import main.utils.CollectionManager;
 import main.utils.Command;
 
