@@ -215,4 +215,20 @@ public class HumanBeing implements Serializable, Comparable<HumanBeing> {
         return Long.compare(this.id, comparingHuman.getId());
 //        return this.getId().compareTo(comparingHuman.getId());
     }
+    @Override
+    public String toString() {
+        return "HumanBeing {" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", coordinates=(" + coordinates.getX() + ", " + coordinates.getY() + ")" +
+                ", realHero=" + realHero +
+                ", hasToothpick=" + hasToothpick +
+                ", impactSpeed=" + impactSpeed +
+                ", soundtrackName='" + soundtrackName + '\'' +
+                ", minutesOfWaiting=" + minutesOfWaiting +
+                ", weaponType=" + weaponType +
+                ", car=" + (car != null ? car.isCool() : null) +
+                ", creationDate=" + creationDate +
+                '}';
+    }
 }

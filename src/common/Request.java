@@ -7,20 +7,24 @@ public class Request implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String commandName;
-    private Object commandArgument;
+    private String stringArgument;
+    private Object objectArgument;
 
-
-    public Request(String commandName, Object commandArgument) {
+    public Request(String commandName, String stringArgument, Object objectArgument) {
         this.commandName = commandName;
-        this.commandArgument = commandArgument;
+        this.stringArgument = stringArgument;
+        this.objectArgument = objectArgument;
     }
-
 
     public String getCommandName() {
         return commandName;
     }
 
-    public Object getCommandArgument() {
-        return commandArgument;
+    public String getStringArgument() {
+        return stringArgument;
+    }
+
+    public Object getObjectArgument() {
+        return objectArgument;
     }
 }

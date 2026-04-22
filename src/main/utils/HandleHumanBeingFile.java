@@ -1,6 +1,6 @@
 package main.utils;
 
-import main.objects.HumanBeing;
+import common.models.HumanBeing;
 
 import java.util.Collection;
 
