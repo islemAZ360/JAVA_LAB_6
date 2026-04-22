@@ -1,6 +1,6 @@
 package main.utils;
 
-import main.objects.HumanBeing;
+import common.models.HumanBeing;
 
 import java.io.*;
 import java.util.Collection;
@@ -12,7 +12,14 @@ public class HumanBeingFileManager extends FileManager implements HandleHumanBei
     }
 
     public void readFileAndLoadHumanBeing(CollectionManager collectionManager) {
-        try (Scanner scanner = new Scanner(this.readFile())) {
+        File file = this.readFile();
+
+        if (file == null) {
+            System.out.println("Коллекция не загружена, так как файл отсутствует.");
+            return;
+        }
+
+        try (Scanner scanner = new Scanner(file)) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine().trim();
                 if (line.isEmpty()) continue;
@@ -20,9 +27,7 @@ public class HumanBeingFileManager extends FileManager implements HandleHumanBei
                 try {
                     long currentId = HumanBeingReader.extractIdFromLine(line);
 
-//                  // if id exists, then do not add to collection
-                    if(collectionManager.getHumanById(currentId) == null) {
-                        // Используем вспомогательный класс для конвертации строки в объект
+                    if (collectionManager.getHumanById(currentId) == null) {
                         HumanBeing human = HumanBeingReader.convertLine(line);
                         collectionManager.add(human);
                         human.setValueHumanCount(collectionManager.getMaxId());
@@ -33,8 +38,8 @@ public class HumanBeingFileManager extends FileManager implements HandleHumanBei
                 } catch (Exception e) {
                     System.out.println("Ошибка при чтении строки: " + e.getMessage());
                 }
-
             }
+
             System.out.println("Коллекция успешно загружена из файла.");
         } catch (FileNotFoundException e) {
             System.out.println("Ошибка: файл не найден.");
