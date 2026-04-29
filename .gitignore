@@ -30,6 +30,5 @@ bin/
 
 .idea/
 data/
-Lab5.iml
 reports/
-
+production/
