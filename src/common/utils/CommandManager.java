@@ -1,4 +1,6 @@
-package main.utils;
+package common.utils;
+
+import common.Command;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -37,7 +39,7 @@ public class CommandManager {
             System.out.println("Неизвестная команда: '" + commandName + "'. Введите 'help' для справки.");
         } else {
             try {
-                command.execute(args);
+//                command.execute(args);
             } catch (Exception e) {
             System.out.println("Произошла ошибка при выполнении команды: " + e.getMessage());
             }

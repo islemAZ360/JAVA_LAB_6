@@ -27,4 +27,9 @@ public class Request implements Serializable {
     public Object getObjectArgument() {
         return objectArgument;
     }
+
+    @Override
+    public String toString() {
+        return "Request{cmd='" + this.commandName + "', stringArg='" + this.stringArgument + "'" + ", objectArg='" + this.objectArgument +"'}";
+    }
 }

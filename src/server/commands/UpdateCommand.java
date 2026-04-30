@@ -1,9 +1,10 @@
 package server.commands;
 
+import common.Command;
 import common.Request;
 import common.Response;
 import common.models.HumanBeing;
-import main.utils.CollectionManager;
+import server.CollectionManager;
 
 public class UpdateCommand implements Command {
 
@@ -14,13 +15,23 @@ public class UpdateCommand implements Command {
     }
 
     @Override
+    public String getName() {
+        return "update";
+    }
+
+    @Override
+    public String getDescription() {
+        return "update id {element} : обновить элемент по ID";
+    }
+
+    @Override
     public Response execute(Request request) {
         if (request.getStringArgument() == null || request.getStringArgument().isBlank()) {
             return new Response("ID не указан", false, null);
         }
 
         if (request.getObjectArgument() == null) {
-            return new Response("Новый объект не передан", false, null);
+            return new Response("Новый объект не передан\nспользование: update id", false, null);
         }
 
         try {

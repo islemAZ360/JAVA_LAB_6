@@ -2,7 +2,7 @@ package server;
 
 import common.Request;
 import common.Response;
-import server.commands.Command;
+import common.Command;
 
 public class RequestHandler {
 

@@ -1,9 +1,10 @@
 package server.commands;
 
+import common.Command;
 import common.Request;
 import common.Response;
 import common.models.HumanBeing;
-import main.utils.CollectionManager;
+import server.CollectionManager;
 
 public class AddIfMinCommand implements Command {
 
@@ -11,6 +12,16 @@ public class AddIfMinCommand implements Command {
 
     public AddIfMinCommand(CollectionManager collectionManager) {
         this.collectionManager = collectionManager;
+    }
+
+    @Override
+    public String getName() {
+        return "add_if_min";
+    }
+
+    @Override
+    public String getDescription() {
+        return "add_if_min {element} : добавить элемент, если его значение меньше минимального";
     }
 
     @Override

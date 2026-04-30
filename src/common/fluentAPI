@@ -1,0 +1,75 @@
+public class Request {
+    private final String command;
+    private final String[] args;
+    private final Object data;
+    private final long timestamp;
+
+    // Constructor private để ép người dùng phải qua Builder
+    private Request(RequestBuilder builder) {
+        this.command = builder.command;
+        this.args = builder.args;
+        this.data = builder.data;
+        this.timestamp = builder.timestamp;
+    }
+
+    // Chỉ có Getters
+    public String getCommand() { return command; }
+    public String[] getArgs() { return args; }
+    public Object getData() { return data; }
+    public long getTimestamp() { return timestamp; }
+
+    // Tĩnh để khởi tạo Builder nhanh
+    public static RequestBuilder builder() {
+        return new RequestBuilder();
+    }
+
+    // Lớp Builder bên trong (Inner Class)
+    public static class RequestBuilder {
+        private String command;
+        private String[] args;
+        private Object data;
+        private long timestamp = System.currentTimeMillis(); // Default
+
+        public RequestBuilder setCommand(String command) {
+            this.command = command;
+            return this; // Trả về chính nó để nối chuỗi (Fluent)
+        }
+
+        public RequestBuilder setArgs(String[] args) {
+            this.args = args;
+            return this;
+        }
+
+        public RequestBuilder setData(Object data) {
+            this.data = data;
+            return this;
+        }
+
+        public RequestBuilder setTimestamp(long timestamp) {
+            this.timestamp = timestamp;
+            return this;
+        }
+
+        public Request build() {
+            // Bạn có thể validate dữ liệu ở đây trước khi tạo Object thật
+            if (command == null || command.isEmpty()) {
+                throw new IllegalStateException("Command cannot be null or empty");
+            }
+            return new Request(this);
+        }
+    }
+}
+
+// Giả sử bạn vừa dùng HumanBeingReader để build xong data
+HumanBeing hb = humanReader.buildFromConsole();
+String[] consoleArgs = {"arg1", "arg2"};
+
+// Sử dụng Fluent API
+Request req = Request.builder()
+    .setCommand("add")
+    .setArgs(consoleArgs)
+    .setData(hb)
+    .build();
+
+// Gửi đi
+networkClient.send(req);

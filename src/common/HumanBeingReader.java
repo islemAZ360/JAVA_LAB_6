@@ -1,4 +1,4 @@
-package main.utils;
+package common;
 
 import common.models.HumanBeing;
 import common.models.Car;
