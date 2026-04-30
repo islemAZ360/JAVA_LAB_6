@@ -1,9 +1,10 @@
 package server.commands;
 
+import common.Command;
 import common.Request;
 import common.Response;
 import common.models.HumanBeing;
-import main.utils.CollectionManager;
+import server.CollectionManager;
 
 import java.util.List;
 
@@ -13,6 +14,16 @@ public class FilterLessThanMinutesOfWaitingCommand implements Command {
 
     public FilterLessThanMinutesOfWaitingCommand(CollectionManager collectionManager) {
         this.collectionManager = collectionManager;
+    }
+
+    @Override
+    public String getName() {
+        return "filter_less_than_minutes_of_waiting";
+    }
+
+    @Override
+    public String getDescription() {
+        return "filter_less_than_minutes_of_waiting minutes : фильтр по minutesOfWaiting";
     }
 
     @Override

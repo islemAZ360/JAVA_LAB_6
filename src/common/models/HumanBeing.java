@@ -1,10 +1,8 @@
 package common.models;
 
-import main.utils.HumanBeingChecker;
-import main.utils.HumanBeingReader;
+import common.HumanBeingChecker;
 
 import java.time.LocalDateTime;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 import java.io.Serializable;

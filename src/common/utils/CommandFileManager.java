@@ -1,4 +1,6 @@
-package main.utils;
+package common.utils;
+
+import server.CollectionManager;
 
 import java.io.FileNotFoundException;
 import java.util.Scanner;

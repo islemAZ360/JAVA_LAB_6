@@ -1,9 +1,10 @@
 package server.commands;
 
+import common.Command;
 import common.Request;
 import common.Response;
 import common.models.HumanBeing;
-import main.utils.CollectionManager;
+import server.CollectionManager;
 
 import java.util.List;
 
@@ -13,6 +14,16 @@ public class FilterGreaterThanCarCommand implements Command {
 
     public FilterGreaterThanCarCommand(CollectionManager collectionManager) {
         this.collectionManager = collectionManager;
+    }
+
+    @Override
+    public String getName() {
+        return "filter_greater_than_car";
+    }
+
+    @Override
+    public String getDescription() {
+        return "filter_greater_than_car [true/false] : вывести элементы, значение car.cool которых больше заданного";
     }
 
     @Override

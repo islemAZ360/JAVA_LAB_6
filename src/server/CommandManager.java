@@ -1,13 +1,11 @@
 package server;
 
-import main.utils.CollectionManager;
-import main.utils.HumanBeingFileManager;
+import common.utils.HumanBeingFileManager;
 import server.commands.AddCommand;
 import server.commands.AddIfMaxCommand;
 import server.commands.AddIfMinCommand;
 import server.commands.ClearCommand;
-import server.commands.Command;
-import server.commands.ExecuteScriptCommand;
+import common.Command;
 import server.commands.FilterContainsNameCommand;
 import server.commands.FilterGreaterThanCarCommand;
 import server.commands.FilterLessThanMinutesOfWaitingCommand;
@@ -27,7 +25,7 @@ public class CommandManager {
     private final Map<String, Command> commands = new HashMap<>();
 
     public CommandManager(CollectionManager collectionManager, HumanBeingFileManager humanBeingFileManager) {
-        commands.put("help", new HelpCommand());
+        commands.put("help", new HelpCommand(this));
         commands.put("show", new ShowCommand(collectionManager));
         commands.put("info", new InfoCommand(collectionManager));
         commands.put("clear", new ClearCommand(collectionManager));
@@ -41,7 +39,7 @@ public class CommandManager {
         commands.put("filter_greater_than_car", new FilterGreaterThanCarCommand(collectionManager));
         commands.put("filter_less_than_minutes_of_waiting", new FilterLessThanMinutesOfWaitingCommand(collectionManager));
         commands.put("save", new SaveCommand(collectionManager, humanBeingFileManager));
-        commands.put("run_script_file", new ExecuteScriptCommand());
+//        commands.put("run_script_file", new ExecuteScriptCommand());
     }
 
     public Command getCommand(String commandName) {

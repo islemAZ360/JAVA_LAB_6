@@ -2,14 +2,16 @@ package server;
 
 import common.Request;
 import common.Response;
-import server.commands.Command;
+import common.Command;
 
 public class RequestHandler {
 
     private final CommandManager commandManager;
+    private final CommandSuggester commandSuggester;
 
     public RequestHandler(CommandManager commandManager) {
         this.commandManager = commandManager;
+        this.commandSuggester = new CommandSuggester(commandManager);
     }
 
     public Response handle(Request request) {
@@ -26,7 +28,7 @@ public class RequestHandler {
         Command command = commandManager.getCommand(commandName);
 
         if (command == null) {
-            return new Response("Команда не найдена: " + commandName, false, null);
+            return new Response("Команда не найдена: " + commandName + "\n" + this.commandSuggester.correct(commandName), false, null);
         }
 
         try {

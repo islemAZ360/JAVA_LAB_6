@@ -1,18 +1,39 @@
 package server.commands;
 
+import common.Command;
+import common.HumanBeingBuilder;
 import common.Request;
 import common.Response;
 import common.models.HumanBeing;
-import main.utils.CollectionManager;
+import server.CollectionManager;
+
+import java.util.Arrays;
+
+/**
+ * Команда добавляет новый элемент в коллекцию, только если его ID превышает
+ * максимальный ID текущей коллекции.
+ */
 
 public class AddIfMaxCommand implements Command {
 
     private final CollectionManager collectionManager;
 
-    public AddIfMaxCommand(CollectionManager collectionManager) {
-        this.collectionManager = collectionManager;
+    public AddIfMaxCommand(CollectionManager collectionManager) { this.collectionManager = collectionManager;}
+
+    @Override
+    public String getName() {
+        return "add_if_max";
     }
 
+    @Override
+    public String getDescription() {
+        return "add_if_max : добавить новый элемент в коллекцию, если его значение превышает значение наибольшего элемента этой коллекции";
+    }
+
+    /**
+     * Выполняет команду add_if_max
+     * @param request аргументы команды: args[1] = ID нового элемента
+     */
     @Override
     public Response execute(Request request) {
         if (request.getObjectArgument() == null) {

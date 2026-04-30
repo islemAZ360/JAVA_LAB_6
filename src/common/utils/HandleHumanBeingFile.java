@@ -1,6 +1,7 @@
-package main.utils;
+package common.utils;
 
 import common.models.HumanBeing;
+import server.CollectionManager;
 
 import java.util.Collection;
 

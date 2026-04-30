@@ -1,7 +1,5 @@
 package common.models;
 
-import main.objects.Const;
-
 import java.io.Serializable;
 
 

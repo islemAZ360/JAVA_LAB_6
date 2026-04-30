@@ -1,9 +1,10 @@
 package server.commands;
 
+import common.Command;
 import common.Request;
 import common.Response;
 import common.models.HumanBeing;
-import main.utils.CollectionManager;
+import server.CollectionManager;
 
 public class RemoveGreaterCommand implements Command {
 
@@ -14,9 +15,19 @@ public class RemoveGreaterCommand implements Command {
     }
 
     @Override
+    public String getName() {
+        return "remove_greater";
+    }
+
+    @Override
+    public String getDescription() {
+        return "remove_greater id : удалить элементы с ID больше указанного.";
+    }
+
+    @Override
     public Response execute(Request request) {
         if (request.getStringArgument() == null || request.getStringArgument().isBlank()) {
-            return new Response("ID не указан", false, null);
+            return new Response("ID не указан\nИспользование: remove_greater id\nПример: remove_greater 10.", false, null);
         }
 
         try {

@@ -1,21 +1,20 @@
-package main.utils;
+package common;
+
 import common.models.Car;
-import common.models.*;
-import main.objects.*;
+import common.models.Coordinates;
+import common.models.HumanBeing;
+import common.models.WeaponType;
+import common.models.Const;
 
-import java.util.List;
 import java.util.Scanner;
-import java.util.NoSuchElementException;
 
-public class InputManager {
-
+public class HumanBeingBuilder {
     private final Scanner scanner;
     private final Coordinates coordinatesChecker;
 
-    public InputManager(Scanner scanner) {
-        this.scanner = scanner;
-        this.coordinatesChecker = new Coordinates();
-
+    public HumanBeingBuilder(Scanner sc, Coordinates coordinatesChecker) {
+        this.scanner=sc;
+        this.coordinatesChecker=coordinatesChecker;
     }
 
     // read name
@@ -34,10 +33,9 @@ public class InputManager {
             return input;
         }
     }
-// read Координаты
 
+    // read Координаты
     // # X
-
     public int readX() {
         while (true) {
             System.out.printf("Введите координату X (X > %d): ", Const.MINVALUEX);
@@ -213,16 +211,16 @@ public class InputManager {
 //        args: ["name", "x", "y", ...]
         try {
             HumanBeing humanBeing = new HumanBeing(
-                args[0],
-                args[1],
-                args[2],
-                args[3],
-                args[4],
-                args[5],
-                args[6],
-                args[7],
-                args[8],
-                args[9]
+                    args[0],
+                    args[1],
+                    args[2],
+                    args[3],
+                    args[4],
+                    args[5],
+                    args[6],
+                    args[7],
+                    args[8],
+                    args[9]
             );
             return humanBeing;
         } catch (Exception e) {
@@ -254,4 +252,3 @@ public class InputManager {
         return HumanBeingReader.convertLine(String.join(",", infoFields));
     }
 }
-

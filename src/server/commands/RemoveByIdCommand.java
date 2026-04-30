@@ -1,8 +1,9 @@
 package server.commands;
 
+import common.Command;
 import common.Request;
 import common.Response;
-import main.utils.CollectionManager;
+import server.CollectionManager;
 
 public class RemoveByIdCommand implements Command {
 
@@ -10,6 +11,16 @@ public class RemoveByIdCommand implements Command {
 
     public RemoveByIdCommand(CollectionManager collectionManager) {
         this.collectionManager = collectionManager;
+    }
+
+    @Override
+    public String getName() {
+        return "remove_by_id";
+    }
+
+    @Override
+    public String getDescription() {
+        return "remove_by_id id : удалить элемент по ID";
     }
 
     @Override

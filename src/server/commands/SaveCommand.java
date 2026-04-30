@@ -1,9 +1,10 @@
 package server.commands;
 
+import common.Command;
 import common.Request;
 import common.Response;
-import main.utils.CollectionManager;
-import main.utils.HumanBeingFileManager;
+import server.CollectionManager;
+import common.utils.HumanBeingFileManager;
 
 public class SaveCommand implements Command {
 
@@ -13,6 +14,16 @@ public class SaveCommand implements Command {
     public SaveCommand(CollectionManager collectionManager, HumanBeingFileManager humanBeingFileManager) {
         this.collectionManager = collectionManager;
         this.humanBeingFileManager = humanBeingFileManager;
+    }
+
+    @Override
+    public String getName() {
+        return "save";
+    }
+
+    @Override
+    public String getDescription() {
+        return "save : сохранить коллекцию в файл";
     }
 
     @Override
