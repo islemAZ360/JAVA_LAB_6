@@ -1,6 +1,7 @@
 package server.commands;
 
 import common.Command;
+import common.HumanBeingReader;
 import common.Request;
 import common.Response;
 import common.models.HumanBeing;
@@ -40,13 +41,24 @@ public class AddCommand implements Command {
         }
 
         try {
-            HumanBeing human = (HumanBeing) request.getObjectArgument();
+            HumanBeing tempHuman = (HumanBeing) request.getObjectArgument();
+            HumanBeing newHuman = new HumanBeing(
+                    tempHuman.getName(),
+                    tempHuman.getCoordinates(),
+                    tempHuman.isRealHero(),
+                    tempHuman.isHasToothpick(),
+                    tempHuman.getImpactSpeed(),
+                    tempHuman.getSoundtrackName(),
+                    tempHuman.getMinutesOfWaiting(),
+                    tempHuman.getWeaponType(),
+                    tempHuman.getCar()
+            );
 
-            boolean added = collectionManager.add(human);
+            boolean added = collectionManager.add(newHuman);
 
             if (added) {
                 return new Response(
-                        "Элемент добавлен. ID: " + human.getId(),
+                        "Элемент добавлен. ID: " + newHuman.getId(),
                         true,
                         null
                 );

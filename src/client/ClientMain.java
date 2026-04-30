@@ -5,7 +5,6 @@ import java.net.Socket;
 import java.util.Scanner;
 import common.Request;
 import common.Response;
-import common.Serializer;
 import common.models.Const;
 
 public class ClientMain {
@@ -16,7 +15,10 @@ public class ClientMain {
              DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
              // Only this one communicates with Socket (read header and data => ois)
              DataInputStream dis = new DataInputStream(socket.getInputStream());
+             RequestSender reqSender = new RequestSender(dos, dis);
              Scanner scanner = new Scanner(System.in)) {
+
+            InputManager inputMng = new InputManager(scanner, reqSender);
 
             System.out.println("✅ Connected to server successfully!");
             System.out.printf(Const.GREEN + Const.cat + Const.RESET);
@@ -28,7 +30,7 @@ public class ClientMain {
 
             while (true) {
                 System.out.println("\nПрограмма готова к работе! Введите 'help' для подержки || 'exit' для выхода.");
-                System.out.println("What are you thinking?");
+                System.out.println(">>> \uD83E\uDD16 Что вы думаете? Чем я могу помочь?");
                 System.out.print(">>> ");
                 String input = scanner.nextLine();
 
@@ -37,46 +39,25 @@ public class ClientMain {
                 // Handles one or multiple spaces perfectly
                 String[] arguments = input.split("\\s+");
 
-                // 1. Tạo đối tượng Request
-                Request req = new Request(
-                        arguments[0],
-                        arguments.length>1? arguments[1]:null,
-                        "hello");
+//  ===========================================================================================
+                Response resp = inputMng.handleCommand(arguments[0]);
 
-                // 2. Serialize Object ra mảng byte để đếm độ dài
-                byte[] dataBytes = Serializer.serialize(req);
-
-                // 3. GỬI: 4 byte Header (độ dài) + Dữ liệu thật
-                dos.writeInt(dataBytes.length); // Ghi 4 byte int
-                dos.write(dataBytes);           // Ghi mảng byte
-                dos.flush();
-                System.out.println("🚀 Request was sent (" + dataBytes.length + " bytes)");
-
-                // 4. NHẬN: Đợi phản hồi từ Server (Blocking)
-                // Lưu ý: Phía Server cũng phải gửi theo quy tắc tương tự
-                // Ở đây mình minh họa đọc trực tiếp Object nếu Server dùng ObjectOutputStream
-                try {
-                    // Đọc nhãn (4 byte)
-                    int size = dis.readInt();
-                    System.out.printf("First 4 received bytes in (Hex): %08X\n", size);
-                    // Đọc gói hàng
-                    byte[] data = new byte[size];
-                    dis.readFully(data);
-
-                    // Giải mã (Trong này vẫn dùng ObjectInputStream nhưng là dùng "nội bộ" với mảng byte)
-                    Response resp = (Response) Serializer.deserialize(data);
-
-                    System.out.println(resp);
-
-                    System.out.println("📩 Server response:\n" + resp.getMessage());
-                } catch (ClassNotFoundException e) {
-                    System.err.println("❌ Can not understand data type from Server.");
-                }
+//                // 1. Tạo đối tượng Request
+//                Request req = new Request(
+//                        arguments[0],
+//                        arguments.length>1? arguments[1]:null,
+//                        "hello");
+//
+//                Response resp = reqSender.sendRequest(req);
+                System.out.println("📩 Server response:\n" + resp.getMessage());
+//  ===========================================================================================
             }
 
         } catch (IOException e) {
             System.out.println(e.getMessage());
             System.err.println("❌ Connecting error: Server busy or not response. (If server is not running, start server first!)");
+        } catch (Exception e) {
+            System.out.printf("❌ Some errors were occurred: %s.\n", e.getMessage());
         }
     }
 }
