@@ -1,0 +1,55 @@
+2026-05-02 17:33:38.943 [main] INFO  server.ServerMain - Hello! Log4j2 run successfully.
+2026-05-02 17:33:39.060 [main] INFO  server.ServerMain - 🚀 Server NIO is running at localhost: 1234
+2026-05-02 17:33:42.565 [main] INFO  server.ServerMain - 🤝 Sent greeting and accepted: /127.0.0.1:52632
+2026-05-02 17:33:46.934 [main] INFO  server.ServerMain - 📦 Received Object: 141 bytes
+2026-05-02 17:33:46.944 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='savwee', stringArg='null', objectArg='null'}
+2026-05-02 17:33:46.947 [main] INFO  server.ServerMain - 📤 Send response to Client (196 bytes)
+2026-05-02 17:33:50.696 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-02 17:33:50.696 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='save', stringArg='null', objectArg='null'}
+2026-05-02 17:33:50.697 [main] INFO  server.ServerMain - 📤 Send response to Client (177 bytes)
+2026-05-02 17:36:45.230 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-02 17:36:45.230 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='show', stringArg='null', objectArg='null'}
+2026-05-02 17:36:45.233 [main] INFO  server.ServerMain - 📤 Send response to Client (4525 bytes)
+2026-05-02 17:36:53.156 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-02 17:36:53.156 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='help', stringArg='null', objectArg='null'}
+2026-05-02 17:36:53.157 [main] INFO  server.ServerMain - 📤 Send response to Client (1606 bytes)
+2026-05-02 18:12:31.726 [Thread-0] INFO  server.ServerMain - Сервер завершает работу. Сохранение коллекции...
+2026-05-02 18:12:38.272 [main] INFO  server.ServerMain - Hello! Log4j2 run successfully.
+2026-05-02 18:12:38.378 [main] INFO  server.ServerMain - 🚀 Server NIO is running at localhost: 1234
+2026-05-02 18:12:41.090 [main] INFO  server.ServerMain - 🤝 Sent greeting and accepted: /127.0.0.1:61813
+2026-05-02 18:12:44.542 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-02 18:12:44.552 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='help', stringArg='null', objectArg='null'}
+2026-05-02 18:12:44.554 [main] INFO  server.ServerMain - 📤 Send response to Client (1606 bytes)
+2026-05-02 18:13:11.792 [main] INFO  server.ServerMain - 📦 Received Object: 164 bytes
+2026-05-02 18:13:11.793 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='filter_greater_than_car', stringArg='true', objectArg='null'}
+2026-05-02 18:13:11.805 [main] INFO  server.ServerMain - 📤 Send response to Client (7372 bytes)
+2026-05-02 18:14:14.944 [main] ERROR server.ServerMain - ❌ Reading data error: Connection reset
+2026-05-02 18:14:16.062 [main] INFO  server.ServerMain - 🤝 Sent greeting and accepted: /127.0.0.1:61837
+2026-05-02 18:14:30.190 [main] INFO  server.ServerMain - 📦 Received Object: 165 bytes
+2026-05-02 18:14:30.190 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='filter_greater_than_car', stringArg='false', objectArg='null'}
+2026-05-02 18:14:30.190 [main] INFO  server.ServerMain - 📤 Send response to Client (166 bytes)
+2026-05-02 18:14:39.475 [main] INFO  server.ServerMain - 👋 Client leaved.
+2026-05-02 18:18:45.447 [main] INFO  server.ServerMain - 🤝 Sent greeting and accepted: /127.0.0.1:65016
+2026-05-02 18:19:28.586 [main] INFO  server.ServerMain - 📦 Received Object: 577 bytes
+2026-05-02 18:19:28.595 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='add', stringArg='null', objectArg='HumanBeing {id=1, name='uibr', coordinates=(33, 33), realHero=true, hasToothpick=true, impactSpeed=34.0, soundtrackName='5', minutesOfWaiting=3, weaponType=null, car=null, creationDate=2026-05-02T18:19:28.560435400}'}
+2026-05-02 18:19:28.596 [main] INFO  server.ServerMain - 📤 Send response to Client (150 bytes)
+2026-05-02 18:19:44.023 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-02 18:19:44.024 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='show', stringArg='null', objectArg='null'}
+2026-05-02 18:19:44.026 [main] INFO  server.ServerMain - 📤 Send response to Client (4717 bytes)
+2026-05-02 18:21:20.484 [Thread-0] INFO  server.ServerMain - Сервер завершает работу. Сохранение коллекции...
+2026-05-02 18:21:25.619 [main] INFO  server.ServerMain - Hello! Log4j2 run successfully.
+2026-05-02 18:21:25.720 [main] INFO  server.ServerMain - 🚀 Server NIO is running at localhost: 1234
+2026-05-02 18:21:29.353 [main] INFO  server.ServerMain - 🤝 Sent greeting and accepted: /127.0.0.1:55042
+2026-05-02 18:21:31.959 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-02 18:21:31.967 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='show', stringArg='null', objectArg='null'}
+2026-05-02 18:21:31.971 [main] INFO  server.ServerMain - 📤 Send response to Client (4717 bytes)
+2026-05-02 18:23:23.645 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-02 18:23:23.646 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='show', stringArg='null', objectArg='null'}
+2026-05-02 18:23:23.647 [main] INFO  server.ServerMain - 📤 Send response to Client (4717 bytes)
+2026-05-02 18:23:30.160 [Thread-0] INFO  server.ServerMain - Сервер завершает работу. Сохранение коллекции...
+2026-05-02 18:23:31.675 [main] INFO  server.ServerMain - Hello! Log4j2 run successfully.
+2026-05-02 18:23:31.779 [main] INFO  server.ServerMain - 🚀 Server NIO is running at localhost: 1234
+2026-05-02 18:23:46.758 [Thread-0] INFO  server.ServerMain - Сервер завершает работу. Сохранение коллекции...
+2026-05-02 18:23:48.292 [main] INFO  server.ServerMain - Hello! Log4j2 run successfully.
+2026-05-02 18:23:48.393 [main] INFO  server.ServerMain - 🚀 Server NIO is running at localhost: 1234
+2026-05-02 18:24:36.025 [Thread-0] INFO  server.ServerMain - Сервер завершает работу. Сохранение коллекции...

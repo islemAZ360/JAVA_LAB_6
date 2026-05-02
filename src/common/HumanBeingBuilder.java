@@ -191,7 +191,7 @@ public class HumanBeingBuilder {
         int minutes = readMinutesOfWaiting();
         WeaponType weapon = readWeaponType();
         Car car = readCar();
-
+//        System.out.println(car.isCool()); // null
         return new HumanBeing(name, coors, hero, toothpick, speed, soundtrack, minutes, weapon, car);
     }
 

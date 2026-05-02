@@ -83,7 +83,9 @@ public class CollectionManager extends TreeSet<HumanBeing> {
         StringBuilder sb = new StringBuilder();
         sb.append(String.format("%-4s | %-20s | %-11s | %-11s | %-30s | %-10s | %-14s | %-11s | %14s | %16s | %10s | %7s\n", Const.FILEHEADER));
         for (HumanBeing human: listHuman) {
+//            Bug here (in .extractInfo())!!!!! [Fixed]
             sb.append(String.format("%-4s | %-20s | %-11s | %-11s | %-30s | %-10s | %-14s | %-11s | %14s | %16s | %10s | %7s\n", HumanBeingReader.extractInfo(human).split(",")));
+//            sb.append(human.toString()).append("\n");
         }
         return sb.toString().trim();
     }

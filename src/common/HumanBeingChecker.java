@@ -67,6 +67,7 @@ public class HumanBeingChecker {
     }
 
     public static Car checkCar(Car car) {
+//        System.out.println(car.isCool()); // null
         return car;
     }
 }

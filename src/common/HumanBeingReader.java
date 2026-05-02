@@ -64,6 +64,10 @@ public class HumanBeingReader {
      * @return строка CSV с данными объекта
      */
     public static String extractInfo(HumanBeing human) {
+//        [BUG FIXED] Quy tắc của %b:
+//        If passed arg is null/false => false.
+//        If passed arg is not null/false (String, int, ...) => true.
+//        format "%b": null/Boolean false => false | not null/false (String "false", int 0, ...) => true
         return String.format("%d,%s,%d,%d,%s,%b,%b,%s,%s,%d,%s,%b",
                 human.getId(),
                 human.getName(),
@@ -76,7 +80,8 @@ public class HumanBeingReader {
                 human.getSoundtrackName(),
                 human.getMinutesOfWaiting(),
                 (human.getWeaponType() == null ? "" : human.getWeaponType()),
-                (human.getCar() == null ? "false" : human.getCar().isCool())
+//                (human.getCar() == null ? "false" : human.getCar().isCool()) // null => true [%b of String "false" (not boolean false) is true]
+                (human.getCar() != null && human.getCar().isCool())
         );
     }
 
