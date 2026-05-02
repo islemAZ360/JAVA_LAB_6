@@ -42,6 +42,7 @@ public class AddCommand implements Command {
 
         try {
             HumanBeing tempHuman = (HumanBeing) request.getObjectArgument();
+//            System.out.println(tempHuman.getCar()); // null
             HumanBeing newHuman = new HumanBeing(
                     tempHuman.getName(),
                     tempHuman.getCoordinates(),
