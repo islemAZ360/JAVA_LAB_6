@@ -25,6 +25,10 @@ public class RequestHandler {
             return new Response("Имя команды не указано", false, null);
         }
 
+        if (commandName.equals("save")) {
+            return new Response("Эта комманда не доступна для клиента", false, null);
+        }
+
         Command command = commandManager.getCommand(commandName);
 
         if (command == null) {

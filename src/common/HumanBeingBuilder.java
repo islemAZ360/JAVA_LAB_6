@@ -5,16 +5,19 @@ import common.models.Coordinates;
 import common.models.HumanBeing;
 import common.models.WeaponType;
 import common.models.Const;
+import common.utils.BooleanBuilder;
 
 import java.util.Scanner;
 
 public class HumanBeingBuilder {
     private final Scanner scanner;
     private final Coordinates coordinatesChecker;
+    private final BooleanBuilder booleanBuilder;
 
-    public HumanBeingBuilder(Scanner sc, Coordinates coordinatesChecker) {
+    public HumanBeingBuilder(Scanner sc, Coordinates coordinatesChecker, BooleanBuilder booleanBuilder) {
         this.scanner=sc;
         this.coordinatesChecker=coordinatesChecker;
+        this.booleanBuilder=booleanBuilder;
     }
 
     // read name
@@ -86,23 +89,8 @@ public class HumanBeingBuilder {
 
     // realHero ??
     public Boolean readBoolean(String message) {
-        while (true) {
-            System.out.print(message + " (true/false): ");
-            String input = scanner.nextLine().trim().toLowerCase();
-
-            if (!input.equals("true") && !input.equals("false")) {
-                System.out.println("Ошибка: введите 'true' или 'false'!");
-                continue;
-            }
-
-            boolean isRealHero = Boolean.parseBoolean(input);
-            try {
-                HumanBeingChecker.checkIsRealHero(isRealHero);
-                return isRealHero;
-            } catch (IllegalArgumentException E) {
-                System.out.printf("Ошибка: %s\n", E.getMessage());
-            }
-        }
+        boolean isRealHero = this.booleanBuilder.readBoolean(message);
+        return HumanBeingChecker.checkIsRealHero(isRealHero);
     }
 
     // # impactSpeed
