@@ -3,6 +3,7 @@ package server.commands;
 import common.Command;
 import common.Request;
 import common.Response;
+import common.StatusCode;
 import common.models.HumanBeing;
 import server.CollectionManager;
 
@@ -29,7 +30,7 @@ public class FilterLessThanMinutesOfWaitingCommand implements Command {
     @Override
     public Response execute(Request request) {
         if (request.getStringArgument() == null || request.getStringArgument().isBlank()) {
-            return new Response("minutesOfWaiting не указан", false, null);
+            return new Response("minutesOfWaiting не указан", StatusCode.REQUIRED_FIELD_MISSING, null);
         }
 
         try {
@@ -42,18 +43,18 @@ public class FilterLessThanMinutesOfWaitingCommand implements Command {
             if (result.isEmpty()) {
                 return new Response(
                         "Элементы с minutesOfWaiting < " + minutes + " не найдены",
-                        false,
+                        StatusCode.OK,
                         null
                 );
             }
 
             return new Response(
                     collectionManager.show(result),
-                    true,
+                    StatusCode.OK,
                     result
             );
         } catch (NumberFormatException e) {
-            return new Response("Ошибка: minutes должно быть целым числом", false, null);
+            return new Response("Ошибка: minutes должно быть целым числом", StatusCode.FORMAT_INVALID, null);
         }
     }
 }

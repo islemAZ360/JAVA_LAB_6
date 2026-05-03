@@ -3,6 +3,7 @@ package server.commands;
 import common.Command;
 import common.Request;
 import common.Response;
+import common.StatusCode;
 import common.models.HumanBeing;
 import server.CollectionManager;
 
@@ -29,7 +30,7 @@ public class FilterGreaterThanCarCommand implements Command {
     @Override
     public Response execute(Request request) {
         if (request.getStringArgument() == null || request.getStringArgument().isBlank()) {
-            return new Response("Значение car.cool не указано", false, null);
+            return new Response("Значение car.cool не указано", StatusCode.BAD_REQUEST, null);
         }
 
         try {
@@ -45,18 +46,18 @@ public class FilterGreaterThanCarCommand implements Command {
             if (result.isEmpty()) {
                 return new Response(
                         "Элементы с car.cool = " + filterValue + " не найдены",
-                        false,
+                        StatusCode.OK,
                         null
                 );
             }
 
             return new Response(
                     collectionManager.show(result),
-                    true,
+                    StatusCode.OK,
                     result
             );
         } catch (Exception e) {
-            return new Response("Ошибка при filter_greater_than_car: " + e.getMessage(), false, null);
+            return new Response("Ошибка при filter_greater_than_car: " + e.getMessage(), StatusCode.SERVER_ERROR, null);
         }
     }
 }

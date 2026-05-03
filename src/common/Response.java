@@ -6,23 +6,21 @@ public class Response implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String message;
-    private boolean success;
+    private StatusCode status;
     private Object data;
 
-
-    public Response(String message, boolean success, Object data) {
+    public Response(String message, StatusCode status, Object data) {
         this.message = message;
-        this.success = success;
+        this.status = status;
         this.data = data;
     }
-
 
     public String getMessage() {
         return message;
     }
 
-    public boolean isSuccess() {
-        return success;
+    public Boolean isSuccess() {
+        return this.status.isSuccess();
     }
 
     public Object getData() {

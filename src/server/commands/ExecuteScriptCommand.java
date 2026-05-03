@@ -3,6 +3,7 @@ package server.commands;
 import common.Command;
 import common.Request;
 import common.Response;
+import common.StatusCode;
 import common.utils.CommandFileManager;
 import common.utils.CommandManager;
 import common.utils.HumanBeingFileManager;
@@ -36,9 +37,9 @@ public class ExecuteScriptCommand implements Command {
     @Override
     public Response execute(Request request) {
         return new Response(
-                "Команда execute_script пока не реализована для client-server версии",
-                false,
-                null
+            "Команда execute_script пока не реализована для client-server версии",
+            StatusCode.SERVER_ERROR,
+            null
         );
     }
 

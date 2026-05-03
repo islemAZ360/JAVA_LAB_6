@@ -1,9 +1,6 @@
 package server.commands;
 
-import common.Command;
-import common.HumanBeingBuilder;
-import common.Request;
-import common.Response;
+import common.*;
 import common.models.HumanBeing;
 import server.CollectionManager;
 
@@ -37,7 +34,7 @@ public class AddIfMaxCommand implements Command {
     @Override
     public Response execute(Request request) {
         if (request.getObjectArgument() == null) {
-            return new Response("Объект не передан", false, null);
+            return new Response("Объект не передан", StatusCode.BAD_REQUEST, null);
         }
 
         try {
@@ -47,7 +44,7 @@ public class AddIfMaxCommand implements Command {
                 collectionManager.add(newHuman);
                 return new Response(
                         "Коллекция пуста. Элемент добавлен. ID: " + newHuman.getId(),
-                        true,
+                        StatusCode.OK,
                         null
                 );
             }
@@ -58,20 +55,20 @@ public class AddIfMaxCommand implements Command {
                 collectionManager.add(newHuman);
                 return new Response(
                         "Элемент добавлен, так как его ID больше максимального. ID: " + newHuman.getId(),
-                        true,
+                        StatusCode.OK,
                         null
                 );
             }
 
             return new Response(
                     "Элемент не добавлен: его ID не превышает максимальный ID в коллекции (" + maxId + ")",
-                    false,
+                    StatusCode.ID_INVALID,
                     null
             );
         } catch (ClassCastException e) {
-            return new Response("Ошибка: передан объект неверного типа", false, null);
+            return new Response("Ошибка: передан объект неверного типа", StatusCode.BAD_REQUEST, null);
         } catch (Exception e) {
-            return new Response("Ошибка при add_if_max: " + e.getMessage(), false, null);
+            return new Response("Ошибка при add_if_max: " + e.getMessage(), StatusCode.SERVER_ERROR, null);
         }
     }
 }

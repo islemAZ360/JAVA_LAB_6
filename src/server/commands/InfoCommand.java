@@ -3,6 +3,7 @@ package server.commands;
 import common.Command;
 import common.Request;
 import common.Response;
+import common.StatusCode;
 import server.CollectionManager;
 
 /**
@@ -29,7 +30,7 @@ public class InfoCommand implements Command {
     public Response execute(Request request) {
         return new Response(
                 collectionManager.getCollectionInfo(),
-                true,
+                StatusCode.OK,
                 null
         );
     }

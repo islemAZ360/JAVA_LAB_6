@@ -3,6 +3,7 @@ package server.commands;
 import common.Command;
 import common.Request;
 import common.Response;
+import common.StatusCode;
 import server.CollectionManager;
 
 /**
@@ -28,6 +29,6 @@ public class ShowCommand implements Command {
     @Override
     public Response execute(Request request) {
         String result = collectionManager.show();
-        return new Response(result, true, null);
+        return new Response(result, StatusCode.OK, null);
     }
 }
