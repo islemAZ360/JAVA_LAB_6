@@ -4,8 +4,6 @@ import common.*;
 import common.models.HumanBeing;
 import server.CollectionManager;
 
-import java.util.Arrays;
-
 /**
  * Команда добавляет новый элемент в коллекцию, только если его ID превышает
  * максимальный ID текущей коллекции.
@@ -33,12 +31,19 @@ public class AddIfMaxCommand implements Command {
      */
     @Override
     public Response execute(Request request) {
-        if (request.getObjectArgument() == null) {
-            return new Response("Объект не передан", StatusCode.BAD_REQUEST, null);
-        }
-
         try {
+            Long newId = Long.parseLong(request.getStringArgument());
+
+            if (request.getObjectArgument() == null) {
+    //            return new Response("Объект не передан", StatusCode.REQUIRED_FIELD_MISSING, null);
+                if (isValidId(newId)) {
+                    return new Response("Нужно заполнение полей информации объекта", StatusCode.CONTINUE, null);
+                }
+                return new Response("ID не превышает максимальный ID в коллекции", StatusCode.ID_INVALID, null);
+            }
+
             HumanBeing newHuman = (HumanBeing) request.getObjectArgument();
+            newHuman.setId(newId);
 
             if (collectionManager.isEmpty()) {
                 collectionManager.add(newHuman);
@@ -70,5 +75,10 @@ public class AddIfMaxCommand implements Command {
         } catch (Exception e) {
             return new Response("Ошибка при add_if_max: " + e.getMessage(), StatusCode.SERVER_ERROR, null);
         }
+    }
+
+    public Boolean isValidId(Long id) {
+        Long maxId = collectionManager.getMaxId();
+        return id > maxId || collectionManager.isEmpty();
     }
 }

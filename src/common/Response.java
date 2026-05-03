@@ -23,6 +23,10 @@ public class Response implements Serializable {
         return this.status.isSuccess();
     }
 
+    public StatusCode getStatusCode() {
+        return this.status;
+    }
+
     public Object getData() {
         return data;
     }

@@ -3,7 +3,6 @@ package client;
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
-import common.Request;
 import common.Response;
 import common.models.Const;
 
@@ -42,7 +41,7 @@ public class ClientMain {
 //  ===========================================================================================
                 Response resp = inputMng.handleCommand(arguments[0]);
 
-//                // 1. Tạo đối tượng Request
+//                // 1. Create Request object
 //                Request req = new Request(
 //                        arguments[0],
 //                        arguments.length>1? arguments[1]:null,
