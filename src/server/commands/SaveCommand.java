@@ -3,6 +3,7 @@ package server.commands;
 import common.Command;
 import common.Request;
 import common.Response;
+import common.StatusCode;
 import server.CollectionManager;
 import common.utils.HumanBeingFileManager;
 
@@ -33,11 +34,11 @@ public class SaveCommand implements Command {
 
             return new Response(
                     "Коллекция успешно сохранена в файл. Всего элементов: " + collectionManager.size(),
-                    true,
+                    StatusCode.OK,
                     null
             );
         } catch (Exception e) {
-            return new Response("Ошибка при сохранении: " + e.getMessage(), false, null);
+            return new Response("Ошибка при сохранении: " + e.getMessage(), StatusCode.SERVER_ERROR, null);
         }
     }
 }

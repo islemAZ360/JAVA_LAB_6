@@ -3,6 +3,7 @@ package server.commands;
 import common.Command;
 import common.Request;
 import common.Response;
+import common.StatusCode;
 import server.CollectionManager;
 
 import java.util.ArrayList;
@@ -53,11 +54,11 @@ public class ClearCommand implements Command {
     @Override
     public Response execute(Request request) {
         if (request.getStringArgument() != null) {
-            return new Response("Команда clear не принимает аргументы.\nИспользование: clear", false, null);
+            return new Response("Команда clear не принимает аргументы.\nИспользование: clear", StatusCode.BAD_REQUEST, null);
         }
 
         if (collectionManager.isEmpty()) {
-            return new Response("Коллекция уже пуста", false, null);
+            return new Response("Коллекция уже пуста", StatusCode.OK, null);
         }
 
         int size = collectionManager.size();
@@ -65,7 +66,7 @@ public class ClearCommand implements Command {
 
         return new Response(
             "Коллекция очищена. Удалено элементов: " + size,
-            true,
+            StatusCode.OK,
             null
         );
     }

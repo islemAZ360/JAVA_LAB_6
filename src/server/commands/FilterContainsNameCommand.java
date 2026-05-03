@@ -3,6 +3,7 @@ package server.commands;
 import common.Command;
 import common.Request;
 import common.Response;
+import common.StatusCode;
 import common.models.HumanBeing;
 import server.CollectionManager;
 
@@ -29,7 +30,7 @@ public class FilterContainsNameCommand implements Command {
     @Override
     public Response execute(Request request) {
         if (request.getStringArgument() == null || request.getStringArgument().isBlank()) {
-            return new Response("Подстрока имени не указана\nИспользование: filter_contains_name name\nПример: filter_contains_name John", false, null);
+            return new Response("Подстрока имени не указана\nИспользование: filter_contains_name name\nПример: filter_contains_name John", StatusCode.REQUIRED_FIELD_MISSING, null);
         }
 
         String nameSubstring = request.getStringArgument();
@@ -41,14 +42,14 @@ public class FilterContainsNameCommand implements Command {
         if (result.isEmpty()) {
             return new Response(
                     "Элементы с именем, содержащим \"" + nameSubstring + "\", не найдены",
-                    false,
+                    StatusCode.OK,
                     null
             );
         }
 
         return new Response(
                 collectionManager.show(result),
-                true,
+                StatusCode.OK,
                 result
         );
     }

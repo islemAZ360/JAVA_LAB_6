@@ -3,6 +3,7 @@ package server.commands;
 import common.Command;
 import common.Request;
 import common.Response;
+import common.StatusCode;
 import server.CommandManager;
 
 public class HelpCommand implements Command {
@@ -34,7 +35,7 @@ public class HelpCommand implements Command {
 
         return new Response(
                 sb.toString().trim(),
-                true,
+                StatusCode.OK,
                 null
         );
     }

@@ -1,9 +1,6 @@
 package server.commands;
 
-import common.Command;
-import common.HumanBeingReader;
-import common.Request;
-import common.Response;
+import common.*;
 import common.models.HumanBeing;
 import server.CollectionManager;
 import client.InputManager;
@@ -37,7 +34,7 @@ public class AddCommand implements Command {
     public Response execute(Request request) {
 
         if (request.getObjectArgument() == null) {
-            return new Response("Объект не передан", false, null);
+            return new Response("Объект не передан", StatusCode.BAD_REQUEST, null);
         }
 
         try {
@@ -60,15 +57,15 @@ public class AddCommand implements Command {
             if (added) {
                 return new Response(
                         "Элемент добавлен. ID: " + newHuman.getId(),
-                        true,
+                        StatusCode.OK,
                         null
                 );
             } else {
-                return new Response("Не удалось добавить элемент", false, null);
+                return new Response("Не удалось добавить элемент", StatusCode.SERVER_ERROR, null);
             }
 
         } catch (Exception e) {
-            return new Response("Ошибка при добавлении: " + e.getMessage(), false, null);
+            return new Response("Ошибка при добавлении: " + e.getMessage(), StatusCode.SERVER_ERROR, null);
         }
     }
 }

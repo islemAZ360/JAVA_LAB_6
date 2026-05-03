@@ -3,6 +3,7 @@ package server.commands;
 import common.Command;
 import common.Request;
 import common.Response;
+import common.StatusCode;
 import common.models.HumanBeing;
 import server.CollectionManager;
 
@@ -27,11 +28,11 @@ public class UpdateCommand implements Command {
     @Override
     public Response execute(Request request) {
         if (request.getStringArgument() == null || request.getStringArgument().isBlank()) {
-            return new Response("ID не указан", false, null);
+            return new Response("ID не указан", StatusCode.BAD_REQUEST, null);
         }
 
         if (request.getObjectArgument() == null) {
-            return new Response("Новый объект не передан\nспользование: update id", false, null);
+            return new Response("Новый объект не передан\nспользование: update id", StatusCode.BAD_REQUEST, null);
         }
 
         try {
@@ -41,16 +42,16 @@ public class UpdateCommand implements Command {
             boolean updated = collectionManager.update(id, newHuman);
 
             if (updated) {
-                return new Response("Элемент обновлен", true, null);
+                return new Response("Элемент обновлен", StatusCode.OK, null);
             } else {
-                return new Response("Элемент с таким ID не найден", false, null);
+                return new Response("Элемент с таким ID не найден", StatusCode.ID_INVALID, null);
             }
         } catch (NumberFormatException e) {
-            return new Response("Ошибка: ID должен быть числом", false, null);
+            return new Response("Ошибка: ID должен быть числом", StatusCode.ID_INVALID, null);
         } catch (ClassCastException e) {
-            return new Response("Ошибка: передан объект неверного типа", false, null);
+            return new Response("Ошибка: передан объект неверного типа", StatusCode.BAD_REQUEST, null);
         } catch (Exception e) {
-            return new Response("Ошибка при обновлении: " + e.getMessage(), false, null);
+            return new Response("Ошибка при обновлении: " + e.getMessage(), StatusCode.SERVER_ERROR, null);
         }
     }
 }
