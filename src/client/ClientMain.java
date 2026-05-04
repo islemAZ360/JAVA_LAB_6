@@ -36,10 +36,10 @@ public class ClientMain {
                 if ("exit".equalsIgnoreCase(input)) break;
 
                 // Handles one or multiple spaces perfectly
-                String[] arguments = input.split("\\s+");
+//                String[] arguments = input.split("\\s+");
 
 //  ===========================================================================================
-                Response resp = inputMng.handleCommand(arguments[0]);
+                Response resp = inputMng.handleCommand(input);
 
 //                // 1. Create Request object
 //                Request req = new Request(

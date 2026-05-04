@@ -151,7 +151,7 @@ public class ServerMain {
         } catch (Exception e) {
             logger.error("❌ Reading data error: {}", e.getMessage());
 //            System.err.println("❌ Reading data error: " + e.getMessage());
-            try { sc.close(); } catch (IOException _) {}
+            try { sc.close(); } catch (IOException ignored) {}
         }
     }
 

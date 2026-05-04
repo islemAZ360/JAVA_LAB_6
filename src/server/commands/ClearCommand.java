@@ -53,21 +53,40 @@ public class ClearCommand implements Command {
 
     @Override
     public Response execute(Request request) {
-        if (request.getStringArgument() != null) {
-            return new Response("Команда clear не принимает аргументы.\nИспользование: clear", StatusCode.BAD_REQUEST, null);
-        }
-
         if (collectionManager.isEmpty()) {
             return new Response("Коллекция уже пуста", StatusCode.OK, null);
         }
 
-        int size = collectionManager.size();
-        collectionManager.clear();
+        if (request.getStringArgument() == null || request.getStringArgument().isBlank()) {
+            return new Response(
+                    "В коллекции " + collectionManager.size() + " элементов.\n" +
+                            "Вы уверены, что хотите очистить коллекцию? (yes/no)",
+                    StatusCode.CONTINUE,
+                    null
+            );
+        }
+
+        String answer = request.getStringArgument().trim().toLowerCase();
+
+        if (answer.equals("yes") || answer.equals("y")) {
+            int size = collectionManager.size();
+            collectionManager.clear();
+
+            return new Response(
+                    "Коллекция очищена. Удалено элементов: " + size,
+                    StatusCode.OK,
+                    null
+            );
+        }
+
+        if (answer.equals("no") || answer.equals("n")) {
+            return new Response("Операция отменена.", StatusCode.OK, null);
+        }
 
         return new Response(
-            "Коллекция очищена. Удалено элементов: " + size,
-            StatusCode.OK,
-            null
+                "Неверный ответ. Используйте yes/no.",
+                StatusCode.BAD_REQUEST,
+                null
         );
     }
 }

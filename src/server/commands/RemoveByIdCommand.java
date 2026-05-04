@@ -26,7 +26,6 @@ public class RemoveByIdCommand implements Command {
 
     @Override
     public Response execute(Request request) {
-
         if (request.getStringArgument() == null) {
             return new Response("ID не указан", StatusCode.BAD_REQUEST, null);
         }

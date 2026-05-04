@@ -31,7 +31,6 @@ public class AddIfMinCommand implements Command {
             Long newId = Long.parseLong(request.getStringArgument());
 
             if (request.getObjectArgument() == null) {
-                //            return new Response("Объект не передан", StatusCode.REQUIRED_FIELD_MISSING, null);
                 if (isValidId(newId)) {
                     return new Response("Нужно заполнение полей информации объекта", StatusCode.CONTINUE, null);
                 }
