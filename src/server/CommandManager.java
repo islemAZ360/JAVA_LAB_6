@@ -1,21 +1,8 @@
 package server;
 
 import common.utils.HumanBeingFileManager;
-import server.commands.AddCommand;
-import server.commands.AddIfMaxCommand;
-import server.commands.AddIfMinCommand;
-import server.commands.ClearCommand;
+import server.commands.*;
 import common.Command;
-import server.commands.FilterContainsNameCommand;
-import server.commands.FilterGreaterThanCarCommand;
-import server.commands.FilterLessThanMinutesOfWaitingCommand;
-import server.commands.HelpCommand;
-import server.commands.InfoCommand;
-import server.commands.RemoveByIdCommand;
-import server.commands.RemoveGreaterCommand;
-import server.commands.SaveCommand;
-import server.commands.ShowCommand;
-import server.commands.UpdateCommand;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -39,7 +26,7 @@ public class CommandManager {
         commands.put("filter_greater_than_car", new FilterGreaterThanCarCommand(collectionManager));
         commands.put("filter_less_than_minutes_of_waiting", new FilterLessThanMinutesOfWaitingCommand(collectionManager));
         commands.put("save", new SaveCommand(collectionManager, humanBeingFileManager));
-//        commands.put("run_script_file", new ExecuteScriptCommand());
+        commands.put("run_script_file", new ExecuteScriptCommand(collectionManager, humanBeingFileManager));
     }
 
     public Command getCommand(String commandName) {

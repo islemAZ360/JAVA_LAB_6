@@ -85,12 +85,6 @@ public class InputManager {
                 }
                 break;
 
-            case "remove_by_id":
-            case "remove_greater":
-            case "filter_contains_name":
-            case "filter_less_than_minutes_of_waiting":
-                req = new Request(commandName, argument, null);
-                break;
             case "update":
                 req = new Request(commandName, argument, null);
 
@@ -138,6 +132,41 @@ public class InputManager {
                 System.out.println("Команда save недоступна в клиенте.");
                 return null;
 
+            case "run_script_file":
+                if (argument == null) {
+                    System.out.println("Укажите путь к файлу");
+                    return null;
+                }
+
+                try {
+                    Scanner fileScanner = new Scanner(new java.io.File(argument));
+
+                    while (fileScanner.hasNextLine()) {
+                        String line = fileScanner.nextLine().trim();
+
+                        if (line.isEmpty()) continue;
+
+                        System.out.println(">>> " + line);
+
+                        Response scriptResp = this.handleCommand(line);
+
+                        if (scriptResp != null) {
+                            System.out.println(scriptResp.getMessage());
+                        }
+                    }
+
+                    fileScanner.close();
+
+                } catch (Exception e) {
+                    System.out.println("Ошибка чтения файла: " + e.getMessage());
+                }
+
+                return null;
+
+            case "remove_by_id":
+            case "remove_greater":
+            case "filter_contains_name":
+            case "filter_less_than_minutes_of_waiting":
             default:
                 req = new Request(commandName, argument, null);
                 break;
