@@ -10,6 +10,8 @@ import common.utils.LongBuilder;
 
 import java.io.IOException;
 import java.util.Scanner;
+import java.io.File;
+import java.util.Arrays;
 
 public class InputManager {
 
@@ -41,9 +43,12 @@ public class InputManager {
         return this.longBuilder.readLongId();
     }
 
+    public HumanBeing readHumanbeing(String[] args) {
+        return this.humanBeingBuilder.readHumanBeing(args);
+    }
+
     public Response handleCommand(String input) throws IOException {
 
-        // 🔥 TÁCH COMMAND + ARG
         String[] parts = input.trim().split("\\s+", 2);
         String commandName = parts[0];
         String argument = parts.length > 1 ? parts[1] : null;
@@ -53,10 +58,7 @@ public class InputManager {
         switch (commandName) {
 
             case "add":
-                req = new Request(
-                        commandName,
-                        null,
-                        this.readHumanbeing());
+                req = new Request(commandName, null, this.readHumanbeing());
                 break;
 
             case "filter_greater_than_car":
@@ -67,23 +69,31 @@ public class InputManager {
                 break;
 
             case "add_if_max":
-            case "add_if_min":
-                Long id = this.read_id_value();
+            case "add_if_min": {
+                Long id;
+
+                if (argument != null && !argument.isBlank()) {
+                    id = Long.parseLong(argument);
+                } else {
+                    id = this.read_id_value();
+                }
 
                 req = new Request(commandName, id.toString(), null);
-                Response resp = this.reqSender.sendRequest(req);
+                Response addIfResp = this.reqSender.sendRequest(req);
 
-                if (resp.getStatusCode() == StatusCode.CONTINUE) {
-                    System.out.println(resp.getMessage());
+                if (addIfResp.getStatusCode() == StatusCode.CONTINUE) {
+                    System.out.println(addIfResp.getMessage());
 
                     req = new Request(
                             commandName,
                             id.toString(),
-                            this.readHumanbeing());
+                            this.readHumanbeing()
+                    );
                 } else {
-                    return resp;
+                    return addIfResp;
                 }
                 break;
+            }
 
             case "update":
                 req = new Request(commandName, argument, null);
@@ -99,11 +109,12 @@ public class InputManager {
                             this.readHumanbeing()
                     );
                 } else {
-                        return updateResp;
+                    return updateResp;
                 }
                 break;
+
             case "clear":
-                req = new Request(commandName, null, null);
+                req = new Request(commandName, argument, null);
 
                 Response clearResp = this.reqSender.sendRequest(req);
 
@@ -117,6 +128,7 @@ public class InputManager {
                     return clearResp;
                 }
                 break;
+
             case "show":
             case "info":
             case "help":
@@ -132,36 +144,90 @@ public class InputManager {
                 System.out.println("Команда save недоступна в клиенте.");
                 return null;
 
-            case "run_script_file":
-                if (argument == null) {
-                    System.out.println("Укажите путь к файлу");
-                    return null;
+            case "run_script_file": {
+                if (argument == null || argument.isBlank()) {
+                    return new Response("Укажите путь к файлу скрипта.", StatusCode.BAD_REQUEST, null);
                 }
 
-                try {
-                    Scanner fileScanner = new Scanner(new java.io.File(argument));
-
+                try (Scanner fileScanner = new Scanner(new File(argument))) {
                     while (fileScanner.hasNextLine()) {
                         String line = fileScanner.nextLine().trim();
 
-                        if (line.isEmpty()) continue;
+                        if (line.isEmpty() || line.startsWith("#")) continue;
+
+                        String[] scriptParts = line.split("\\s+");
+                        String scriptCommand = scriptParts[0];
 
                         System.out.println(">>> " + line);
 
-                        Response scriptResp = this.handleCommand(line);
+                        if (scriptCommand.equals("add")) {
+                            if (scriptParts.length < 11) {
+                                return new Response(
+                                        "Ошибка: add должен быть в формате: add name x y realHero hasToothpick impactSpeed soundtrack minutes weapon car",
+                                        StatusCode.BAD_REQUEST,
+                                        null
+                                );
+                            }
 
+                            String[] humanArgs = Arrays.copyOfRange(scriptParts, 1, 11);
+
+                            Request addReq = new Request(
+                                    scriptCommand,
+                                    null,
+                                    this.readHumanbeing(humanArgs)
+                            );
+
+                            Response addResp = this.reqSender.sendRequest(addReq);
+                            System.out.println(addResp.getMessage());
+
+                            continue;
+                        }
+
+                        if (scriptCommand.equals("add_if_max") || scriptCommand.equals("add_if_min")) {
+                            if (scriptParts.length < 12) {
+                                return new Response(
+                                        "Ошибка: " + scriptCommand + " должен быть в формате: " +
+                                                scriptCommand + " id name x y realHero hasToothpick impactSpeed soundtrack minutes weapon car",
+                                        StatusCode.BAD_REQUEST,
+                                        null
+                                );
+                            }
+
+                            String scriptId = scriptParts[1];
+                            String[] humanArgs = Arrays.copyOfRange(scriptParts, 2, 12);
+
+                            Request checkReq = new Request(scriptCommand, scriptId, null);
+                            Response checkResp = this.reqSender.sendRequest(checkReq);
+                            System.out.println(checkResp.getMessage());
+
+                            if (checkResp.getStatusCode() == StatusCode.CONTINUE) {
+                                Request finalReq = new Request(
+                                        scriptCommand,
+                                        scriptId,
+                                        this.readHumanbeing(humanArgs)
+                                );
+
+                                Response finalResp = this.reqSender.sendRequest(finalReq);
+                                System.out.println(finalResp.getMessage());
+                            }
+
+                            continue;
+                        }
+
+                        Response scriptResp = this.handleCommand(line);
                         if (scriptResp != null) {
                             System.out.println(scriptResp.getMessage());
                         }
                     }
 
-                    fileScanner.close();
+                    System.out.println("Скрипт успешно выполнен.");
 
                 } catch (Exception e) {
-                    System.out.println("Ошибка чтения файла: " + e.getMessage());
+                    return new Response("Ошибка чтения скрипта: " + e.getMessage(), StatusCode.BAD_REQUEST, null);
                 }
 
-                return null;
+                return new Response("Скрипт успешно выполнен.", StatusCode.OK, null);
+            }
 
             case "remove_by_id":
             case "remove_greater":
