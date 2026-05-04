@@ -1,9 +1,0 @@
-2026-05-05 00:00:25.966 [main] INFO  server.ServerMain - 📦 Received Object: 589 bytes
-2026-05-05 00:00:25.983 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='add', stringArg='null', objectArg='HumanBeing {id=1, name='rshtrshsth', coordinates=(44, 44), realHero=true, hasToothpick=false, impactSpeed=234.0, soundtrackName='fsdgews', minutesOfWaiting=4, weaponType=null, car=null, creationDate=2026-05-05T00:00:25.948039900}'}
-2026-05-05 00:00:25.985 [main] INFO  server.ServerMain - 📤 Send response to Client (238 bytes)
-2026-05-05 00:00:25.986 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
-2026-05-05 00:00:25.987 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='show', stringArg='null', objectArg='null'}
-2026-05-05 00:00:25.992 [main] INFO  server.ServerMain - 📤 Send response to Client (6149 bytes)
-2026-05-05 00:00:25.994 [main] INFO  server.ServerMain - 📦 Received Object: 205 bytes
-2026-05-05 00:00:25.995 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='update', stringArg='3 TestAddByScript 100 165 true true 555.0 BipBip 2 HAMMER true', objectArg='null'}
-2026-05-05 00:00:25.995 [main] INFO  server.ServerMain - 📤 Send response to Client (257 bytes)
