@@ -22,6 +22,7 @@ public enum StatusCode implements Serializable {
 
     // Group 5xx: Server or System err
     SERVER_ERROR(500, "Server đang ngáo, thử lại sau"),
+    SERVICE_UNAVAILABLE(503, "Server is unavailable at this time"),
     TIMEOUT(504, "Chờ mày nhập liệu lâu quá, tao đóng kết nối đây");
 
     private final int code;

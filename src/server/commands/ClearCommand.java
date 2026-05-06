@@ -1,9 +1,6 @@
 package server.commands;
 
-import common.Command;
-import common.Request;
-import common.Response;
-import common.StatusCode;
+import common.*;
 import server.CollectionManager;
 
 import java.util.ArrayList;
@@ -63,7 +60,10 @@ public class ClearCommand implements Command {
         if (arg != null) {
             String flag = arg.trim().toLowerCase();
 
-            if (flag.equals("-y") || flag.equals("-f")) {
+            if (flag.equals(CommandFlag.YES.getLongFlag()) ||
+                flag.equals(CommandFlag.YES.getShortFlag()) ||
+                flag.equals(CommandFlag.FORCE.getLongFlag()) ||
+                flag.equals(CommandFlag.FORCE.getShortFlag())) {
                 int size = collectionManager.size();
                 collectionManager.clear();
 
@@ -78,7 +78,7 @@ public class ClearCommand implements Command {
 //                return new Response("Операция отменена.", StatusCode.OK, null);
 //            }
 
-            return new Response("Неверный аргумент. Используйте -y или -f", StatusCode.BAD_REQUEST, null);
+            return new Response(String.format("Неверный аргумент. Используйте флаги %s или %s", CommandFlag.FORCE.getLongFlag(), CommandFlag.YES.getLongFlag()), StatusCode.BAD_REQUEST, null);
         }
 
         return new Response(

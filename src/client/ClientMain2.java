@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class ClientMain {
+public class ClientMain2 {
     public static void main(String[] args) {
         boolean connected = false;
         int maxRetries = 5;
