@@ -37,9 +37,9 @@ public class ExecuteScriptCommand implements Command {
     @Override
     public Response execute(Request request) {
         return new Response(
-            "Команда execute_script пока не реализована для client-server версии",
-            StatusCode.SERVER_ERROR,
-            null
+                "Команда run_script_file выполняется на клиенте.",
+                StatusCode.BAD_REQUEST,
+                null
         );
     }
 

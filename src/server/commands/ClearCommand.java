@@ -53,39 +53,38 @@ public class ClearCommand implements Command {
 
     @Override
     public Response execute(Request request) {
+
         if (collectionManager.isEmpty()) {
             return new Response("Коллекция уже пуста", StatusCode.OK, null);
         }
 
-        if (request.getStringArgument() == null || request.getStringArgument().isBlank()) {
-            return new Response(
-                    "В коллекции " + collectionManager.size() + " элементов.\n" +
-                            "Вы уверены, что хотите очистить коллекцию? (yes/no)",
-                    StatusCode.CONTINUE,
-                    null
-            );
-        }
+        String arg = request.getStringArgument();
 
-        String answer = request.getStringArgument().trim().toLowerCase();
+        if (arg != null) {
+            String flag = arg.trim().toLowerCase();
 
-        if (answer.equals("yes") || answer.equals("y")) {
-            int size = collectionManager.size();
-            collectionManager.clear();
+            if (flag.equals("-y") || flag.equals("-f")) {
+                int size = collectionManager.size();
+                collectionManager.clear();
 
-            return new Response(
-                    "Коллекция очищена. Удалено элементов: " + size,
-                    StatusCode.OK,
-                    null
-            );
-        }
+                return new Response(
+                        "Коллекция очищена. Удалено элементов: " + size,
+                        StatusCode.OK,
+                        null
+                );
+            }
 
-        if (answer.equals("no") || answer.equals("n")) {
-            return new Response("Операция отменена.", StatusCode.OK, null);
+//            if (flag.equals("-n")) {
+//                return new Response("Операция отменена.", StatusCode.OK, null);
+//            }
+
+            return new Response("Неверный аргумент. Используйте -y или -f", StatusCode.BAD_REQUEST, null);
         }
 
         return new Response(
-                "Неверный ответ. Используйте yes/no.",
-                StatusCode.BAD_REQUEST,
+                "В коллекции " + collectionManager.size() + " элементов.\n" +
+                        "Вы уверены? (yes/no)",
+                StatusCode.CONTINUE,
                 null
         );
     }
