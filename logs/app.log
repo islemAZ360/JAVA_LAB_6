@@ -1,9 +1,29 @@
-2026-05-05 00:00:25.966 [main] INFO  server.ServerMain - 📦 Received Object: 589 bytes
-2026-05-05 00:00:25.983 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='add', stringArg='null', objectArg='HumanBeing {id=1, name='rshtrshsth', coordinates=(44, 44), realHero=true, hasToothpick=false, impactSpeed=234.0, soundtrackName='fsdgews', minutesOfWaiting=4, weaponType=null, car=null, creationDate=2026-05-05T00:00:25.948039900}'}
-2026-05-05 00:00:25.985 [main] INFO  server.ServerMain - 📤 Send response to Client (238 bytes)
-2026-05-05 00:00:25.986 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
-2026-05-05 00:00:25.987 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='show', stringArg='null', objectArg='null'}
-2026-05-05 00:00:25.992 [main] INFO  server.ServerMain - 📤 Send response to Client (6149 bytes)
-2026-05-05 00:00:25.994 [main] INFO  server.ServerMain - 📦 Received Object: 205 bytes
-2026-05-05 00:00:25.995 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='update', stringArg='3 TestAddByScript 100 165 true true 555.0 BipBip 2 HAMMER true', objectArg='null'}
-2026-05-05 00:00:25.995 [main] INFO  server.ServerMain - 📤 Send response to Client (257 bytes)
+2026-05-06 16:20:38.652 [main] INFO  server.ServerMain - Hello! Log4j2 run successfully.
+2026-05-06 16:20:38.790 [main] INFO  server.ServerMain - 🚀 Server NIO is running at localhost: 1234
+2026-05-06 16:20:42.235 [main] INFO  server.ServerMain - 🤝 Sent greeting and accepted: /127.0.0.1:59941
+2026-05-06 16:20:45.201 [main] INFO  server.ServerMain - 🤝 Sent greeting and accepted: /127.0.0.1:59828
+2026-05-06 16:20:52.677 [main] INFO  server.ServerMain - 📦 Received Object: 143 bytes
+2026-05-06 16:20:52.687 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='showshow', stringArg='null', objectArg='null'}
+2026-05-06 16:20:52.691 [main] INFO  server.ServerMain - 📤 Send response to Client (275 bytes)
+2026-05-06 16:20:55.307 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-06 16:20:55.307 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='show', stringArg='null', objectArg='null'}
+2026-05-06 16:20:55.311 [main] INFO  server.ServerMain - 📤 Send response to Client (6341 bytes)
+2026-05-06 16:21:22.102 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-06 16:21:22.102 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='show', stringArg='null', objectArg='null'}
+2026-05-06 16:21:22.104 [main] INFO  server.ServerMain - 📤 Send response to Client (6341 bytes)
+2026-05-06 16:21:48.946 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-06 16:21:48.946 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='show', stringArg='null', objectArg='null'}
+2026-05-06 16:21:48.948 [main] INFO  server.ServerMain - 📤 Send response to Client (6341 bytes)
+2026-05-06 16:22:07.896 [main] INFO  server.ServerMain - 📦 Received Object: 150 bytes
+2026-05-06 16:22:07.897 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='remove_by_id', stringArg='5', objectArg='null'}
+2026-05-06 16:22:07.897 [main] INFO  server.ServerMain - 📤 Send response to Client (238 bytes)
+2026-05-06 16:22:07.898 [main] INFO  server.ServerMain - 📦 Received Object: 135 bytes
+2026-05-06 16:22:07.899 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='', stringArg='null', objectArg='null'}
+2026-05-06 16:22:07.899 [main] INFO  server.ServerMain - 📤 Send response to Client (248 bytes)
+2026-05-06 16:22:38.087 [main] INFO  server.ServerMain - 📦 Received Object: 588 bytes
+2026-05-06 16:22:38.099 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='add', stringArg='null', objectArg='HumanBeing {id=1, name='ibhuergij', coordinates=(43, 345), realHero=true, hasToothpick=true, impactSpeed=44353.0, soundtrackName='4efgder', minutesOfWaiting=4, weaponType=null, car=null, creationDate=2026-05-06T16:22:38.064114500}'}
+2026-05-06 16:22:38.101 [main] INFO  server.ServerMain - 📤 Send response to Client (238 bytes)
+2026-05-06 16:22:44.847 [main] INFO  server.ServerMain - 📦 Received Object: 139 bytes
+2026-05-06 16:22:44.847 [main] INFO  server.ServerMain - 📥 Received Request: Request{cmd='show', stringArg='null', objectArg='null'}
+2026-05-06 16:22:44.849 [main] INFO  server.ServerMain - 📤 Send response to Client (6533 bytes)
+2026-05-06 16:33:23.939 [Thread-0] INFO  server.ServerMain - Сервер завершает работу. Сохранение коллекции...
