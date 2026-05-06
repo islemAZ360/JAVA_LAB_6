@@ -9,9 +9,11 @@ import common.utils.BooleanBuilder;
 import common.utils.LongBuilder;
 
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.Scanner;
 import java.io.File;
 import java.util.Arrays;
+import java.util.Set;
 
 public class InputManager {
 
@@ -21,6 +23,8 @@ public class InputManager {
     private final HumanBeingBuilder humanBeingBuilder;
     private final BooleanBuilder booleanBuilder;
     private final LongBuilder longBuilder;
+
+    private Set<String> globalRunningStack = new HashSet<>();
 
     public InputManager(Scanner scanner, RequestSender reqSender) {
         this.scanner = scanner;
@@ -158,7 +162,18 @@ public class InputManager {
                         String[] scriptParts = line.split("\\s+");
                         String scriptCommand = scriptParts[0];
 
-                        System.out.println(">>> " + line);
+                        System.out.println(">>> Reading and executing line: " + line);
+
+                        if (scriptCommand.equals("run_script_file")) {
+                            if (globalRunningStack.contains(scriptParts[1])) {
+                                return new Response(
+                                        "⚠️ Recursion prevent (cross or directly): " + scriptParts[1],
+                                        StatusCode.OK,
+                                        null
+                                );
+                            }
+                            globalRunningStack.add(scriptParts[1]);
+                        }
 
                         if (scriptCommand.equals("add")) {
                             if (scriptParts.length < 11) {
@@ -224,6 +239,8 @@ public class InputManager {
 
                 } catch (Exception e) {
                     return new Response("Ошибка чтения скрипта: " + e.getMessage(), StatusCode.BAD_REQUEST, null);
+                } finally {
+                    globalRunningStack.remove(argument);
                 }
 
                 return new Response("Скрипт успешно выполнен.", StatusCode.OK, null);

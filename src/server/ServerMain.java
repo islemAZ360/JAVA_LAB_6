@@ -5,10 +5,12 @@ import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.*;
 import java.util.Iterator;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import common.Request;
 import common.Serializer;
 import common.Response;
+import common.StatusCode;
 import common.models.Const;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,6 +24,10 @@ public class ServerMain {
 
     private static RequestHandler requestHandler;
 
+    private static final AtomicInteger currentConnections = new AtomicInteger(0);
+
+    private static final int MAX_CONNECTIONS = 2;
+
     public static void main(String[] args) {
         logger.info("Hello! Log4j2 run successfully.");
 //        logger.error("Here an example of error log.");
@@ -31,18 +37,15 @@ public class ServerMain {
         CommandManager commandManager = new CommandManager(collectionManager, humanBeingFileManager);
         requestHandler = new RequestHandler(commandManager);
 
-        // 1. đọc file khi khởi động
+        // 1. Load database file
         humanBeingFileManager.readFileAndLoadHumanBeing(collectionManager);
 
-//        // 2. save tự động khi server tắt
+//        // 2. auto save when server is closed
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             logger.info("Сервер завершает работу. Сохранение коллекции...");
             humanBeingFileManager.saveAll(collectionManager);
         }));
-//
-//        // 3. tạm thời chỉ test startup/shutdown cho Issue 4
-//        System.out.println("Сервер запущен.");
-//        System.out.println(collectionManager.getCollectionInfo());
+
         try (Selector selector = Selector.open();
              ServerSocketChannel serverChannel = ServerSocketChannel.open()) {
 
@@ -57,7 +60,7 @@ public class ServerMain {
 //            System.out.println("🚀 Server NIO is running at localhost:" + common.models.Const.port);
 
             while (true) {
-                // Đợi sự kiện (có thể kết hợp kiểm tra CLI ở đây)
+                // Ожидание событий (тайм-аут 1 секунда)
                 if (selector.select(1000) == 0) continue;
 
                 Iterator<SelectionKey> keys = selector.selectedKeys().iterator();
@@ -83,16 +86,36 @@ public class ServerMain {
     // --- HANDSHAKE (ACCEPT) ---
     private static void handleAccept(ServerSocketChannel serverChannel, Selector selector) throws IOException {
         SocketChannel clientChannel = serverChannel.accept();
-        clientChannel.configureBlocking(false); // => NIO
-        // Gắn một "túi chứa" mới cho Client này
-        clientChannel.register(selector, SelectionKey.OP_READ, new ConnectionState());
 
         // Sent 2 byte header response to CLIENT to accept
         // 0x-hex 0byte (hex signature = 4 bit => AC = 8 bít = 1 byte) (OxAC ED: STREAM_MAGIC (Java Serialized Identifier), Ox00 05: STREAM_VERSION (Serialization version))
 //        byte[] header = {(byte) 0xAC, (byte) 0xED, (byte) 0x00, (byte) 0x05};
 //        clientChannel.write(ByteBuffer.wrap(header));
-        logger.info("\uD83E\uDD1D Sent greeting and accepted: {}", clientChannel.getRemoteAddress());
-//        System.out.println("🤝 Sent greeting and accepted: " + clientChannel.getRemoteAddress());
+        if (currentConnections.get() < MAX_CONNECTIONS) {
+//            increase first to keep connection
+            int connectionCount = currentConnections.incrementAndGet();
+
+            clientChannel.configureBlocking(false); // => NIO
+        //  Regist new channel to selector and raise when have data to read
+            clientChannel.register(selector, SelectionKey.OP_READ, new ConnectionState());
+            logger.info("\uD83E\uDD1D Sent greeting and accepted: {}", clientChannel.getRemoteAddress());
+        //  System.out.println("🤝 Sent greeting and accepted: " + clientChannel.getRemoteAddress());
+            logger.info("Новое подключение принято. Всего подключений: {}", connectionCount);
+            sendResponse(clientChannel, new Response(
+                    String.format("Новое подключение принято. Всего подключений: %s", connectionCount),
+                    StatusCode.OK,
+                    null
+            ));
+        } else {
+            // Если лимит превышен, закрываем соединение
+            logger.info("Подключение отклонено: достигнут лимит (макс. {}). Всего подключений: {}", MAX_CONNECTIONS,currentConnections.get());
+            sendResponse(clientChannel, new Response(
+                    String.format("Подключение отклонено: достигнут лимит (макс. %s). Всего подключений: %s", MAX_CONNECTIONS,currentConnections.get()),
+                    StatusCode.SERVICE_UNAVAILABLE,
+                    null
+            ));
+            clientChannel.close();
+        }
     }
 
     // --- RECEIPT REQUEST (READ) ---
@@ -108,6 +131,7 @@ public class ServerMain {
                     // Client closed connection
                     key.cancel();
                     sc.close();
+                    currentConnections.getAndDecrement();
                     logger.info("👋 Client leaved.");
 //                    System.out.println("👋 Client leaved.");
                 }
@@ -122,23 +146,23 @@ public class ServerMain {
                         state.dataBuffer = ByteBuffer.allocate(size);
                         state.hasReadSize = true;
                     } else {
-                        state.headerBuffer.clear(); // Reset nếu size lỗi
+                        state.headerBuffer.clear(); // Reset if data is failed
                     }
                 }
             }
 
-            // B. Đọc Data (sau khi đã có Size)
+            // B. Read Data (after having Size)
             if (state.hasReadSize && state.dataBuffer != null) {
                 sc.read(state.dataBuffer);
 
                 if (!state.dataBuffer.hasRemaining()) {
-                    // C. ĐÃ NHẬN ĐỦ REQUEST
+                    // C. RECEIVED FULL REQUEST
                     byte[] data = state.dataBuffer.array();
                     Object requestObj = Serializer.deserialize(data);
                     logger.info("\uD83D\uDCE5 Received Request: {}", requestObj);
 //                    System.out.println("📥 Received Request: " + requestObj);
 
-                    // Xử lý logic xong thì Reset để chờ Request tiếp theo
+                    // Reset to wait new Request
                     state.headerBuffer.clear();
                     state.dataBuffer = null;
                     state.hasReadSize = false;
@@ -151,7 +175,7 @@ public class ServerMain {
         } catch (Exception e) {
             logger.error("❌ Reading data error: {}", e.getMessage());
 //            System.err.println("❌ Reading data error: " + e.getMessage());
-            try { sc.close(); } catch (IOException ignored) {}
+            try { sc.close(); currentConnections.getAndDecrement(); } catch (IOException ignored) {}
         }
     }
 
