@@ -10,83 +10,178 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
 
 public class ClientMain {
+    private static int current_timeout_index = 0;  // seconds
+    private static final int BASE_TIMEOUT = 5;
+    private static final int[] timeouts = {5, 15, 30, 60, 120, 300, 600};
+    private static Socket socket = null;
+    private static volatile boolean isConnected = false;
+    private static volatile boolean isReconnecting = false;
+    private static DataOutputStream dos;
+    private static DataInputStream dis = null;
+    private static RequestSender reqSender = null;
+    private static InputManager inputMng = null;
+    private static Scanner scanner = new Scanner(System.in);
+    private static String input;
+    private static ScheduledFuture<?> currentTask;
+    private static ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor(r -> {
+        Thread t = new Thread(r);
+        t.setDaemon(true); // Để nó chạy ngầm
+        return t;
+    });
+
     public static void main(String[] args) {
-        boolean connected = false;
-        int maxRetries = 5;
-        int timeout = 5000;
+        reconnect();
 
-        for (int i = 1; i <= maxRetries; i++) {
-            // Use try-with-resources to auto close socket when error
-            // Init output first to avoid Deadlock (server and client will be waiting header for each other => all hang)
-            try (Socket socket = new Socket(Const.host, Const.port);
-//            try (Socket socket = new Socket("77.234.196.4", 1234);
-                 DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
-                 // Only this one communicates with Socket (read header and data => ois)
-                 DataInputStream dis = new DataInputStream(socket.getInputStream())) {
-
-                int size = dis.readInt();
-                byte[] data = new byte[size];
-                dis.readFully(data);
-                Response firstRes = (Response) Serializer.deserialize(data);
-
-                if (firstRes.getStatusCode() == StatusCode.SERVICE_UNAVAILABLE) {
-                    System.out.println(firstRes.getMessage());
-                    if (i < maxRetries) {
-                        System.out.printf("Ожидание %d сек, перед началом новой попытки ...\n", timeout);
-                        Thread.sleep(timeout);
-                        continue; // redundant in this case
-                    } else {
-                        System.out.println("🚨 Количество попыток превышал количество максимальных попыток.");
-                        break;
+        scheduler.scheduleAtFixedRate(() -> {
+            if(isReconnecting) return; // prevent call when cli is trying to reconnect to server
+            boolean isSocketAlive = isSocketAlive(socket);
+            if (!isSocketAlive) {
+                System.out.println("\nDisconnected to server, start reconnecting ...");
+                isConnected=reconnect();
+                if (!isConnected) {
+                    isReconnecting = true; // trigger prevent flag
+                    current_timeout_index = 0;
+                    triggerReconnect();
+                    try {
+                        Thread.sleep(timeouts[current_timeout_index]*1000);
+                    } catch (InterruptedException e) {
+                        System.out.printf("❌ Some errors were occurred: %s.\n", e.getMessage());
                     }
-                } else {
-                    RequestSender reqSender = new RequestSender(dos, dis);
-                    Scanner scanner = new Scanner(System.in);
-                    InputManager inputMng = new InputManager(scanner, reqSender);
-
-                    System.out.println("✅ Connected to server successfully!");
-                    System.out.println(firstRes.getMessage());
-                    System.out.printf(Const.GREEN + Const.cat + Const.RESET);
-
-                    // 2. Send Header instantly to server to get handshake response
-                    // Translate byte[] to obj in deserialize
-                    // ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
-                    // oos.flush();
-
-                    while (true) {
-                        System.out.println("\nПрограмма готова к работе! Введите 'help' для подержки || 'exit' для выхода.");
-                        System.out.println(">>> \uD83E\uDD16 Что вы думаете? Чем я могу помочь?");
-                        System.out.print(">>> ");
-                        String input = scanner.nextLine();
-
-                        if ("exit".equalsIgnoreCase(input)) break;
-                        // Handles one or multiple spaces perfectly
-//                String[] arguments = input.split("\\s+");
-
-//  ===========================================================================================
-                        Response resp = inputMng.handleCommand(input);
-
-//                // 1. Create Request object
-//                Request req = new Request(
-//                        arguments[0],
-//                        arguments.length>1? arguments[1]:null,
-//                        "hello");
-//
-//                Response resp = reqSender.sendRequest(req);
-                        System.out.println("📩 Server response:\n" + resp.getMessage());
-//  ===========================================================================================
-                    }
-                    System.out.println("Завершение работы программы...");
-                    break;
                 }
-            } catch (IOException e) {
-//            System.out.println(e.getMessage());
-                System.err.println("❌ Connecting error: Server busy or not response. (If server is not running, start server first!)");
-            } catch (Exception e) {
-                System.out.printf("❌ Some errors were occurred: %s.\n", e.getMessage());
+            }
+        }, 0, BASE_TIMEOUT, TimeUnit.SECONDS);
+
+        while (true) {
+            if (isConnected) {
+                System.out.println("\nПрограмма готова к работе! Введите 'help' для подержки || 'exit' для выхода.");
+                System.out.println(">>> \uD83E\uDD16 Что вы думаете? Чем я могу помочь?");
+                System.out.print(">>> ");
+                input = scanner.nextLine();
+            } else {
+                input = scanner.nextLine();
+            }
+
+            if ("exit".equalsIgnoreCase(input)) {
+                System.out.println("Завершение работы программы...");
+                break;
+            } else if("reconnect".equalsIgnoreCase(input)) {
+                isConnected = reconnect();
+                if (currentTask != null && isConnected) {
+                    currentTask.cancel(true);
+                    // false: does not cancel when executing.
+                    // true: cancel even when executing (throw InterruptedException where the thread/task is running | Thread.sleep()).
+                }
+            } else if(!isConnected) {
+                log("❌ Connecting error: Server is not response. (If server is not running, start server first!)");
+            } else {
+                try {
+                    Response resp = inputMng.handleCommand(input);
+                    System.out.println("📩 Server response:\n" + resp.getMessage());
+                } catch (IOException e) {
+                    log("❌ Connecting error: Server is not response. (If server is not running, start server first!)");
+                }
             }
         }
     }
+
+    public static boolean isSocketAlive(Socket socket) {
+        try {
+            if (socket == null) {
+                return false;
+            }
+            // Gửi 1 byte dữ liệu khẩn cấp (0xFF) lên Server
+            // Nếu Server đã đóng hoặc crash, lệnh này sẽ ném ra IOException ngay lập tức
+            socket.sendUrgentData(0xFF);
+            return true;
+        } catch (IOException e) {
+            return false;
+        }
+    }
+
+    public static boolean reconnect() {
+        try {
+            socket = new Socket(Const.host, Const.port);
+            dos = new DataOutputStream(socket.getOutputStream());
+            dis = new DataInputStream(socket.getInputStream());
+            reqSender = new RequestSender(dos, dis);
+            inputMng = new InputManager(scanner, reqSender);
+            isConnected = true;
+            isReconnecting = false;
+            int size = dis.readInt();
+            byte[] data = new byte[size];
+            dis.readFully(data);
+            Response firstRes = (Response) Serializer.deserialize(data);
+
+            if (firstRes.getStatusCode() == StatusCode.SERVICE_UNAVAILABLE) {
+                log(firstRes.getMessage());
+            } else {
+                System.out.printf(Const.GREEN + Const.cat + Const.RESET);
+                log("✅ Connected to server successfully!");
+                System.out.println(firstRes.getMessage());
+            }
+            return true;
+        } catch (IOException e) {
+            log("❌ Failed to reconnect to the server!");
+            return false;
+        } catch (Exception e) {
+            log(String.format("❌ Some errors were occurred: %s.\n", e.getMessage()));
+            return false;
+        }
+    }
+
+    private static void triggerReconnect() {
+        boolean success = reconnect();
+
+        if (success) {
+            isReconnecting = false;
+        } else {
+            int waitTime = timeouts[current_timeout_index];
+            log(String.format("⏳ ИСПОЛЗУЙТЕ каманду (reconnect) или подождите %d сек перед началом новой попытки подключения ...\n",waitTime));
+
+            if (current_timeout_index < timeouts.length - 1) {
+                current_timeout_index++;
+            }
+
+            // Next retry recursion (not Thread.sleep)
+            currentTask = scheduler.schedule(ClientMain::triggerReconnect, waitTime, TimeUnit.SECONDS);
+        }
+    }
+
+    public static synchronized void log(String message) {
+//        String currentPrompt = "\nПрограмма готова к работе! Введите 'help' для подержки || 'exit' для выхода.\n>>> \uD83E\uDD16 Что вы думаете? Чем я могу помочь?\n>>> ";
+//        System.out.print("\r" + "\u001B[1A" + "\u001B[2K" + "\u001B[1A" + "\u001B[2K" + "\u001B[1A" + "\u001B[2K");
+//        System.out.print("\r" + MOVE_UP + CLEAR_LINE + MOVE_UP + CLEAR_LINE + MOVE_UP + CLEAR_LINE); //ANSI code
+
+        String currentPrompt = ">>> ";
+//         1. \r: back to head of line
+//         2. space char: remove old line
+//         3. print log and newline
+        System.out.print("\r" + " ".repeat(currentPrompt.length() + 20) + "\r");
+
+        System.out.println(message);
+
+        // 4. reprint
+        System.out.print(currentPrompt);
+        System.out.flush();
+    }
 }
+
+//            boolean isSocketAlive = isSocketAlive(socket);
+//
+//            if (!isSocketAlive) {
+//                Thread thread = new Thread(ClientMain::reconnect);
+//                thread.start();
+//            } else {
+//                try {
+//                    Response resp = inputMng.handleCommand(input);
+//                    System.out.println("📩 Server response:\n" + resp.getMessage());
+//                } catch (IOException e) {
+//                    System.err.println("❌ Connecting error: Server is not response. (If server is not running, start server first!)");
+//                }
+//            }

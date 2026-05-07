@@ -83,7 +83,8 @@ public class ClientMain1 {
                 }
             } catch (IOException e) {
 //            System.out.println(e.getMessage());
-                System.err.println("❌ Connecting error: Server busy or not response. (If server is not running, start server first!)");
+                System.err.println("❌ Connecting error: Server is not response. (If server is not running, start server first!)");
+                break;
             } catch (Exception e) {
                 System.out.printf("❌ Some errors were occurred: %s.\n", e.getMessage());
             }

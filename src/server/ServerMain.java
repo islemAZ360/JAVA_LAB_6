@@ -153,7 +153,7 @@ public class ServerMain {
 
             // B. Read Data (after having Size)
             if (state.hasReadSize && state.dataBuffer != null) {
-                sc.read(state.dataBuffer);
+                sc.read(state.dataBuffer);  
 
                 if (!state.dataBuffer.hasRemaining()) {
                     // C. RECEIVED FULL REQUEST
