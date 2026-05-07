@@ -9,25 +9,79 @@
       "source_file": "client\\ClientMain.java",
       "source_location": "L1",
       "id": "client_clientmain_java",
-      "community": 7,
+      "community": 1,
       "norm_label": "clientmain.java"
     },
     {
       "label": "ClientMain",
       "file_type": "code",
       "source_file": "client\\ClientMain.java",
-      "source_location": "L9",
+      "source_location": "L14",
       "id": "clientmain_clientmain",
-      "community": 7,
+      "community": 1,
       "norm_label": "clientmain"
     },
     {
       "label": ".main()",
       "file_type": "code",
       "source_file": "client\\ClientMain.java",
-      "source_location": "L10",
+      "source_location": "L15",
       "id": "clientmain_clientmain_main",
-      "community": 7,
+      "community": 1,
+      "norm_label": ".main()"
+    },
+    {
+      "label": "ClientMain1.java",
+      "file_type": "code",
+      "source_file": "client\\ClientMain1.java",
+      "source_location": "L1",
+      "id": "client_clientmain1_java",
+      "community": 1,
+      "norm_label": "clientmain1.java"
+    },
+    {
+      "label": "ClientMain1",
+      "file_type": "code",
+      "source_file": "client\\ClientMain1.java",
+      "source_location": "L14",
+      "id": "clientmain1_clientmain1",
+      "community": 1,
+      "norm_label": "clientmain1"
+    },
+    {
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "client\\ClientMain1.java",
+      "source_location": "L15",
+      "id": "clientmain1_clientmain1_main",
+      "community": 1,
+      "norm_label": ".main()"
+    },
+    {
+      "label": "ClientMain2.java",
+      "file_type": "code",
+      "source_file": "client\\ClientMain2.java",
+      "source_location": "L1",
+      "id": "client_clientmain2_java",
+      "community": 1,
+      "norm_label": "clientmain2.java"
+    },
+    {
+      "label": "ClientMain2",
+      "file_type": "code",
+      "source_file": "client\\ClientMain2.java",
+      "source_location": "L14",
+      "id": "clientmain2_clientmain2",
+      "community": 1,
+      "norm_label": "clientmain2"
+    },
+    {
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "client\\ClientMain2.java",
+      "source_location": "L15",
+      "id": "clientmain2_clientmain2_main",
+      "community": 1,
       "norm_label": ".main()"
     },
     {
@@ -36,61 +90,61 @@
       "source_file": "client\\InputManager.java",
       "source_location": "L1",
       "id": "client_inputmanager_java",
-      "community": 7,
+      "community": 1,
       "norm_label": "inputmanager.java"
     },
     {
       "label": "InputManager",
       "file_type": "code",
       "source_file": "client\\InputManager.java",
-      "source_location": "L14",
+      "source_location": "L18",
       "id": "inputmanager_inputmanager",
-      "community": 7,
+      "community": 1,
       "norm_label": "inputmanager"
     },
     {
       "label": ".InputManager()",
       "file_type": "code",
       "source_file": "client\\InputManager.java",
-      "source_location": "L23",
+      "source_location": "L29",
       "id": "inputmanager_inputmanager_inputmanager",
-      "community": 7,
+      "community": 1,
       "norm_label": ".inputmanager()"
     },
     {
       "label": ".readHumanbeing()",
       "file_type": "code",
       "source_file": "client\\InputManager.java",
-      "source_location": "L32",
+      "source_location": "L38",
       "id": "inputmanager_inputmanager_readhumanbeing",
-      "community": 7,
+      "community": 1,
       "norm_label": ".readhumanbeing()"
     },
     {
       "label": ".read_filter_greater_than_car_value()",
       "file_type": "code",
       "source_file": "client\\InputManager.java",
-      "source_location": "L36",
+      "source_location": "L42",
       "id": "inputmanager_inputmanager_read_filter_greater_than_car_value",
-      "community": 7,
+      "community": 1,
       "norm_label": ".read_filter_greater_than_car_value()"
     },
     {
       "label": ".read_id_value()",
       "file_type": "code",
       "source_file": "client\\InputManager.java",
-      "source_location": "L40",
+      "source_location": "L46",
       "id": "inputmanager_inputmanager_read_id_value",
-      "community": 7,
+      "community": 1,
       "norm_label": ".read_id_value()"
     },
     {
       "label": ".handleCommand()",
       "file_type": "code",
       "source_file": "client\\InputManager.java",
-      "source_location": "L44",
+      "source_location": "L54",
       "id": "inputmanager_inputmanager_handlecommand",
-      "community": 7,
+      "community": 1,
       "norm_label": ".handlecommand()"
     },
     {
@@ -99,7 +153,7 @@
       "source_file": "client\\RequestSender.java",
       "source_location": "L1",
       "id": "client_requestsender_java",
-      "community": 8,
+      "community": 1,
       "norm_label": "requestsender.java"
     },
     {
@@ -108,7 +162,7 @@
       "source_file": "client\\RequestSender.java",
       "source_location": "L11",
       "id": "requestsender_requestsender",
-      "community": 8,
+      "community": 1,
       "norm_label": "requestsender"
     },
     {
@@ -117,7 +171,7 @@
       "source_file": "",
       "source_location": "",
       "id": "autocloseable",
-      "community": 8,
+      "community": 1,
       "norm_label": "autocloseable"
     },
     {
@@ -126,7 +180,7 @@
       "source_file": "client\\RequestSender.java",
       "source_location": "L15",
       "id": "requestsender_requestsender_requestsender",
-      "community": 8,
+      "community": 1,
       "norm_label": ".requestsender()"
     },
     {
@@ -135,7 +189,7 @@
       "source_file": "client\\RequestSender.java",
       "source_location": "L20",
       "id": "requestsender_requestsender_sendrequest",
-      "community": 8,
+      "community": 1,
       "norm_label": ".sendrequest()"
     },
     {
@@ -144,7 +198,7 @@
       "source_file": "client\\RequestSender.java",
       "source_location": "L51",
       "id": "requestsender_requestsender_close",
-      "community": 8,
+      "community": 1,
       "norm_label": ".close()"
     },
     {
@@ -153,7 +207,7 @@
       "source_file": "common\\Command.java",
       "source_location": "L1",
       "id": "common_command_java",
-      "community": 12,
+      "community": 11,
       "norm_label": "command.java"
     },
     {
@@ -162,7 +216,7 @@
       "source_file": "common\\Command.java",
       "source_location": "L3",
       "id": "command_command",
-      "community": 12,
+      "community": 11,
       "norm_label": "command"
     },
     {
@@ -171,7 +225,7 @@
       "source_file": "common\\Command.java",
       "source_location": "L4",
       "id": "command_command_getname",
-      "community": 12,
+      "community": 11,
       "norm_label": ".getname()"
     },
     {
@@ -180,7 +234,7 @@
       "source_file": "common\\Command.java",
       "source_location": "L6",
       "id": "command_command_getdescription",
-      "community": 12,
+      "community": 11,
       "norm_label": ".getdescription()"
     },
     {
@@ -189,8 +243,53 @@
       "source_file": "common\\Command.java",
       "source_location": "L10",
       "id": "command_command_execute",
-      "community": 12,
+      "community": 11,
       "norm_label": ".execute()"
+    },
+    {
+      "label": "CommandFlag.java",
+      "file_type": "code",
+      "source_file": "common\\CommandFlag.java",
+      "source_location": "L1",
+      "id": "common_commandflag_java",
+      "community": 9,
+      "norm_label": "commandflag.java"
+    },
+    {
+      "label": "CommandFlag()",
+      "file_type": "code",
+      "source_file": "common\\CommandFlag.java",
+      "source_location": "L10",
+      "id": "commandflag_commandflag",
+      "community": 9,
+      "norm_label": "commandflag()"
+    },
+    {
+      "label": "getShortFlag()",
+      "file_type": "code",
+      "source_file": "common\\CommandFlag.java",
+      "source_location": "L15",
+      "id": "commandflag_getshortflag",
+      "community": 9,
+      "norm_label": "getshortflag()"
+    },
+    {
+      "label": "getLongFlag()",
+      "file_type": "code",
+      "source_file": "common\\CommandFlag.java",
+      "source_location": "L16",
+      "id": "commandflag_getlongflag",
+      "community": 9,
+      "norm_label": "getlongflag()"
+    },
+    {
+      "label": "matches()",
+      "file_type": "code",
+      "source_file": "common\\CommandFlag.java",
+      "source_location": "L18",
+      "id": "commandflag_matches",
+      "community": 9,
+      "norm_label": "matches()"
     },
     {
       "label": "HumanBeingBuilder.java",
@@ -198,7 +297,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L1",
       "id": "common_humanbeingbuilder_java",
-      "community": 3,
+      "community": 5,
       "norm_label": "humanbeingbuilder.java"
     },
     {
@@ -207,7 +306,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L12",
       "id": "humanbeingbuilder_humanbeingbuilder",
-      "community": 3,
+      "community": 5,
       "norm_label": "humanbeingbuilder"
     },
     {
@@ -216,7 +315,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L17",
       "id": "humanbeingbuilder_humanbeingbuilder_humanbeingbuilder",
-      "community": 3,
+      "community": 5,
       "norm_label": ".humanbeingbuilder()"
     },
     {
@@ -225,7 +324,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L24",
       "id": "humanbeingbuilder_humanbeingbuilder_readname",
-      "community": 3,
+      "community": 5,
       "norm_label": ".readname()"
     },
     {
@@ -234,7 +333,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L42",
       "id": "humanbeingbuilder_humanbeingbuilder_readx",
-      "community": 3,
+      "community": 5,
       "norm_label": ".readx()"
     },
     {
@@ -243,7 +342,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L68",
       "id": "humanbeingbuilder_humanbeingbuilder_ready",
-      "community": 3,
+      "community": 5,
       "norm_label": ".ready()"
     },
     {
@@ -252,7 +351,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L91",
       "id": "humanbeingbuilder_humanbeingbuilder_readboolean",
-      "community": 3,
+      "community": 5,
       "norm_label": ".readboolean()"
     },
     {
@@ -261,7 +360,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L97",
       "id": "humanbeingbuilder_humanbeingbuilder_readimpactspeed",
-      "community": 3,
+      "community": 5,
       "norm_label": ".readimpactspeed()"
     },
     {
@@ -270,7 +369,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L117",
       "id": "humanbeingbuilder_humanbeingbuilder_readweapontype",
-      "community": 3,
+      "community": 5,
       "norm_label": ".readweapontype()"
     },
     {
@@ -279,7 +378,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L133",
       "id": "humanbeingbuilder_humanbeingbuilder_readcar",
-      "community": 3,
+      "community": 5,
       "norm_label": ".readcar()"
     },
     {
@@ -288,7 +387,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L152",
       "id": "humanbeingbuilder_humanbeingbuilder_readsoundtrackname",
-      "community": 3,
+      "community": 5,
       "norm_label": ".readsoundtrackname()"
     },
     {
@@ -297,7 +396,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L164",
       "id": "humanbeingbuilder_humanbeingbuilder_readminutesofwaiting",
-      "community": 3,
+      "community": 5,
       "norm_label": ".readminutesofwaiting()"
     },
     {
@@ -306,7 +405,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L182",
       "id": "humanbeingbuilder_humanbeingbuilder_readhumanbeing",
-      "community": 3,
+      "community": 5,
       "norm_label": ".readhumanbeing()"
     },
     {
@@ -315,7 +414,7 @@
       "source_file": "common\\HumanBeingBuilder.java",
       "source_location": "L225",
       "id": "humanbeingbuilder_humanbeingbuilder_createhumanbeingwithid",
-      "community": 3,
+      "community": 5,
       "norm_label": ".createhumanbeingwithid()"
     },
     {
@@ -324,7 +423,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L1",
       "id": "common_humanbeingchecker_java",
-      "community": 3,
+      "community": 5,
       "norm_label": "humanbeingchecker.java"
     },
     {
@@ -333,7 +432,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L12",
       "id": "humanbeingchecker_humanbeingchecker",
-      "community": 3,
+      "community": 5,
       "norm_label": "humanbeingchecker"
     },
     {
@@ -342,7 +441,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L13",
       "id": "humanbeingchecker_humanbeingchecker_checkname",
-      "community": 3,
+      "community": 5,
       "norm_label": ".checkname()"
     },
     {
@@ -351,7 +450,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L20",
       "id": "humanbeingchecker_humanbeingchecker_checkcoordinates",
-      "community": 3,
+      "community": 5,
       "norm_label": ".checkcoordinates()"
     },
     {
@@ -360,7 +459,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L27",
       "id": "humanbeingchecker_humanbeingchecker_checkisrealhero",
-      "community": 3,
+      "community": 5,
       "norm_label": ".checkisrealhero()"
     },
     {
@@ -369,7 +468,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L40",
       "id": "humanbeingchecker_humanbeingchecker_checkishastoothpick",
-      "community": 3,
+      "community": 5,
       "norm_label": ".checkishastoothpick()"
     },
     {
@@ -378,7 +477,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L44",
       "id": "humanbeingchecker_humanbeingchecker_checkimpactspeed",
-      "community": 3,
+      "community": 5,
       "norm_label": ".checkimpactspeed()"
     },
     {
@@ -387,7 +486,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L51",
       "id": "humanbeingchecker_humanbeingchecker_checksoundtrackname",
-      "community": 3,
+      "community": 5,
       "norm_label": ".checksoundtrackname()"
     },
     {
@@ -396,7 +495,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L58",
       "id": "humanbeingchecker_humanbeingchecker_checkminutesofwaiting",
-      "community": 3,
+      "community": 5,
       "norm_label": ".checkminutesofwaiting()"
     },
     {
@@ -405,7 +504,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L65",
       "id": "humanbeingchecker_humanbeingchecker_checkweapontype",
-      "community": 3,
+      "community": 5,
       "norm_label": ".checkweapontype()"
     },
     {
@@ -414,7 +513,7 @@
       "source_file": "common\\HumanBeingChecker.java",
       "source_location": "L69",
       "id": "humanbeingchecker_humanbeingchecker_checkcar",
-      "community": 3,
+      "community": 5,
       "norm_label": ".checkcar()"
     },
     {
@@ -423,7 +522,7 @@
       "source_file": "common\\HumanBeingReader.java",
       "source_location": "L1",
       "id": "common_humanbeingreader_java",
-      "community": 2,
+      "community": 4,
       "norm_label": "humanbeingreader.java"
     },
     {
@@ -432,7 +531,7 @@
       "source_file": "common\\HumanBeingReader.java",
       "source_location": "L12",
       "id": "humanbeingreader_humanbeingreader",
-      "community": 2,
+      "community": 4,
       "norm_label": "humanbeingreader"
     },
     {
@@ -441,7 +540,7 @@
       "source_file": "common\\HumanBeingReader.java",
       "source_location": "L19",
       "id": "humanbeingreader_humanbeingreader_convertcar",
-      "community": 2,
+      "community": 4,
       "norm_label": ".convertcar()"
     },
     {
@@ -450,7 +549,7 @@
       "source_file": "common\\HumanBeingReader.java",
       "source_location": "L29",
       "id": "humanbeingreader_humanbeingreader_convertcoordinates",
-      "community": 2,
+      "community": 4,
       "norm_label": ".convertcoordinates()"
     },
     {
@@ -459,7 +558,7 @@
       "source_file": "common\\HumanBeingReader.java",
       "source_location": "L38",
       "id": "humanbeingreader_humanbeingreader_convertline",
-      "community": 2,
+      "community": 4,
       "norm_label": ".convertline()"
     },
     {
@@ -468,7 +567,7 @@
       "source_file": "common\\HumanBeingReader.java",
       "source_location": "L66",
       "id": "humanbeingreader_humanbeingreader_extractinfo",
-      "community": 1,
+      "community": 3,
       "norm_label": ".extractinfo()"
     },
     {
@@ -477,7 +576,7 @@
       "source_file": "common\\HumanBeingReader.java",
       "source_location": "L93",
       "id": "humanbeingreader_humanbeingreader_extractidfromline",
-      "community": 2,
+      "community": 4,
       "norm_label": ".extractidfromline()"
     },
     {
@@ -486,7 +585,7 @@
       "source_file": "common\\Request.java",
       "source_location": "L1",
       "id": "common_request_java",
-      "community": 5,
+      "community": 8,
       "norm_label": "request.java"
     },
     {
@@ -495,7 +594,7 @@
       "source_file": "common\\Request.java",
       "source_location": "L5",
       "id": "request_request",
-      "community": 5,
+      "community": 8,
       "norm_label": "request"
     },
     {
@@ -504,7 +603,7 @@
       "source_file": "",
       "source_location": "",
       "id": "serializable",
-      "community": 5,
+      "community": 6,
       "norm_label": "serializable"
     },
     {
@@ -513,7 +612,7 @@
       "source_file": "common\\Request.java",
       "source_location": "L13",
       "id": "request_request_request",
-      "community": 5,
+      "community": 8,
       "norm_label": ".request()"
     },
     {
@@ -522,7 +621,7 @@
       "source_file": "common\\Request.java",
       "source_location": "L19",
       "id": "request_request_getcommandname",
-      "community": 5,
+      "community": 8,
       "norm_label": ".getcommandname()"
     },
     {
@@ -531,7 +630,7 @@
       "source_file": "common\\Request.java",
       "source_location": "L23",
       "id": "request_request_getstringargument",
-      "community": 4,
+      "community": 2,
       "norm_label": ".getstringargument()"
     },
     {
@@ -540,7 +639,7 @@
       "source_file": "common\\Request.java",
       "source_location": "L27",
       "id": "request_request_getobjectargument",
-      "community": 1,
+      "community": 8,
       "norm_label": ".getobjectargument()"
     },
     {
@@ -549,7 +648,7 @@
       "source_file": "common\\Request.java",
       "source_location": "L31",
       "id": "request_request_tostring",
-      "community": 5,
+      "community": 8,
       "norm_label": ".tostring()"
     },
     {
@@ -558,7 +657,7 @@
       "source_file": "common\\Response.java",
       "source_location": "L1",
       "id": "common_response_java",
-      "community": 5,
+      "community": 6,
       "norm_label": "response.java"
     },
     {
@@ -567,7 +666,7 @@
       "source_file": "common\\Response.java",
       "source_location": "L5",
       "id": "response_response",
-      "community": 5,
+      "community": 6,
       "norm_label": "response"
     },
     {
@@ -576,7 +675,7 @@
       "source_file": "common\\Response.java",
       "source_location": "L12",
       "id": "response_response_response",
-      "community": 5,
+      "community": 6,
       "norm_label": ".response()"
     },
     {
@@ -585,7 +684,7 @@
       "source_file": "common\\Response.java",
       "source_location": "L18",
       "id": "response_response_getmessage",
-      "community": 3,
+      "community": 5,
       "norm_label": ".getmessage()"
     },
     {
@@ -594,7 +693,7 @@
       "source_file": "common\\Response.java",
       "source_location": "L22",
       "id": "response_response_issuccess",
-      "community": 5,
+      "community": 6,
       "norm_label": ".issuccess()"
     },
     {
@@ -603,7 +702,7 @@
       "source_file": "common\\Response.java",
       "source_location": "L26",
       "id": "response_response_getstatuscode",
-      "community": 5,
+      "community": 1,
       "norm_label": ".getstatuscode()"
     },
     {
@@ -612,7 +711,7 @@
       "source_file": "common\\Response.java",
       "source_location": "L30",
       "id": "response_response_getdata",
-      "community": 5,
+      "community": 6,
       "norm_label": ".getdata()"
     },
     {
@@ -621,7 +720,7 @@
       "source_file": "common\\Serializer.java",
       "source_location": "L1",
       "id": "common_serializer_java",
-      "community": 8,
+      "community": 1,
       "norm_label": "serializer.java"
     },
     {
@@ -630,7 +729,7 @@
       "source_file": "common\\Serializer.java",
       "source_location": "L5",
       "id": "serializer_serializer",
-      "community": 8,
+      "community": 1,
       "norm_label": "serializer"
     },
     {
@@ -639,7 +738,7 @@
       "source_file": "common\\Serializer.java",
       "source_location": "L7",
       "id": "serializer_serializer_serialize",
-      "community": 8,
+      "community": 1,
       "norm_label": ".serialize()"
     },
     {
@@ -648,7 +747,7 @@
       "source_file": "common\\Serializer.java",
       "source_location": "L16",
       "id": "serializer_serializer_deserialize",
-      "community": 8,
+      "community": 1,
       "norm_label": ".deserialize()"
     },
     {
@@ -657,52 +756,52 @@
       "source_file": "common\\StatusCode.java",
       "source_location": "L1",
       "id": "common_statuscode_java",
-      "community": 5,
+      "community": 6,
       "norm_label": "statuscode.java"
     },
     {
       "label": "StatusCode()",
       "file_type": "code",
       "source_file": "common\\StatusCode.java",
-      "source_location": "L30",
+      "source_location": "L31",
       "id": "statuscode_statuscode",
-      "community": 5,
+      "community": 6,
       "norm_label": "statuscode()"
     },
     {
       "label": "getCode()",
       "file_type": "code",
       "source_file": "common\\StatusCode.java",
-      "source_location": "L35",
+      "source_location": "L36",
       "id": "statuscode_getcode",
-      "community": 5,
+      "community": 6,
       "norm_label": "getcode()"
     },
     {
       "label": "getDescription()",
       "file_type": "code",
       "source_file": "common\\StatusCode.java",
-      "source_location": "L39",
+      "source_location": "L40",
       "id": "statuscode_getdescription",
-      "community": 5,
+      "community": 6,
       "norm_label": "getdescription()"
     },
     {
       "label": "isSuccess()",
       "file_type": "code",
       "source_file": "common\\StatusCode.java",
-      "source_location": "L44",
+      "source_location": "L45",
       "id": "statuscode_issuccess",
-      "community": 5,
+      "community": 6,
       "norm_label": "issuccess()"
     },
     {
       "label": "toString()",
       "file_type": "code",
       "source_file": "common\\StatusCode.java",
-      "source_location": "L48",
+      "source_location": "L49",
       "id": "statuscode_tostring",
-      "community": 5,
+      "community": 6,
       "norm_label": "tostring()"
     },
     {
@@ -711,7 +810,7 @@
       "source_file": "common\\models\\Car.java",
       "source_location": "L1",
       "id": "common_models_car_java",
-      "community": 5,
+      "community": 6,
       "norm_label": "car.java"
     },
     {
@@ -720,7 +819,7 @@
       "source_file": "common\\models\\Car.java",
       "source_location": "L6",
       "id": "car_car",
-      "community": 5,
+      "community": 6,
       "norm_label": "car"
     },
     {
@@ -729,7 +828,7 @@
       "source_file": "common\\models\\Car.java",
       "source_location": "L15",
       "id": "car_car_car",
-      "community": 5,
+      "community": 6,
       "norm_label": ".car()"
     },
     {
@@ -738,7 +837,7 @@
       "source_file": "common\\models\\Car.java",
       "source_location": "L19",
       "id": "car_car_iscool",
-      "community": 10,
+      "community": 2,
       "norm_label": ".iscool()"
     },
     {
@@ -747,7 +846,7 @@
       "source_file": "common\\models\\Car.java",
       "source_location": "L23",
       "id": "car_car_setcar",
-      "community": 5,
+      "community": 6,
       "norm_label": ".setcar()"
     },
     {
@@ -756,7 +855,7 @@
       "source_file": "common\\models\\Const.java",
       "source_location": "L1",
       "id": "common_models_const_java",
-      "community": 14,
+      "community": 13,
       "norm_label": "const.java"
     },
     {
@@ -765,7 +864,7 @@
       "source_file": "common\\models\\Const.java",
       "source_location": "L10",
       "id": "const_const",
-      "community": 14,
+      "community": 13,
       "norm_label": "const"
     },
     {
@@ -774,7 +873,7 @@
       "source_file": "common\\models\\Coordinates.java",
       "source_location": "L1",
       "id": "common_models_coordinates_java",
-      "community": 5,
+      "community": 6,
       "norm_label": "coordinates.java"
     },
     {
@@ -783,7 +882,7 @@
       "source_file": "common\\models\\Coordinates.java",
       "source_location": "L6",
       "id": "coordinates_coordinates",
-      "community": 3,
+      "community": 6,
       "norm_label": "coordinates"
     },
     {
@@ -792,7 +891,7 @@
       "source_file": "common\\models\\Coordinates.java",
       "source_location": "L12",
       "id": "coordinates_coordinates_coordinates",
-      "community": 3,
+      "community": 6,
       "norm_label": ".coordinates()"
     },
     {
@@ -801,7 +900,7 @@
       "source_file": "common\\models\\Coordinates.java",
       "source_location": "L25",
       "id": "coordinates_coordinates_getx",
-      "community": 1,
+      "community": 6,
       "norm_label": ".getx()"
     },
     {
@@ -810,7 +909,7 @@
       "source_file": "common\\models\\Coordinates.java",
       "source_location": "L29",
       "id": "coordinates_coordinates_gety",
-      "community": 1,
+      "community": 6,
       "norm_label": ".gety()"
     },
     {
@@ -819,7 +918,7 @@
       "source_file": "common\\models\\Coordinates.java",
       "source_location": "L33",
       "id": "coordinates_coordinates_setx",
-      "community": 3,
+      "community": 6,
       "norm_label": ".setx()"
     },
     {
@@ -828,7 +927,7 @@
       "source_file": "common\\models\\Coordinates.java",
       "source_location": "L40",
       "id": "coordinates_coordinates_sety",
-      "community": 3,
+      "community": 6,
       "norm_label": ".sety()"
     },
     {
@@ -837,7 +936,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L1",
       "id": "common_models_humanbeing_java",
-      "community": 5,
+      "community": 6,
       "norm_label": "humanbeing.java"
     },
     {
@@ -846,7 +945,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L10",
       "id": "humanbeing_humanbeing",
-      "community": 1,
+      "community": 3,
       "norm_label": "humanbeing"
     },
     {
@@ -855,7 +954,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L28",
       "id": "humanbeing_humanbeing_humanbeing",
-      "community": 1,
+      "community": 3,
       "norm_label": ".humanbeing()"
     },
     {
@@ -873,7 +972,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L110",
       "id": "humanbeing_humanbeing_setid",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setid()"
     },
     {
@@ -882,7 +981,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L114",
       "id": "humanbeing_humanbeing_setvaluehumancount",
-      "community": 2,
+      "community": 4,
       "norm_label": ".setvaluehumancount()"
     },
     {
@@ -891,7 +990,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L118",
       "id": "humanbeing_humanbeing_getname",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getname()"
     },
     {
@@ -900,7 +999,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L122",
       "id": "humanbeing_humanbeing_setname",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setname()"
     },
     {
@@ -909,7 +1008,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L126",
       "id": "humanbeing_humanbeing_getcoordinates",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getcoordinates()"
     },
     {
@@ -918,7 +1017,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L130",
       "id": "humanbeing_humanbeing_setcoordinates",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setcoordinates()"
     },
     {
@@ -927,7 +1026,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L134",
       "id": "humanbeing_humanbeing_getcreationdate",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getcreationdate()"
     },
     {
@@ -936,7 +1035,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L138",
       "id": "humanbeing_humanbeing_setvaluecreationdate",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setvaluecreationdate()"
     },
     {
@@ -945,7 +1044,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L142",
       "id": "humanbeing_humanbeing_isrealhero",
-      "community": 1,
+      "community": 3,
       "norm_label": ".isrealhero()"
     },
     {
@@ -954,7 +1053,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L146",
       "id": "humanbeing_humanbeing_setrealhero",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setrealhero()"
     },
     {
@@ -963,7 +1062,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L150",
       "id": "humanbeing_humanbeing_ishastoothpick",
-      "community": 1,
+      "community": 3,
       "norm_label": ".ishastoothpick()"
     },
     {
@@ -972,7 +1071,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L154",
       "id": "humanbeing_humanbeing_sethastoothpick",
-      "community": 1,
+      "community": 3,
       "norm_label": ".sethastoothpick()"
     },
     {
@@ -981,7 +1080,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L158",
       "id": "humanbeing_humanbeing_getimpactspeed",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getimpactspeed()"
     },
     {
@@ -990,7 +1089,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L162",
       "id": "humanbeing_humanbeing_setimpactspeed",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setimpactspeed()"
     },
     {
@@ -999,7 +1098,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L166",
       "id": "humanbeing_humanbeing_getsoundtrackname",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getsoundtrackname()"
     },
     {
@@ -1008,7 +1107,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L170",
       "id": "humanbeing_humanbeing_setsoundtrackname",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setsoundtrackname()"
     },
     {
@@ -1017,7 +1116,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L174",
       "id": "humanbeing_humanbeing_getminutesofwaiting",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getminutesofwaiting()"
     },
     {
@@ -1026,7 +1125,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L178",
       "id": "humanbeing_humanbeing_setminutesofwaiting",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setminutesofwaiting()"
     },
     {
@@ -1035,7 +1134,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L182",
       "id": "humanbeing_humanbeing_getweapontype",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getweapontype()"
     },
     {
@@ -1044,7 +1143,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L186",
       "id": "humanbeing_humanbeing_setweapontype",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setweapontype()"
     },
     {
@@ -1053,7 +1152,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L190",
       "id": "humanbeing_humanbeing_getcar",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getcar()"
     },
     {
@@ -1062,7 +1161,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L194",
       "id": "humanbeing_humanbeing_setcar",
-      "community": 1,
+      "community": 3,
       "norm_label": ".setcar()"
     },
     {
@@ -1071,7 +1170,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L198",
       "id": "humanbeing_humanbeing_equals",
-      "community": 6,
+      "community": 9,
       "norm_label": ".equals()"
     },
     {
@@ -1080,7 +1179,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L206",
       "id": "humanbeing_humanbeing_hashcode",
-      "community": 6,
+      "community": 7,
       "norm_label": ".hashcode()"
     },
     {
@@ -1098,7 +1197,7 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L216",
       "id": "humanbeing_humanbeing_tostring",
-      "community": 1,
+      "community": 6,
       "norm_label": ".tostring()"
     },
     {
@@ -1107,7 +1206,7 @@
       "source_file": "common\\models\\WeaponType.java",
       "source_location": "L1",
       "id": "common_models_weapontype_java",
-      "community": 5,
+      "community": 6,
       "norm_label": "weapontype.java"
     },
     {
@@ -1116,7 +1215,7 @@
       "source_file": "common\\utils\\BooleanBuilder.java",
       "source_location": "L1",
       "id": "common_utils_booleanbuilder_java",
-      "community": 7,
+      "community": 1,
       "norm_label": "booleanbuilder.java"
     },
     {
@@ -1125,7 +1224,7 @@
       "source_file": "common\\utils\\BooleanBuilder.java",
       "source_location": "L7",
       "id": "booleanbuilder_booleanbuilder",
-      "community": 7,
+      "community": 1,
       "norm_label": "booleanbuilder"
     },
     {
@@ -1134,7 +1233,7 @@
       "source_file": "common\\utils\\BooleanBuilder.java",
       "source_location": "L10",
       "id": "booleanbuilder_booleanbuilder_booleanbuilder",
-      "community": 7,
+      "community": 1,
       "norm_label": ".booleanbuilder()"
     },
     {
@@ -1143,7 +1242,7 @@
       "source_file": "common\\utils\\BooleanBuilder.java",
       "source_location": "L13",
       "id": "booleanbuilder_booleanbuilder_readboolean",
-      "community": 7,
+      "community": 1,
       "norm_label": ".readboolean()"
     },
     {
@@ -1152,7 +1251,7 @@
       "source_file": "common\\utils\\CommandFileManager.java",
       "source_location": "L1",
       "id": "common_utils_commandfilemanager_java",
-      "community": 9,
+      "community": 4,
       "norm_label": "commandfilemanager.java"
     },
     {
@@ -1161,7 +1260,7 @@
       "source_file": "common\\utils\\CommandFileManager.java",
       "source_location": "L12",
       "id": "commandfilemanager_commandfilemanager",
-      "community": 9,
+      "community": 4,
       "norm_label": "commandfilemanager"
     },
     {
@@ -1170,7 +1269,7 @@
       "source_file": "",
       "source_location": "",
       "id": "filemanager",
-      "community": 9,
+      "community": 4,
       "norm_label": "filemanager"
     },
     {
@@ -1179,7 +1278,7 @@
       "source_file": "",
       "source_location": "",
       "id": "handlecommandfile",
-      "community": 9,
+      "community": 4,
       "norm_label": "handlecommandfile"
     },
     {
@@ -1188,7 +1287,7 @@
       "source_file": "common\\utils\\CommandFileManager.java",
       "source_location": "L18",
       "id": "commandfilemanager_commandfilemanager_commandfilemanager",
-      "community": 9,
+      "community": 4,
       "norm_label": ".commandfilemanager()"
     },
     {
@@ -1197,7 +1296,7 @@
       "source_file": "common\\utils\\CommandFileManager.java",
       "source_location": "L28",
       "id": "commandfilemanager_commandfilemanager_readfileandrunscripts",
-      "community": 2,
+      "community": 4,
       "norm_label": ".readfileandrunscripts()"
     },
     {
@@ -1206,7 +1305,7 @@
       "source_file": "common\\utils\\CommandManager.java",
       "source_location": "L1",
       "id": "common_utils_commandmanager_java",
-      "community": 6,
+      "community": 4,
       "norm_label": "commandmanager.java"
     },
     {
@@ -1215,7 +1314,7 @@
       "source_file": "server\\CommandManager.java",
       "source_location": "L10",
       "id": "commandmanager_commandmanager",
-      "community": 6,
+      "community": 4,
       "norm_label": "commandmanager"
     },
     {
@@ -1224,7 +1323,7 @@
       "source_file": "common\\utils\\CommandManager.java",
       "source_location": "L20",
       "id": "commandmanager_commandmanager_registercommand",
-      "community": 6,
+      "community": 4,
       "norm_label": ".registercommand()"
     },
     {
@@ -1233,7 +1332,7 @@
       "source_file": "common\\utils\\CommandManager.java",
       "source_location": "L28",
       "id": "commandmanager_commandmanager_executecommand",
-      "community": 2,
+      "community": 4,
       "norm_label": ".executecommand()"
     },
     {
@@ -1242,7 +1341,7 @@
       "source_file": "server\\CommandManager.java",
       "source_location": "L36",
       "id": "commandmanager_commandmanager_getcommands",
-      "community": 6,
+      "community": 7,
       "norm_label": ".getcommands()"
     },
     {
@@ -1251,7 +1350,7 @@
       "source_file": "common\\utils\\FileManager.java",
       "source_location": "L1",
       "id": "common_utils_filemanager_java",
-      "community": 9,
+      "community": 4,
       "norm_label": "filemanager.java"
     },
     {
@@ -1260,7 +1359,7 @@
       "source_file": "common\\utils\\FileManager.java",
       "source_location": "L9",
       "id": "filemanager_filemanager",
-      "community": 9,
+      "community": 4,
       "norm_label": "filemanager"
     },
     {
@@ -1269,7 +1368,7 @@
       "source_file": "common\\utils\\FileManager.java",
       "source_location": "L15",
       "id": "filemanager_filemanager_filemanager",
-      "community": 9,
+      "community": 4,
       "norm_label": ".filemanager()"
     },
     {
@@ -1278,7 +1377,7 @@
       "source_file": "common\\utils\\FileManager.java",
       "source_location": "L23",
       "id": "filemanager_filemanager_readfile",
-      "community": 2,
+      "community": 4,
       "norm_label": ".readfile()"
     },
     {
@@ -1287,7 +1386,7 @@
       "source_file": "common\\utils\\FileManager.java",
       "source_location": "L39",
       "id": "filemanager_filemanager_getfilepath",
-      "community": 9,
+      "community": 4,
       "norm_label": ".getfilepath()"
     },
     {
@@ -1296,7 +1395,7 @@
       "source_file": "common\\utils\\HandleCommandFile.java",
       "source_location": "L1",
       "id": "common_utils_handlecommandfile_java",
-      "community": 13,
+      "community": 12,
       "norm_label": "handlecommandfile.java"
     },
     {
@@ -1305,7 +1404,7 @@
       "source_file": "common\\utils\\HandleCommandFile.java",
       "source_location": "L5",
       "id": "handlecommandfile_handlecommandfile",
-      "community": 13,
+      "community": 12,
       "norm_label": "handlecommandfile"
     },
     {
@@ -1314,7 +1413,7 @@
       "source_file": "common\\utils\\HandleCommandFile.java",
       "source_location": "L6",
       "id": "handlecommandfile_handlecommandfile_readfileandrunscripts",
-      "community": 13,
+      "community": 12,
       "norm_label": ".readfileandrunscripts()"
     },
     {
@@ -1323,7 +1422,7 @@
       "source_file": "common\\utils\\HandleHumanBeingFile.java",
       "source_location": "L1",
       "id": "common_utils_handlehumanbeingfile_java",
-      "community": 11,
+      "community": 10,
       "norm_label": "handlehumanbeingfile.java"
     },
     {
@@ -1332,7 +1431,7 @@
       "source_file": "common\\utils\\HandleHumanBeingFile.java",
       "source_location": "L8",
       "id": "handlehumanbeingfile_handlehumanbeingfile",
-      "community": 11,
+      "community": 10,
       "norm_label": "handlehumanbeingfile"
     },
     {
@@ -1341,7 +1440,7 @@
       "source_file": "common\\utils\\HandleHumanBeingFile.java",
       "source_location": "L9",
       "id": "handlehumanbeingfile_handlehumanbeingfile_readfileandloadhumanbeing",
-      "community": 11,
+      "community": 10,
       "norm_label": ".readfileandloadhumanbeing()"
     },
     {
@@ -1350,7 +1449,7 @@
       "source_file": "common\\utils\\HandleHumanBeingFile.java",
       "source_location": "L10",
       "id": "handlehumanbeingfile_handlehumanbeingfile_save",
-      "community": 11,
+      "community": 10,
       "norm_label": ".save()"
     },
     {
@@ -1359,7 +1458,7 @@
       "source_file": "common\\utils\\HandleHumanBeingFile.java",
       "source_location": "L11",
       "id": "handlehumanbeingfile_handlehumanbeingfile_saveone",
-      "community": 11,
+      "community": 10,
       "norm_label": ".saveone()"
     },
     {
@@ -1368,7 +1467,7 @@
       "source_file": "common\\utils\\HandleHumanBeingFile.java",
       "source_location": "L12",
       "id": "handlehumanbeingfile_handlehumanbeingfile_saveall",
-      "community": 11,
+      "community": 10,
       "norm_label": ".saveall()"
     },
     {
@@ -1377,7 +1476,7 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L1",
       "id": "common_utils_humanbeingfilemanager_java",
-      "community": 9,
+      "community": 4,
       "norm_label": "humanbeingfilemanager.java"
     },
     {
@@ -1386,7 +1485,7 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L11",
       "id": "humanbeingfilemanager_humanbeingfilemanager",
-      "community": 9,
+      "community": 4,
       "norm_label": "humanbeingfilemanager"
     },
     {
@@ -1395,7 +1494,7 @@
       "source_file": "",
       "source_location": "",
       "id": "handlehumanbeingfile",
-      "community": 9,
+      "community": 4,
       "norm_label": "handlehumanbeingfile"
     },
     {
@@ -1404,7 +1503,7 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L12",
       "id": "humanbeingfilemanager_humanbeingfilemanager_humanbeingfilemanager",
-      "community": 9,
+      "community": 4,
       "norm_label": ".humanbeingfilemanager()"
     },
     {
@@ -1413,7 +1512,7 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L16",
       "id": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
-      "community": 2,
+      "community": 4,
       "norm_label": ".readfileandloadhumanbeing()"
     },
     {
@@ -1422,7 +1521,7 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L54",
       "id": "humanbeingfilemanager_humanbeingfilemanager_save",
-      "community": 9,
+      "community": 4,
       "norm_label": ".save()"
     },
     {
@@ -1431,7 +1530,7 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L70",
       "id": "humanbeingfilemanager_humanbeingfilemanager_saveone",
-      "community": 9,
+      "community": 4,
       "norm_label": ".saveone()"
     },
     {
@@ -1440,7 +1539,7 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L78",
       "id": "humanbeingfilemanager_humanbeingfilemanager_saveall",
-      "community": 4,
+      "community": 7,
       "norm_label": ".saveall()"
     },
     {
@@ -1449,7 +1548,7 @@
       "source_file": "common\\utils\\LongBuilder.java",
       "source_location": "L1",
       "id": "common_utils_longbuilder_java",
-      "community": 7,
+      "community": 1,
       "norm_label": "longbuilder.java"
     },
     {
@@ -1458,7 +1557,7 @@
       "source_file": "common\\utils\\LongBuilder.java",
       "source_location": "L5",
       "id": "longbuilder_longbuilder",
-      "community": 7,
+      "community": 1,
       "norm_label": "longbuilder"
     },
     {
@@ -1467,7 +1566,7 @@
       "source_file": "common\\utils\\LongBuilder.java",
       "source_location": "L8",
       "id": "longbuilder_longbuilder_longbuilder",
-      "community": 7,
+      "community": 1,
       "norm_label": ".longbuilder()"
     },
     {
@@ -1476,7 +1575,7 @@
       "source_file": "common\\utils\\LongBuilder.java",
       "source_location": "L12",
       "id": "longbuilder_longbuilder_readlongid",
-      "community": 7,
+      "community": 1,
       "norm_label": ".readlongid()"
     },
     {
@@ -1485,7 +1584,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L1",
       "id": "server_collectionmanager_java",
-      "community": 4,
+      "community": 2,
       "norm_label": "collectionmanager.java"
     },
     {
@@ -1494,7 +1593,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L10",
       "id": "collectionmanager_collectionmanager",
-      "community": 4,
+      "community": 2,
       "norm_label": "collectionmanager"
     },
     {
@@ -1503,7 +1602,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L13",
       "id": "collectionmanager_collectionmanager_collectionmanager",
-      "community": 4,
+      "community": 2,
       "norm_label": ".collectionmanager()"
     },
     {
@@ -1512,7 +1611,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L27",
       "id": "collectionmanager_collectionmanager_size",
-      "community": 4,
+      "community": 7,
       "norm_label": ".size()"
     },
     {
@@ -1530,7 +1629,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L37",
       "id": "collectionmanager_collectionmanager_contains",
-      "community": 4,
+      "community": 2,
       "norm_label": ".contains()"
     },
     {
@@ -1539,7 +1638,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L42",
       "id": "collectionmanager_collectionmanager_add",
-      "community": 4,
+      "community": 2,
       "norm_label": ".add()"
     },
     {
@@ -1548,7 +1647,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L47",
       "id": "collectionmanager_collectionmanager_addall",
-      "community": 4,
+      "community": 2,
       "norm_label": ".addall()"
     },
     {
@@ -1557,7 +1656,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L52",
       "id": "collectionmanager_collectionmanager_remove",
-      "community": 4,
+      "community": 2,
       "norm_label": ".remove()"
     },
     {
@@ -1566,7 +1665,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L57",
       "id": "collectionmanager_collectionmanager_removeall",
-      "community": 4,
+      "community": 2,
       "norm_label": ".removeall()"
     },
     {
@@ -1575,7 +1674,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L62",
       "id": "collectionmanager_collectionmanager_clear",
-      "community": 4,
+      "community": 9,
       "norm_label": ".clear()"
     },
     {
@@ -1584,7 +1683,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L67",
       "id": "collectionmanager_collectionmanager_getcollectioninfo",
-      "community": 4,
+      "community": 7,
       "norm_label": ".getcollectioninfo()"
     },
     {
@@ -1593,7 +1692,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L71",
       "id": "collectionmanager_collectionmanager_tostring",
-      "community": 4,
+      "community": 7,
       "norm_label": ".tostring()"
     },
     {
@@ -1602,7 +1701,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L78",
       "id": "collectionmanager_collectionmanager_show",
-      "community": 4,
+      "community": 2,
       "norm_label": ".show()"
     },
     {
@@ -1611,7 +1710,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L93",
       "id": "collectionmanager_collectionmanager_gethumanby",
-      "community": 4,
+      "community": 2,
       "norm_label": ".gethumanby()"
     },
     {
@@ -1620,7 +1719,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L100",
       "id": "collectionmanager_collectionmanager_gethumanbyid",
-      "community": 4,
+      "community": 2,
       "norm_label": ".gethumanbyid()"
     },
     {
@@ -1629,7 +1728,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L103",
       "id": "collectionmanager_collectionmanager_gethumanbyname",
-      "community": 4,
+      "community": 2,
       "norm_label": ".gethumanbyname()"
     },
     {
@@ -1638,7 +1737,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L108",
       "id": "collectionmanager_collectionmanager_removebyid",
-      "community": 4,
+      "community": 2,
       "norm_label": ".removebyid()"
     },
     {
@@ -1647,7 +1746,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L116",
       "id": "collectionmanager_collectionmanager_update",
-      "community": 1,
+      "community": 3,
       "norm_label": ".update()"
     },
     {
@@ -1683,7 +1782,7 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L156",
       "id": "collectionmanager_collectionmanager_removegreater",
-      "community": 4,
+      "community": 2,
       "norm_label": ".removegreater()"
     },
     {
@@ -1692,7 +1791,7 @@
       "source_file": "server\\CommandManager.java",
       "source_location": "L1",
       "id": "server_commandmanager_java",
-      "community": 6,
+      "community": 4,
       "norm_label": "commandmanager.java"
     },
     {
@@ -1701,7 +1800,7 @@
       "source_file": "server\\CommandManager.java",
       "source_location": "L14",
       "id": "commandmanager_commandmanager_commandmanager",
-      "community": 6,
+      "community": 4,
       "norm_label": ".commandmanager()"
     },
     {
@@ -1710,7 +1809,7 @@
       "source_file": "server\\CommandManager.java",
       "source_location": "L32",
       "id": "commandmanager_commandmanager_getcommand",
-      "community": 6,
+      "community": 8,
       "norm_label": ".getcommand()"
     },
     {
@@ -1719,7 +1818,7 @@
       "source_file": "server\\CommandSuggester.java",
       "source_location": "L1",
       "id": "server_commandsuggester_java",
-      "community": 6,
+      "community": 7,
       "norm_label": "commandsuggester.java"
     },
     {
@@ -1728,7 +1827,7 @@
       "source_file": "server\\CommandSuggester.java",
       "source_location": "L7",
       "id": "commandsuggester_commandsuggester",
-      "community": 6,
+      "community": 7,
       "norm_label": "commandsuggester"
     },
     {
@@ -1737,7 +1836,7 @@
       "source_file": "server\\CommandSuggester.java",
       "source_location": "L34",
       "id": "commandsuggester_commandsuggester_commandsuggester",
-      "community": 6,
+      "community": 7,
       "norm_label": ".commandsuggester()"
     },
     {
@@ -1746,7 +1845,7 @@
       "source_file": "server\\CommandSuggester.java",
       "source_location": "L39",
       "id": "commandsuggester_commandsuggester_getlevenshteindistance",
-      "community": 6,
+      "community": 7,
       "norm_label": ".getlevenshteindistance()"
     },
     {
@@ -1755,7 +1854,7 @@
       "source_file": "server\\CommandSuggester.java",
       "source_location": "L56",
       "id": "commandsuggester_commandsuggester_correct",
-      "community": 6,
+      "community": 7,
       "norm_label": ".correct()"
     },
     {
@@ -1764,7 +1863,7 @@
       "source_file": "server\\CommandSuggester.java",
       "source_location": "L88",
       "id": "commandsuggester_commandsuggester_formatresponse",
-      "community": 6,
+      "community": 7,
       "norm_label": ".formatresponse()"
     },
     {
@@ -1773,7 +1872,7 @@
       "source_file": "server\\ConnectionState.java",
       "source_location": "L1",
       "id": "server_connectionstate_java",
-      "community": 15,
+      "community": 14,
       "norm_label": "connectionstate.java"
     },
     {
@@ -1782,7 +1881,7 @@
       "source_file": "server\\ConnectionState.java",
       "source_location": "L5",
       "id": "connectionstate_connectionstate",
-      "community": 15,
+      "community": 14,
       "norm_label": "connectionstate"
     },
     {
@@ -1791,7 +1890,7 @@
       "source_file": "server\\RequestHandler.java",
       "source_location": "L1",
       "id": "server_requesthandler_java",
-      "community": 6,
+      "community": 8,
       "norm_label": "requesthandler.java"
     },
     {
@@ -1800,7 +1899,7 @@
       "source_file": "server\\RequestHandler.java",
       "source_location": "L8",
       "id": "requesthandler_requesthandler",
-      "community": 6,
+      "community": 8,
       "norm_label": "requesthandler"
     },
     {
@@ -1809,7 +1908,7 @@
       "source_file": "server\\RequestHandler.java",
       "source_location": "L13",
       "id": "requesthandler_requesthandler_requesthandler",
-      "community": 6,
+      "community": 8,
       "norm_label": ".requesthandler()"
     },
     {
@@ -1818,7 +1917,7 @@
       "source_file": "server\\RequestHandler.java",
       "source_location": "L18",
       "id": "requesthandler_requesthandler_handle",
-      "community": 6,
+      "community": 8,
       "norm_label": ".handle()"
     },
     {
@@ -1827,52 +1926,52 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L1",
       "id": "server_servermain_java",
-      "community": 8,
+      "community": 1,
       "norm_label": "servermain.java"
     },
     {
       "label": "ServerMain",
       "file_type": "code",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L18",
+      "source_location": "L20",
       "id": "servermain_servermain",
-      "community": 8,
+      "community": 1,
       "norm_label": "servermain"
     },
     {
       "label": ".main()",
       "file_type": "code",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L25",
+      "source_location": "L31",
       "id": "servermain_servermain_main",
-      "community": 8,
+      "community": 1,
       "norm_label": ".main()"
     },
     {
       "label": ".handleAccept()",
       "file_type": "code",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L84",
+      "source_location": "L87",
       "id": "servermain_servermain_handleaccept",
-      "community": 8,
+      "community": 1,
       "norm_label": ".handleaccept()"
     },
     {
       "label": ".handleRead()",
       "file_type": "code",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L99",
+      "source_location": "L122",
       "id": "servermain_servermain_handleread",
-      "community": 8,
+      "community": 1,
       "norm_label": ".handleread()"
     },
     {
       "label": ".sendResponse()",
       "file_type": "code",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L163",
+      "source_location": "L187",
       "id": "servermain_servermain_sendresponse",
-      "community": 8,
+      "community": 1,
       "norm_label": ".sendresponse()"
     },
     {
@@ -1881,7 +1980,7 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L1",
       "id": "server_commands_addcommand_java",
-      "community": 1,
+      "community": 3,
       "norm_label": "addcommand.java"
     },
     {
@@ -1890,7 +1989,7 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L16",
       "id": "addcommand_addcommand",
-      "community": 1,
+      "community": 3,
       "norm_label": "addcommand"
     },
     {
@@ -1908,7 +2007,7 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L19",
       "id": "addcommand_addcommand_addcommand",
-      "community": 1,
+      "community": 3,
       "norm_label": ".addcommand()"
     },
     {
@@ -1917,7 +2016,7 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L23",
       "id": "addcommand_addcommand_getname",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getname()"
     },
     {
@@ -1926,7 +2025,7 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L28",
       "id": "addcommand_addcommand_getdescription",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getdescription()"
     },
     {
@@ -1935,7 +2034,7 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L33",
       "id": "addcommand_addcommand_execute",
-      "community": 1,
+      "community": 3,
       "norm_label": ".execute()"
     },
     {
@@ -2007,7 +2106,7 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L1",
       "id": "server_commands_addifmincommand_java",
-      "community": 2,
+      "community": 0,
       "norm_label": "addifmincommand.java"
     },
     {
@@ -2016,7 +2115,7 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L10",
       "id": "addifmincommand_addifmincommand",
-      "community": 2,
+      "community": 0,
       "norm_label": "addifmincommand"
     },
     {
@@ -2025,7 +2124,7 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L14",
       "id": "addifmincommand_addifmincommand_addifmincommand",
-      "community": 2,
+      "community": 0,
       "norm_label": ".addifmincommand()"
     },
     {
@@ -2034,7 +2133,7 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L18",
       "id": "addifmincommand_addifmincommand_getname",
-      "community": 2,
+      "community": 0,
       "norm_label": ".getname()"
     },
     {
@@ -2043,7 +2142,7 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L23",
       "id": "addifmincommand_addifmincommand_getdescription",
-      "community": 2,
+      "community": 0,
       "norm_label": ".getdescription()"
     },
     {
@@ -2070,52 +2169,52 @@
       "source_file": "server\\commands\\ClearCommand.java",
       "source_location": "L1",
       "id": "server_commands_clearcommand_java",
-      "community": 0,
+      "community": 9,
       "norm_label": "clearcommand.java"
     },
     {
       "label": "ClearCommand",
       "file_type": "code",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L17",
+      "source_location": "L14",
       "id": "clearcommand_clearcommand",
-      "community": 0,
+      "community": 9,
       "norm_label": "clearcommand"
     },
     {
       "label": ".ClearCommand()",
       "file_type": "code",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L22",
+      "source_location": "L19",
       "id": "clearcommand_clearcommand_clearcommand",
-      "community": 0,
+      "community": 9,
       "norm_label": ".clearcommand()"
     },
     {
       "label": ".getName()",
       "file_type": "code",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L27",
+      "source_location": "L24",
       "id": "clearcommand_clearcommand_getname",
-      "community": 0,
+      "community": 9,
       "norm_label": ".getname()"
     },
     {
       "label": ".getDescription()",
       "file_type": "code",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L32",
+      "source_location": "L29",
       "id": "clearcommand_clearcommand_getdescription",
-      "community": 0,
+      "community": 9,
       "norm_label": ".getdescription()"
     },
     {
       "label": ".execute()",
       "file_type": "code",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L54",
+      "source_location": "L51",
       "id": "clearcommand_clearcommand_execute",
-      "community": 4,
+      "community": 9,
       "norm_label": ".execute()"
     },
     {
@@ -2205,7 +2304,7 @@
       "source_file": "server\\commands\\FilterContainsNameCommand.java",
       "source_location": "L20",
       "id": "filtercontainsnamecommand_filtercontainsnamecommand_getname",
-      "community": 4,
+      "community": 2,
       "norm_label": ".getname()"
     },
     {
@@ -2223,7 +2322,7 @@
       "source_file": "server\\commands\\FilterContainsNameCommand.java",
       "source_location": "L30",
       "id": "filtercontainsnamecommand_filtercontainsnamecommand_execute",
-      "community": 4,
+      "community": 2,
       "norm_label": ".execute()"
     },
     {
@@ -2232,7 +2331,7 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L1",
       "id": "server_commands_filtergreaterthancarcommand_java",
-      "community": 10,
+      "community": 0,
       "norm_label": "filtergreaterthancarcommand.java"
     },
     {
@@ -2241,7 +2340,7 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L12",
       "id": "filtergreaterthancarcommand_filtergreaterthancarcommand",
-      "community": 10,
+      "community": 0,
       "norm_label": "filtergreaterthancarcommand"
     },
     {
@@ -2250,7 +2349,7 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L16",
       "id": "filtergreaterthancarcommand_filtergreaterthancarcommand_filtergreaterthancarcommand",
-      "community": 10,
+      "community": 0,
       "norm_label": ".filtergreaterthancarcommand()"
     },
     {
@@ -2259,7 +2358,7 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L20",
       "id": "filtergreaterthancarcommand_filtergreaterthancarcommand_getname",
-      "community": 10,
+      "community": 0,
       "norm_label": ".getname()"
     },
     {
@@ -2268,7 +2367,7 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L25",
       "id": "filtergreaterthancarcommand_filtergreaterthancarcommand_getdescription",
-      "community": 10,
+      "community": 0,
       "norm_label": ".getdescription()"
     },
     {
@@ -2277,7 +2376,7 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L30",
       "id": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
-      "community": 10,
+      "community": 2,
       "norm_label": ".execute()"
     },
     {
@@ -2331,7 +2430,7 @@
       "source_file": "server\\commands\\FilterLessThanMinutesOfWaitingCommand.java",
       "source_location": "L30",
       "id": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute",
-      "community": 4,
+      "community": 2,
       "norm_label": ".execute()"
     },
     {
@@ -2340,7 +2439,7 @@
       "source_file": "server\\commands\\HelpCommand.java",
       "source_location": "L1",
       "id": "server_commands_helpcommand_java",
-      "community": 6,
+      "community": 7,
       "norm_label": "helpcommand.java"
     },
     {
@@ -2349,7 +2448,7 @@
       "source_file": "server\\commands\\HelpCommand.java",
       "source_location": "L9",
       "id": "helpcommand_helpcommand",
-      "community": 6,
+      "community": 7,
       "norm_label": "helpcommand"
     },
     {
@@ -2358,7 +2457,7 @@
       "source_file": "server\\commands\\HelpCommand.java",
       "source_location": "L15",
       "id": "helpcommand_helpcommand_helpcommand",
-      "community": 6,
+      "community": 7,
       "norm_label": ".helpcommand()"
     },
     {
@@ -2367,7 +2466,7 @@
       "source_file": "server\\commands\\HelpCommand.java",
       "source_location": "L19",
       "id": "helpcommand_helpcommand_getname",
-      "community": 6,
+      "community": 7,
       "norm_label": ".getname()"
     },
     {
@@ -2376,7 +2475,7 @@
       "source_file": "server\\commands\\HelpCommand.java",
       "source_location": "L24",
       "id": "helpcommand_helpcommand_getdescription",
-      "community": 6,
+      "community": 7,
       "norm_label": ".getdescription()"
     },
     {
@@ -2385,7 +2484,7 @@
       "source_file": "server\\commands\\HelpCommand.java",
       "source_location": "L29",
       "id": "helpcommand_helpcommand_execute",
-      "community": 6,
+      "community": 7,
       "norm_label": ".execute()"
     },
     {
@@ -2439,7 +2538,7 @@
       "source_file": "server\\commands\\InfoCommand.java",
       "source_location": "L29",
       "id": "infocommand_infocommand_execute",
-      "community": 4,
+      "community": 7,
       "norm_label": ".execute()"
     },
     {
@@ -2448,7 +2547,7 @@
       "source_file": "server\\commands\\RemoveByIdCommand.java",
       "source_location": "L1",
       "id": "server_commands_removebyidcommand_java",
-      "community": 0,
+      "community": 7,
       "norm_label": "removebyidcommand.java"
     },
     {
@@ -2457,7 +2556,7 @@
       "source_file": "server\\commands\\RemoveByIdCommand.java",
       "source_location": "L9",
       "id": "removebyidcommand_removebyidcommand",
-      "community": 0,
+      "community": 7,
       "norm_label": "removebyidcommand"
     },
     {
@@ -2466,7 +2565,7 @@
       "source_file": "server\\commands\\RemoveByIdCommand.java",
       "source_location": "L13",
       "id": "removebyidcommand_removebyidcommand_removebyidcommand",
-      "community": 0,
+      "community": 7,
       "norm_label": ".removebyidcommand()"
     },
     {
@@ -2475,7 +2574,7 @@
       "source_file": "server\\commands\\RemoveByIdCommand.java",
       "source_location": "L17",
       "id": "removebyidcommand_removebyidcommand_getname",
-      "community": 0,
+      "community": 7,
       "norm_label": ".getname()"
     },
     {
@@ -2484,7 +2583,7 @@
       "source_file": "server\\commands\\RemoveByIdCommand.java",
       "source_location": "L22",
       "id": "removebyidcommand_removebyidcommand_getdescription",
-      "community": 0,
+      "community": 7,
       "norm_label": ".getdescription()"
     },
     {
@@ -2493,7 +2592,7 @@
       "source_file": "server\\commands\\RemoveByIdCommand.java",
       "source_location": "L27",
       "id": "removebyidcommand_removebyidcommand_execute",
-      "community": 4,
+      "community": 7,
       "norm_label": ".execute()"
     },
     {
@@ -2547,7 +2646,7 @@
       "source_file": "server\\commands\\RemoveGreaterCommand.java",
       "source_location": "L28",
       "id": "removegreatercommand_removegreatercommand_execute",
-      "community": 4,
+      "community": 2,
       "norm_label": ".execute()"
     },
     {
@@ -2601,7 +2700,7 @@
       "source_file": "server\\commands\\SaveCommand.java",
       "source_location": "L30",
       "id": "savecommand_savecommand_execute",
-      "community": 4,
+      "community": 7,
       "norm_label": ".execute()"
     },
     {
@@ -2664,7 +2763,7 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L1",
       "id": "server_commands_updatecommand_java",
-      "community": 0,
+      "community": 8,
       "norm_label": "updatecommand.java"
     },
     {
@@ -2673,7 +2772,7 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L10",
       "id": "updatecommand_updatecommand",
-      "community": 0,
+      "community": 8,
       "norm_label": "updatecommand"
     },
     {
@@ -2682,7 +2781,7 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L14",
       "id": "updatecommand_updatecommand_updatecommand",
-      "community": 0,
+      "community": 8,
       "norm_label": ".updatecommand()"
     },
     {
@@ -2691,7 +2790,7 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L18",
       "id": "updatecommand_updatecommand_getname",
-      "community": 1,
+      "community": 3,
       "norm_label": ".getname()"
     },
     {
@@ -2700,7 +2799,7 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L23",
       "id": "updatecommand_updatecommand_getdescription",
-      "community": 0,
+      "community": 8,
       "norm_label": ".getdescription()"
     },
     {
@@ -2709,7 +2808,7 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L28",
       "id": "updatecommand_updatecommand_execute",
-      "community": 1,
+      "community": 8,
       "norm_label": ".execute()"
     }
   ],
@@ -2718,7 +2817,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "client\\ClientMain.java",
-      "source_location": "L9",
+      "source_location": "L14",
       "weight": 1.0,
       "_src": "client_clientmain_java",
       "_tgt": "clientmain_clientmain",
@@ -2730,7 +2829,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "client\\ClientMain.java",
-      "source_location": "L10",
+      "source_location": "L15",
       "weight": 1.0,
       "_src": "clientmain_clientmain",
       "_tgt": "clientmain_clientmain_main",
@@ -2743,12 +2842,24 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "client\\ClientMain.java",
-      "source_location": "L42",
+      "source_location": "L31",
       "weight": 1.0,
       "_src": "clientmain_clientmain_main",
-      "_tgt": "inputmanager_inputmanager_handlecommand",
+      "_tgt": "serializer_serializer_deserialize",
       "source": "clientmain_clientmain_main",
-      "target": "inputmanager_inputmanager_handlecommand"
+      "target": "serializer_serializer_deserialize"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\ClientMain.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_src": "clientmain_clientmain_main",
+      "_tgt": "response_response_getstatuscode",
+      "source": "clientmain_clientmain_main",
+      "target": "response_response_getstatuscode"
     },
     {
       "relation": "calls",
@@ -2763,10 +2874,166 @@
       "target": "response_response_getmessage"
     },
     {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\ClientMain.java",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_src": "clientmain_clientmain_main",
+      "_tgt": "inputmanager_inputmanager_handlecommand",
+      "source": "clientmain_clientmain_main",
+      "target": "inputmanager_inputmanager_handlecommand"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client\\ClientMain1.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "client_clientmain1_java",
+      "_tgt": "clientmain1_clientmain1",
+      "source": "client_clientmain1_java",
+      "target": "clientmain1_clientmain1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "client\\ClientMain1.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "clientmain1_clientmain1",
+      "_tgt": "clientmain1_clientmain1_main",
+      "source": "clientmain1_clientmain1",
+      "target": "clientmain1_clientmain1_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\ClientMain1.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_src": "clientmain1_clientmain1_main",
+      "_tgt": "serializer_serializer_deserialize",
+      "source": "clientmain1_clientmain1_main",
+      "target": "serializer_serializer_deserialize"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\ClientMain1.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_src": "clientmain1_clientmain1_main",
+      "_tgt": "response_response_getstatuscode",
+      "source": "clientmain1_clientmain1_main",
+      "target": "response_response_getstatuscode"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\ClientMain1.java",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_src": "clientmain1_clientmain1_main",
+      "_tgt": "response_response_getmessage",
+      "source": "clientmain1_clientmain1_main",
+      "target": "response_response_getmessage"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\ClientMain1.java",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_src": "clientmain1_clientmain1_main",
+      "_tgt": "inputmanager_inputmanager_handlecommand",
+      "source": "clientmain1_clientmain1_main",
+      "target": "inputmanager_inputmanager_handlecommand"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "client\\ClientMain2.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "client_clientmain2_java",
+      "_tgt": "clientmain2_clientmain2",
+      "source": "client_clientmain2_java",
+      "target": "clientmain2_clientmain2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "client\\ClientMain2.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "clientmain2_clientmain2",
+      "_tgt": "clientmain2_clientmain2_main",
+      "source": "clientmain2_clientmain2",
+      "target": "clientmain2_clientmain2_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\ClientMain2.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_src": "clientmain2_clientmain2_main",
+      "_tgt": "serializer_serializer_deserialize",
+      "source": "clientmain2_clientmain2_main",
+      "target": "serializer_serializer_deserialize"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\ClientMain2.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_src": "clientmain2_clientmain2_main",
+      "_tgt": "response_response_getstatuscode",
+      "source": "clientmain2_clientmain2_main",
+      "target": "response_response_getstatuscode"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\ClientMain2.java",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_src": "clientmain2_clientmain2_main",
+      "_tgt": "response_response_getmessage",
+      "source": "clientmain2_clientmain2_main",
+      "target": "response_response_getmessage"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\ClientMain2.java",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_src": "clientmain2_clientmain2_main",
+      "_tgt": "inputmanager_inputmanager_handlecommand",
+      "source": "clientmain2_clientmain2_main",
+      "target": "inputmanager_inputmanager_handlecommand"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "client\\InputManager.java",
-      "source_location": "L14",
+      "source_location": "L18",
       "weight": 1.0,
       "_src": "client_inputmanager_java",
       "_tgt": "inputmanager_inputmanager",
@@ -2778,7 +3045,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "client\\InputManager.java",
-      "source_location": "L23",
+      "source_location": "L29",
       "weight": 1.0,
       "_src": "inputmanager_inputmanager",
       "_tgt": "inputmanager_inputmanager_inputmanager",
@@ -2790,7 +3057,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "client\\InputManager.java",
-      "source_location": "L32",
+      "source_location": "L50",
       "weight": 1.0,
       "_src": "inputmanager_inputmanager",
       "_tgt": "inputmanager_inputmanager_readhumanbeing",
@@ -2802,7 +3069,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "client\\InputManager.java",
-      "source_location": "L36",
+      "source_location": "L42",
       "weight": 1.0,
       "_src": "inputmanager_inputmanager",
       "_tgt": "inputmanager_inputmanager_read_filter_greater_than_car_value",
@@ -2814,7 +3081,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "client\\InputManager.java",
-      "source_location": "L40",
+      "source_location": "L46",
       "weight": 1.0,
       "_src": "inputmanager_inputmanager",
       "_tgt": "inputmanager_inputmanager_read_id_value",
@@ -2826,7 +3093,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "client\\InputManager.java",
-      "source_location": "L44",
+      "source_location": "L54",
       "weight": 1.0,
       "_src": "inputmanager_inputmanager",
       "_tgt": "inputmanager_inputmanager_handlecommand",
@@ -2838,7 +3105,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "client\\InputManager.java",
-      "source_location": "L59",
+      "source_location": "L65",
       "weight": 1.0,
       "_src": "inputmanager_inputmanager_handlecommand",
       "_tgt": "inputmanager_inputmanager_readhumanbeing",
@@ -2850,7 +3117,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "client\\InputManager.java",
-      "source_location": "L65",
+      "source_location": "L71",
       "weight": 1.0,
       "_src": "inputmanager_inputmanager_handlecommand",
       "_tgt": "inputmanager_inputmanager_read_filter_greater_than_car_value",
@@ -2874,7 +3141,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "client\\InputManager.java",
-      "source_location": "L71",
+      "source_location": "L82",
       "weight": 1.0,
       "_src": "inputmanager_inputmanager_handlecommand",
       "_tgt": "inputmanager_inputmanager_read_id_value",
@@ -2953,6 +3220,54 @@
       "_tgt": "collectionmanager_collectionmanager_isempty",
       "source": "inputmanager_inputmanager_handlecommand",
       "target": "collectionmanager_collectionmanager_isempty"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\InputManager.java",
+      "source_location": "L167",
+      "weight": 1.0,
+      "_src": "inputmanager_inputmanager_handlecommand",
+      "_tgt": "humanbeing_humanbeing_equals",
+      "source": "inputmanager_inputmanager_handlecommand",
+      "target": "humanbeing_humanbeing_equals"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\InputManager.java",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_src": "inputmanager_inputmanager_handlecommand",
+      "_tgt": "collectionmanager_collectionmanager_contains",
+      "source": "inputmanager_inputmanager_handlecommand",
+      "target": "collectionmanager_collectionmanager_contains"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\InputManager.java",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_src": "inputmanager_inputmanager_handlecommand",
+      "_tgt": "collectionmanager_collectionmanager_add",
+      "source": "inputmanager_inputmanager_handlecommand",
+      "target": "collectionmanager_collectionmanager_add"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "client\\InputManager.java",
+      "source_location": "L243",
+      "weight": 1.0,
+      "_src": "inputmanager_inputmanager_handlecommand",
+      "_tgt": "collectionmanager_collectionmanager_remove",
+      "source": "inputmanager_inputmanager_handlecommand",
+      "target": "collectionmanager_collectionmanager_remove"
     },
     {
       "relation": "calls",
@@ -3055,10 +3370,22 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "server\\ServerMain.java",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_src": "servermain_servermain_handleaccept",
+      "_tgt": "requestsender_requestsender_close",
+      "source": "requestsender_requestsender_close",
+      "target": "servermain_servermain_handleaccept"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server\\ServerMain.java",
       "source_location": "L110",
       "weight": 1.0,
-      "_src": "servermain_servermain_handleread",
-      "_tgt": "requestsender_requestsender_close",
+      "_src": "requestsender_requestsender_close",
+      "_tgt": "servermain_servermain_handleread",
       "source": "requestsender_requestsender_close",
       "target": "servermain_servermain_handleread"
     },
@@ -3069,8 +3396,8 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L189",
       "weight": 1.0,
-      "_src": "servermain_servermain_sendresponse",
-      "_tgt": "requestsender_requestsender_close",
+      "_src": "requestsender_requestsender_close",
+      "_tgt": "servermain_servermain_sendresponse",
       "source": "requestsender_requestsender_close",
       "target": "servermain_servermain_sendresponse"
     },
@@ -3121,6 +3448,90 @@
       "source": "command_command",
       "target": "command_command_execute",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "common\\CommandFlag.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "common_commandflag_java",
+      "_tgt": "commandflag_commandflag",
+      "source": "common_commandflag_java",
+      "target": "commandflag_commandflag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "common\\CommandFlag.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "common_commandflag_java",
+      "_tgt": "commandflag_getshortflag",
+      "source": "common_commandflag_java",
+      "target": "commandflag_getshortflag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "common\\CommandFlag.java",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "common_commandflag_java",
+      "_tgt": "commandflag_getlongflag",
+      "source": "common_commandflag_java",
+      "target": "commandflag_getlongflag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "common\\CommandFlag.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "common_commandflag_java",
+      "_tgt": "commandflag_matches",
+      "source": "common_commandflag_java",
+      "target": "commandflag_matches",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server\\commands\\ClearCommand.java",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_src": "clearcommand_clearcommand_execute",
+      "_tgt": "commandflag_getshortflag",
+      "source": "commandflag_getshortflag",
+      "target": "clearcommand_clearcommand_execute"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "server\\commands\\ClearCommand.java",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_src": "clearcommand_clearcommand_execute",
+      "_tgt": "commandflag_getlongflag",
+      "source": "commandflag_getlongflag",
+      "target": "clearcommand_clearcommand_execute"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "common\\CommandFlag.java",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_src": "commandflag_matches",
+      "_tgt": "humanbeing_humanbeing_equals",
+      "source": "commandflag_matches",
+      "target": "humanbeing_humanbeing_equals"
     },
     {
       "relation": "contains",
@@ -3789,8 +4200,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L123",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_setname",
-      "_tgt": "humanbeingchecker_humanbeingchecker_checkname",
+      "_src": "humanbeingchecker_humanbeingchecker_checkname",
+      "_tgt": "humanbeing_humanbeing_setname",
       "source": "humanbeingchecker_humanbeingchecker_checkname",
       "target": "humanbeing_humanbeing_setname"
     },
@@ -3801,8 +4212,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L131",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_setcoordinates",
-      "_tgt": "humanbeingchecker_humanbeingchecker_checkcoordinates",
+      "_src": "humanbeingchecker_humanbeingchecker_checkcoordinates",
+      "_tgt": "humanbeing_humanbeing_setcoordinates",
       "source": "humanbeingchecker_humanbeingchecker_checkcoordinates",
       "target": "humanbeing_humanbeing_setcoordinates"
     },
@@ -3813,8 +4224,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L147",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_setrealhero",
-      "_tgt": "humanbeingchecker_humanbeingchecker_checkisrealhero",
+      "_src": "humanbeingchecker_humanbeingchecker_checkisrealhero",
+      "_tgt": "humanbeing_humanbeing_setrealhero",
       "source": "humanbeingchecker_humanbeingchecker_checkisrealhero",
       "target": "humanbeing_humanbeing_setrealhero"
     },
@@ -3825,8 +4236,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L155",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_sethastoothpick",
-      "_tgt": "humanbeingchecker_humanbeingchecker_checkishastoothpick",
+      "_src": "humanbeingchecker_humanbeingchecker_checkishastoothpick",
+      "_tgt": "humanbeing_humanbeing_sethastoothpick",
       "source": "humanbeingchecker_humanbeingchecker_checkishastoothpick",
       "target": "humanbeing_humanbeing_sethastoothpick"
     },
@@ -3837,8 +4248,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L163",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_setimpactspeed",
-      "_tgt": "humanbeingchecker_humanbeingchecker_checkimpactspeed",
+      "_src": "humanbeingchecker_humanbeingchecker_checkimpactspeed",
+      "_tgt": "humanbeing_humanbeing_setimpactspeed",
       "source": "humanbeingchecker_humanbeingchecker_checkimpactspeed",
       "target": "humanbeing_humanbeing_setimpactspeed"
     },
@@ -3861,8 +4272,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L171",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_setsoundtrackname",
-      "_tgt": "humanbeingchecker_humanbeingchecker_checksoundtrackname",
+      "_src": "humanbeingchecker_humanbeingchecker_checksoundtrackname",
+      "_tgt": "humanbeing_humanbeing_setsoundtrackname",
       "source": "humanbeingchecker_humanbeingchecker_checksoundtrackname",
       "target": "humanbeing_humanbeing_setsoundtrackname"
     },
@@ -3873,8 +4284,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L179",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_setminutesofwaiting",
-      "_tgt": "humanbeingchecker_humanbeingchecker_checkminutesofwaiting",
+      "_src": "humanbeingchecker_humanbeingchecker_checkminutesofwaiting",
+      "_tgt": "humanbeing_humanbeing_setminutesofwaiting",
       "source": "humanbeingchecker_humanbeingchecker_checkminutesofwaiting",
       "target": "humanbeing_humanbeing_setminutesofwaiting"
     },
@@ -3885,8 +4296,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L187",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_setweapontype",
-      "_tgt": "humanbeingchecker_humanbeingchecker_checkweapontype",
+      "_src": "humanbeingchecker_humanbeingchecker_checkweapontype",
+      "_tgt": "humanbeing_humanbeing_setweapontype",
       "source": "humanbeingchecker_humanbeingchecker_checkweapontype",
       "target": "humanbeing_humanbeing_setweapontype"
     },
@@ -3897,8 +4308,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L195",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_setcar",
-      "_tgt": "humanbeingchecker_humanbeingchecker_checkcar",
+      "_src": "humanbeingchecker_humanbeingchecker_checkcar",
+      "_tgt": "humanbeing_humanbeing_setcar",
       "source": "humanbeingchecker_humanbeingchecker_checkcar",
       "target": "humanbeing_humanbeing_setcar"
     },
@@ -4017,8 +4428,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L33",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
-      "_tgt": "humanbeingreader_humanbeingreader_convertline",
+      "_src": "humanbeingreader_humanbeingreader_convertline",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
       "source": "humanbeingreader_humanbeingreader_convertline",
       "target": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing"
     },
@@ -4197,8 +4608,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L56",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_save",
-      "_tgt": "humanbeingreader_humanbeingreader_extractinfo",
+      "_src": "humanbeingreader_humanbeingreader_extractinfo",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_save",
       "source": "humanbeingreader_humanbeingreader_extractinfo",
       "target": "humanbeingfilemanager_humanbeingfilemanager_save"
     },
@@ -4209,8 +4620,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L96",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_saveall",
-      "_tgt": "humanbeingreader_humanbeingreader_extractinfo",
+      "_src": "humanbeingreader_humanbeingreader_extractinfo",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_saveall",
       "source": "humanbeingreader_humanbeingreader_extractinfo",
       "target": "humanbeingfilemanager_humanbeingfilemanager_saveall"
     },
@@ -4221,8 +4632,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L87",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_show",
-      "_tgt": "humanbeingreader_humanbeingreader_extractinfo",
+      "_src": "humanbeingreader_humanbeingreader_extractinfo",
+      "_tgt": "collectionmanager_collectionmanager_show",
       "source": "humanbeingreader_humanbeingreader_extractinfo",
       "target": "collectionmanager_collectionmanager_show"
     },
@@ -4233,8 +4644,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L30",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
-      "_tgt": "humanbeingreader_humanbeingreader_extractidfromline",
+      "_src": "humanbeingreader_humanbeingreader_extractidfromline",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
       "source": "humanbeingreader_humanbeingreader_extractidfromline",
       "target": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing"
     },
@@ -4461,8 +4872,8 @@
       "source_file": "server\\RequestHandler.java",
       "source_location": "L23",
       "weight": 1.0,
-      "_src": "requesthandler_requesthandler_handle",
-      "_tgt": "request_request_getcommandname",
+      "_src": "request_request_getcommandname",
+      "_tgt": "requesthandler_requesthandler_handle",
       "source": "request_request_getcommandname",
       "target": "requesthandler_requesthandler_handle"
     },
@@ -4473,8 +4884,8 @@
       "source_file": "server\\commands\\AddIfMaxCommand.java",
       "source_location": "L35",
       "weight": 1.0,
-      "_src": "addifmaxcommand_addifmaxcommand_execute",
-      "_tgt": "request_request_getstringargument",
+      "_src": "request_request_getstringargument",
+      "_tgt": "addifmaxcommand_addifmaxcommand_execute",
       "source": "request_request_getstringargument",
       "target": "addifmaxcommand_addifmaxcommand_execute"
     },
@@ -4485,8 +4896,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L31",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_execute",
-      "_tgt": "request_request_getstringargument",
+      "_src": "request_request_getstringargument",
+      "_tgt": "addifmincommand_addifmincommand_execute",
       "source": "request_request_getstringargument",
       "target": "addifmincommand_addifmincommand_execute"
     },
@@ -4497,8 +4908,8 @@
       "source_file": "server\\commands\\ClearCommand.java",
       "source_location": "L60",
       "weight": 1.0,
-      "_src": "clearcommand_clearcommand_execute",
-      "_tgt": "request_request_getstringargument",
+      "_src": "request_request_getstringargument",
+      "_tgt": "clearcommand_clearcommand_execute",
       "source": "request_request_getstringargument",
       "target": "clearcommand_clearcommand_execute"
     },
@@ -4509,8 +4920,8 @@
       "source_file": "server\\commands\\FilterContainsNameCommand.java",
       "source_location": "L32",
       "weight": 1.0,
-      "_src": "filtercontainsnamecommand_filtercontainsnamecommand_execute",
-      "_tgt": "request_request_getstringargument",
+      "_src": "request_request_getstringargument",
+      "_tgt": "filtercontainsnamecommand_filtercontainsnamecommand_execute",
       "source": "request_request_getstringargument",
       "target": "filtercontainsnamecommand_filtercontainsnamecommand_execute"
     },
@@ -4521,8 +4932,8 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L32",
       "weight": 1.0,
-      "_src": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
-      "_tgt": "request_request_getstringargument",
+      "_src": "request_request_getstringargument",
+      "_tgt": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
       "source": "request_request_getstringargument",
       "target": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute"
     },
@@ -4533,8 +4944,8 @@
       "source_file": "server\\commands\\FilterLessThanMinutesOfWaitingCommand.java",
       "source_location": "L32",
       "weight": 1.0,
-      "_src": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute",
-      "_tgt": "request_request_getstringargument",
+      "_src": "request_request_getstringargument",
+      "_tgt": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute",
       "source": "request_request_getstringargument",
       "target": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute"
     },
@@ -4545,8 +4956,8 @@
       "source_file": "server\\commands\\RemoveByIdCommand.java",
       "source_location": "L29",
       "weight": 1.0,
-      "_src": "removebyidcommand_removebyidcommand_execute",
-      "_tgt": "request_request_getstringargument",
+      "_src": "request_request_getstringargument",
+      "_tgt": "removebyidcommand_removebyidcommand_execute",
       "source": "request_request_getstringargument",
       "target": "removebyidcommand_removebyidcommand_execute"
     },
@@ -4557,8 +4968,8 @@
       "source_file": "server\\commands\\RemoveGreaterCommand.java",
       "source_location": "L30",
       "weight": 1.0,
-      "_src": "removegreatercommand_removegreatercommand_execute",
-      "_tgt": "request_request_getstringargument",
+      "_src": "request_request_getstringargument",
+      "_tgt": "removegreatercommand_removegreatercommand_execute",
       "source": "request_request_getstringargument",
       "target": "removegreatercommand_removegreatercommand_execute"
     },
@@ -4569,8 +4980,8 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L30",
       "weight": 1.0,
-      "_src": "updatecommand_updatecommand_execute",
-      "_tgt": "request_request_getstringargument",
+      "_src": "request_request_getstringargument",
+      "_tgt": "updatecommand_updatecommand_execute",
       "source": "request_request_getstringargument",
       "target": "updatecommand_updatecommand_execute"
     },
@@ -4581,8 +4992,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L36",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "request_request_getobjectargument",
+      "_src": "request_request_getobjectargument",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "request_request_getobjectargument",
       "target": "addcommand_addcommand_execute"
     },
@@ -4593,8 +5004,8 @@
       "source_file": "server\\commands\\AddIfMaxCommand.java",
       "source_location": "L37",
       "weight": 1.0,
-      "_src": "addifmaxcommand_addifmaxcommand_execute",
-      "_tgt": "request_request_getobjectargument",
+      "_src": "request_request_getobjectargument",
+      "_tgt": "addifmaxcommand_addifmaxcommand_execute",
       "source": "request_request_getobjectargument",
       "target": "addifmaxcommand_addifmaxcommand_execute"
     },
@@ -4605,8 +5016,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L33",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_execute",
-      "_tgt": "request_request_getobjectargument",
+      "_src": "request_request_getobjectargument",
+      "_tgt": "addifmincommand_addifmincommand_execute",
       "source": "request_request_getobjectargument",
       "target": "addifmincommand_addifmincommand_execute"
     },
@@ -4617,8 +5028,8 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L39",
       "weight": 1.0,
-      "_src": "updatecommand_updatecommand_execute",
-      "_tgt": "request_request_getobjectargument",
+      "_src": "request_request_getobjectargument",
+      "_tgt": "updatecommand_updatecommand_execute",
       "source": "request_request_getobjectargument",
       "target": "updatecommand_updatecommand_execute"
     },
@@ -4701,8 +5112,8 @@
       "source_file": "common\\utils\\BooleanBuilder.java",
       "source_location": "L26",
       "weight": 1.0,
-      "_src": "booleanbuilder_booleanbuilder_readboolean",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "booleanbuilder_booleanbuilder_readboolean",
       "source": "response_response_getmessage",
       "target": "booleanbuilder_booleanbuilder_readboolean"
     },
@@ -4713,8 +5124,8 @@
       "source_file": "common\\utils\\CommandFileManager.java",
       "source_location": "L47",
       "weight": 1.0,
-      "_src": "commandfilemanager_commandfilemanager_readfileandrunscripts",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "commandfilemanager_commandfilemanager_readfileandrunscripts",
       "source": "response_response_getmessage",
       "target": "commandfilemanager_commandfilemanager_readfileandrunscripts"
     },
@@ -4725,8 +5136,8 @@
       "source_file": "common\\utils\\CommandManager.java",
       "source_location": "L44",
       "weight": 1.0,
-      "_src": "commandmanager_commandmanager_executecommand",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "commandmanager_commandmanager_executecommand",
       "source": "response_response_getmessage",
       "target": "commandmanager_commandmanager_executecommand"
     },
@@ -4737,8 +5148,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L41",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
       "source": "response_response_getmessage",
       "target": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing"
     },
@@ -4749,8 +5160,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L63",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_save",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_save",
       "source": "response_response_getmessage",
       "target": "humanbeingfilemanager_humanbeingfilemanager_save"
     },
@@ -4761,8 +5172,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L105",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_saveall",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_saveall",
       "source": "response_response_getmessage",
       "target": "humanbeingfilemanager_humanbeingfilemanager_saveall"
     },
@@ -4773,8 +5184,8 @@
       "source_file": "server\\RequestHandler.java",
       "source_location": "L42",
       "weight": 1.0,
-      "_src": "requesthandler_requesthandler_handle",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "requesthandler_requesthandler_handle",
       "source": "response_response_getmessage",
       "target": "requesthandler_requesthandler_handle"
     },
@@ -4785,8 +5196,8 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L152",
       "weight": 1.0,
-      "_src": "servermain_servermain_handleread",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "servermain_servermain_handleread",
       "source": "response_response_getmessage",
       "target": "servermain_servermain_handleread"
     },
@@ -4797,8 +5208,8 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L187",
       "weight": 1.0,
-      "_src": "servermain_servermain_sendresponse",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "servermain_servermain_sendresponse",
       "source": "response_response_getmessage",
       "target": "servermain_servermain_sendresponse"
     },
@@ -4809,8 +5220,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L68",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "response_response_getmessage",
       "target": "addcommand_addcommand_execute"
     },
@@ -4821,8 +5232,8 @@
       "source_file": "server\\commands\\AddIfMaxCommand.java",
       "source_location": "L76",
       "weight": 1.0,
-      "_src": "addifmaxcommand_addifmaxcommand_execute",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "addifmaxcommand_addifmaxcommand_execute",
       "source": "response_response_getmessage",
       "target": "addifmaxcommand_addifmaxcommand_execute"
     },
@@ -4833,8 +5244,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L71",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_execute",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "addifmincommand_addifmincommand_execute",
       "source": "response_response_getmessage",
       "target": "addifmincommand_addifmincommand_execute"
     },
@@ -4845,8 +5256,8 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L60",
       "weight": 1.0,
-      "_src": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
       "source": "response_response_getmessage",
       "target": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute"
     },
@@ -4857,8 +5268,8 @@
       "source_file": "server\\commands\\RemoveGreaterCommand.java",
       "source_location": "L58",
       "weight": 1.0,
-      "_src": "removegreatercommand_removegreatercommand_execute",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "removegreatercommand_removegreatercommand_execute",
       "source": "response_response_getmessage",
       "target": "removegreatercommand_removegreatercommand_execute"
     },
@@ -4869,8 +5280,8 @@
       "source_file": "server\\commands\\SaveCommand.java",
       "source_location": "L41",
       "weight": 1.0,
-      "_src": "savecommand_savecommand_execute",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "savecommand_savecommand_execute",
       "source": "response_response_getmessage",
       "target": "savecommand_savecommand_execute"
     },
@@ -4881,8 +5292,8 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L76",
       "weight": 1.0,
-      "_src": "updatecommand_updatecommand_execute",
-      "_tgt": "response_response_getmessage",
+      "_src": "response_response_getmessage",
+      "_tgt": "updatecommand_updatecommand_execute",
       "source": "response_response_getmessage",
       "target": "updatecommand_updatecommand_execute"
     },
@@ -4929,8 +5340,8 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L167",
       "weight": 1.0,
-      "_src": "servermain_servermain_sendresponse",
-      "_tgt": "serializer_serializer_serialize",
+      "_src": "serializer_serializer_serialize",
+      "_tgt": "servermain_servermain_sendresponse",
       "source": "serializer_serializer_serialize",
       "target": "servermain_servermain_sendresponse"
     },
@@ -4941,8 +5352,8 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L137",
       "weight": 1.0,
-      "_src": "servermain_servermain_handleread",
-      "_tgt": "serializer_serializer_deserialize",
+      "_src": "serializer_serializer_deserialize",
+      "_tgt": "servermain_servermain_handleread",
       "source": "serializer_serializer_deserialize",
       "target": "servermain_servermain_handleread"
     },
@@ -4950,7 +5361,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "common\\StatusCode.java",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "_src": "common_statuscode_java",
       "_tgt": "statuscode_statuscode",
@@ -4962,7 +5373,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "common\\StatusCode.java",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0,
       "_src": "common_statuscode_java",
       "_tgt": "statuscode_getcode",
@@ -4974,7 +5385,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "common\\StatusCode.java",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0,
       "_src": "common_statuscode_java",
       "_tgt": "statuscode_getdescription",
@@ -4986,7 +5397,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "common\\StatusCode.java",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0,
       "_src": "common_statuscode_java",
       "_tgt": "statuscode_issuccess",
@@ -4998,7 +5409,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "common\\StatusCode.java",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0,
       "_src": "common_statuscode_java",
       "_tgt": "statuscode_tostring",
@@ -5073,8 +5484,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L228",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_tostring",
-      "_tgt": "car_car_iscool",
+      "_src": "car_car_iscool",
+      "_tgt": "humanbeing_humanbeing_tostring",
       "source": "car_car_iscool",
       "target": "humanbeing_humanbeing_tostring"
     },
@@ -5085,8 +5496,8 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L41",
       "weight": 1.0,
-      "_src": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
-      "_tgt": "car_car_iscool",
+      "_src": "car_car_iscool",
+      "_tgt": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
       "source": "car_car_iscool",
       "target": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute"
     },
@@ -5205,8 +5616,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L221",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_tostring",
-      "_tgt": "coordinates_coordinates_getx",
+      "_src": "coordinates_coordinates_getx",
+      "_tgt": "humanbeing_humanbeing_tostring",
       "source": "coordinates_coordinates_getx",
       "target": "humanbeing_humanbeing_tostring"
     },
@@ -5217,8 +5628,8 @@
       "source_file": "common\\models\\HumanBeing.java",
       "source_location": "L221",
       "weight": 1.0,
-      "_src": "humanbeing_humanbeing_tostring",
-      "_tgt": "coordinates_coordinates_gety",
+      "_src": "coordinates_coordinates_gety",
+      "_tgt": "humanbeing_humanbeing_tostring",
       "source": "coordinates_coordinates_gety",
       "target": "humanbeing_humanbeing_tostring"
     },
@@ -5745,8 +6156,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L101",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_gethumanbyid",
-      "_tgt": "humanbeing_humanbeing_getid",
+      "_src": "humanbeing_humanbeing_getid",
+      "_tgt": "collectionmanager_collectionmanager_gethumanbyid",
       "source": "humanbeing_humanbeing_getid",
       "target": "collectionmanager_collectionmanager_gethumanbyid"
     },
@@ -5757,8 +6168,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L146",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_getmaxid",
-      "_tgt": "humanbeing_humanbeing_getid",
+      "_src": "humanbeing_humanbeing_getid",
+      "_tgt": "collectionmanager_collectionmanager_getmaxid",
       "source": "humanbeing_humanbeing_getid",
       "target": "collectionmanager_collectionmanager_getmaxid"
     },
@@ -5769,8 +6180,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L59",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "humanbeing_humanbeing_getid",
+      "_src": "humanbeing_humanbeing_getid",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "humanbeing_humanbeing_getid",
       "target": "addcommand_addcommand_execute"
     },
@@ -5781,8 +6192,8 @@
       "source_file": "server\\commands\\AddIfMaxCommand.java",
       "source_location": "L51",
       "weight": 1.0,
-      "_src": "addifmaxcommand_addifmaxcommand_execute",
-      "_tgt": "humanbeing_humanbeing_getid",
+      "_src": "humanbeing_humanbeing_getid",
+      "_tgt": "addifmaxcommand_addifmaxcommand_execute",
       "source": "humanbeing_humanbeing_getid",
       "target": "addifmaxcommand_addifmaxcommand_execute"
     },
@@ -5793,8 +6204,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L46",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_execute",
-      "_tgt": "humanbeing_humanbeing_getid",
+      "_src": "humanbeing_humanbeing_getid",
+      "_tgt": "addifmincommand_addifmincommand_execute",
       "source": "humanbeing_humanbeing_getid",
       "target": "addifmincommand_addifmincommand_execute"
     },
@@ -5805,8 +6216,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L76",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_isvalidid",
-      "_tgt": "humanbeing_humanbeing_getid",
+      "_src": "humanbeing_humanbeing_getid",
+      "_tgt": "addifmincommand_addifmincommand_isvalidid",
       "source": "humanbeing_humanbeing_getid",
       "target": "addifmincommand_addifmincommand_isvalidid"
     },
@@ -5817,8 +6228,8 @@
       "source_file": "server\\commands\\AddIfMaxCommand.java",
       "source_location": "L46",
       "weight": 1.0,
-      "_src": "addifmaxcommand_addifmaxcommand_execute",
-      "_tgt": "humanbeing_humanbeing_setid",
+      "_src": "humanbeing_humanbeing_setid",
+      "_tgt": "addifmaxcommand_addifmaxcommand_execute",
       "source": "humanbeing_humanbeing_setid",
       "target": "addifmaxcommand_addifmaxcommand_execute"
     },
@@ -5829,8 +6240,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L41",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_execute",
-      "_tgt": "humanbeing_humanbeing_setid",
+      "_src": "humanbeing_humanbeing_setid",
+      "_tgt": "addifmincommand_addifmincommand_execute",
       "source": "humanbeing_humanbeing_setid",
       "target": "addifmincommand_addifmincommand_execute"
     },
@@ -5841,8 +6252,8 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L61",
       "weight": 1.0,
-      "_src": "updatecommand_updatecommand_execute",
-      "_tgt": "humanbeing_humanbeing_setid",
+      "_src": "humanbeing_humanbeing_setid",
+      "_tgt": "updatecommand_updatecommand_execute",
       "source": "humanbeing_humanbeing_setid",
       "target": "updatecommand_updatecommand_execute"
     },
@@ -5853,8 +6264,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L35",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
-      "_tgt": "humanbeing_humanbeing_setvaluehumancount",
+      "_src": "humanbeing_humanbeing_setvaluehumancount",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
       "source": "humanbeing_humanbeing_setvaluehumancount",
       "target": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing"
     },
@@ -5865,8 +6276,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L123",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_setname",
+      "_src": "humanbeing_humanbeing_setname",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_setname",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -5877,8 +6288,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L124",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_getcoordinates",
+      "_src": "humanbeing_humanbeing_getcoordinates",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_getcoordinates",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -5889,8 +6300,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L45",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "humanbeing_humanbeing_getcoordinates",
+      "_src": "humanbeing_humanbeing_getcoordinates",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "humanbeing_humanbeing_getcoordinates",
       "target": "addcommand_addcommand_execute"
     },
@@ -5901,8 +6312,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L124",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_setcoordinates",
+      "_src": "humanbeing_humanbeing_setcoordinates",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_setcoordinates",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -5913,8 +6324,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L125",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_isrealhero",
+      "_src": "humanbeing_humanbeing_isrealhero",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_isrealhero",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -5925,8 +6336,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L46",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "humanbeing_humanbeing_isrealhero",
+      "_src": "humanbeing_humanbeing_isrealhero",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "humanbeing_humanbeing_isrealhero",
       "target": "addcommand_addcommand_execute"
     },
@@ -5937,8 +6348,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L125",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_setrealhero",
+      "_src": "humanbeing_humanbeing_setrealhero",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_setrealhero",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -5949,8 +6360,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L126",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_ishastoothpick",
+      "_src": "humanbeing_humanbeing_ishastoothpick",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_ishastoothpick",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -5961,8 +6372,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L47",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "humanbeing_humanbeing_ishastoothpick",
+      "_src": "humanbeing_humanbeing_ishastoothpick",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "humanbeing_humanbeing_ishastoothpick",
       "target": "addcommand_addcommand_execute"
     },
@@ -5973,8 +6384,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L126",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_sethastoothpick",
+      "_src": "humanbeing_humanbeing_sethastoothpick",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_sethastoothpick",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -5985,8 +6396,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L127",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_getimpactspeed",
+      "_src": "humanbeing_humanbeing_getimpactspeed",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_getimpactspeed",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -5997,8 +6408,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L48",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "humanbeing_humanbeing_getimpactspeed",
+      "_src": "humanbeing_humanbeing_getimpactspeed",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "humanbeing_humanbeing_getimpactspeed",
       "target": "addcommand_addcommand_execute"
     },
@@ -6009,8 +6420,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L127",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_setimpactspeed",
+      "_src": "humanbeing_humanbeing_setimpactspeed",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_setimpactspeed",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -6021,8 +6432,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L128",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_getsoundtrackname",
+      "_src": "humanbeing_humanbeing_getsoundtrackname",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_getsoundtrackname",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -6033,8 +6444,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L49",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "humanbeing_humanbeing_getsoundtrackname",
+      "_src": "humanbeing_humanbeing_getsoundtrackname",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "humanbeing_humanbeing_getsoundtrackname",
       "target": "addcommand_addcommand_execute"
     },
@@ -6045,8 +6456,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L128",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_setsoundtrackname",
+      "_src": "humanbeing_humanbeing_setsoundtrackname",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_setsoundtrackname",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -6057,8 +6468,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L129",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_getminutesofwaiting",
+      "_src": "humanbeing_humanbeing_getminutesofwaiting",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_getminutesofwaiting",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -6069,8 +6480,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L50",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "humanbeing_humanbeing_getminutesofwaiting",
+      "_src": "humanbeing_humanbeing_getminutesofwaiting",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "humanbeing_humanbeing_getminutesofwaiting",
       "target": "addcommand_addcommand_execute"
     },
@@ -6081,8 +6492,8 @@
       "source_file": "server\\commands\\FilterLessThanMinutesOfWaitingCommand.java",
       "source_location": "L40",
       "weight": 1.0,
-      "_src": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute",
-      "_tgt": "humanbeing_humanbeing_getminutesofwaiting",
+      "_src": "humanbeing_humanbeing_getminutesofwaiting",
+      "_tgt": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute",
       "source": "humanbeing_humanbeing_getminutesofwaiting",
       "target": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute"
     },
@@ -6093,8 +6504,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L129",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_setminutesofwaiting",
+      "_src": "humanbeing_humanbeing_setminutesofwaiting",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_setminutesofwaiting",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -6105,8 +6516,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L130",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_getweapontype",
+      "_src": "humanbeing_humanbeing_getweapontype",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_getweapontype",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -6117,8 +6528,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L51",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "humanbeing_humanbeing_getweapontype",
+      "_src": "humanbeing_humanbeing_getweapontype",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "humanbeing_humanbeing_getweapontype",
       "target": "addcommand_addcommand_execute"
     },
@@ -6129,8 +6540,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L130",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_setweapontype",
+      "_src": "humanbeing_humanbeing_setweapontype",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_setweapontype",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -6141,8 +6552,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L131",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_getcar",
+      "_src": "humanbeing_humanbeing_getcar",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_getcar",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -6153,8 +6564,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L52",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "humanbeing_humanbeing_getcar",
+      "_src": "humanbeing_humanbeing_getcar",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "humanbeing_humanbeing_getcar",
       "target": "addcommand_addcommand_execute"
     },
@@ -6165,8 +6576,8 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L41",
       "weight": 1.0,
-      "_src": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
-      "_tgt": "humanbeing_humanbeing_getcar",
+      "_src": "humanbeing_humanbeing_getcar",
+      "_tgt": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
       "source": "humanbeing_humanbeing_getcar",
       "target": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute"
     },
@@ -6177,8 +6588,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L131",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_update",
-      "_tgt": "humanbeing_humanbeing_setcar",
+      "_src": "humanbeing_humanbeing_setcar",
+      "_tgt": "collectionmanager_collectionmanager_update",
       "source": "humanbeing_humanbeing_setcar",
       "target": "collectionmanager_collectionmanager_update"
     },
@@ -6189,8 +6600,8 @@
       "source_file": "server\\RequestHandler.java",
       "source_location": "L29",
       "weight": 1.0,
-      "_src": "requesthandler_requesthandler_handle",
-      "_tgt": "humanbeing_humanbeing_equals",
+      "_src": "humanbeing_humanbeing_equals",
+      "_tgt": "requesthandler_requesthandler_handle",
       "source": "humanbeing_humanbeing_equals",
       "target": "requesthandler_requesthandler_handle"
     },
@@ -6201,8 +6612,8 @@
       "source_file": "server\\commands\\ClearCommand.java",
       "source_location": "L71",
       "weight": 1.0,
-      "_src": "clearcommand_clearcommand_execute",
-      "_tgt": "humanbeing_humanbeing_equals",
+      "_src": "humanbeing_humanbeing_equals",
+      "_tgt": "clearcommand_clearcommand_execute",
       "source": "humanbeing_humanbeing_equals",
       "target": "clearcommand_clearcommand_execute"
     },
@@ -6213,8 +6624,8 @@
       "source_file": "server\\CommandSuggester.java",
       "source_location": "L89",
       "weight": 1.0,
-      "_src": "commandsuggester_commandsuggester_formatresponse",
-      "_tgt": "humanbeing_humanbeing_hashcode",
+      "_src": "humanbeing_humanbeing_hashcode",
+      "_tgt": "commandsuggester_commandsuggester_formatresponse",
       "source": "humanbeing_humanbeing_hashcode",
       "target": "commandsuggester_commandsuggester_formatresponse"
     },
@@ -6225,8 +6636,8 @@
       "source_file": "server\\CollectionManager.java",
       "source_location": "L161",
       "weight": 1.0,
-      "_src": "collectionmanager_collectionmanager_removegreater",
-      "_tgt": "humanbeing_humanbeing_compareto",
+      "_src": "humanbeing_humanbeing_compareto",
+      "_tgt": "collectionmanager_collectionmanager_removegreater",
       "source": "humanbeing_humanbeing_compareto",
       "target": "collectionmanager_collectionmanager_removegreater"
     },
@@ -6501,8 +6912,8 @@
       "source_file": "server\\CommandSuggester.java",
       "source_location": "L35",
       "weight": 1.0,
-      "_src": "commandsuggester_commandsuggester_commandsuggester",
-      "_tgt": "commandmanager_commandmanager_getcommands",
+      "_src": "commandmanager_commandmanager_getcommands",
+      "_tgt": "commandsuggester_commandsuggester_commandsuggester",
       "source": "commandmanager_commandmanager_getcommands",
       "target": "commandsuggester_commandsuggester_commandsuggester"
     },
@@ -6513,8 +6924,8 @@
       "source_file": "server\\commands\\HelpCommand.java",
       "source_location": "L32",
       "weight": 1.0,
-      "_src": "helpcommand_helpcommand_execute",
-      "_tgt": "commandmanager_commandmanager_getcommands",
+      "_src": "commandmanager_commandmanager_getcommands",
+      "_tgt": "helpcommand_helpcommand_execute",
       "source": "commandmanager_commandmanager_getcommands",
       "target": "helpcommand_helpcommand_execute"
     },
@@ -6573,8 +6984,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L17",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
-      "_tgt": "filemanager_filemanager_readfile",
+      "_src": "filemanager_filemanager_readfile",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
       "source": "filemanager_filemanager_readfile",
       "target": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing"
     },
@@ -6585,8 +6996,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L58",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_save",
-      "_tgt": "filemanager_filemanager_getfilepath",
+      "_src": "filemanager_filemanager_getfilepath",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_save",
       "source": "filemanager_filemanager_getfilepath",
       "target": "humanbeingfilemanager_humanbeingfilemanager_save"
     },
@@ -6597,8 +7008,8 @@
       "source_file": "common\\utils\\HumanBeingFileManager.java",
       "source_location": "L80",
       "weight": 1.0,
-      "_src": "humanbeingfilemanager_humanbeingfilemanager_saveall",
-      "_tgt": "filemanager_filemanager_getfilepath",
+      "_src": "filemanager_filemanager_getfilepath",
+      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_saveall",
       "source": "filemanager_filemanager_getfilepath",
       "target": "humanbeingfilemanager_humanbeingfilemanager_saveall"
     },
@@ -6837,8 +7248,8 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L35",
       "weight": 1.0,
-      "_src": "servermain_servermain_main",
-      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
+      "_src": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
+      "_tgt": "servermain_servermain_main",
       "source": "humanbeingfilemanager_humanbeingfilemanager_readfileandloadhumanbeing",
       "target": "servermain_servermain_main"
     },
@@ -6873,8 +7284,8 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L40",
       "weight": 1.0,
-      "_src": "servermain_servermain_main",
-      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_saveall",
+      "_src": "humanbeingfilemanager_humanbeingfilemanager_saveall",
+      "_tgt": "servermain_servermain_main",
       "source": "humanbeingfilemanager_humanbeingfilemanager_saveall",
       "target": "servermain_servermain_main"
     },
@@ -6885,8 +7296,8 @@
       "source_file": "server\\commands\\SaveCommand.java",
       "source_location": "L33",
       "weight": 1.0,
-      "_src": "savecommand_savecommand_execute",
-      "_tgt": "humanbeingfilemanager_humanbeingfilemanager_saveall",
+      "_src": "humanbeingfilemanager_humanbeingfilemanager_saveall",
+      "_tgt": "savecommand_savecommand_execute",
       "source": "humanbeingfilemanager_humanbeingfilemanager_saveall",
       "target": "savecommand_savecommand_execute"
     },
@@ -7221,8 +7632,8 @@
       "source_file": "server\\CommandSuggester.java",
       "source_location": "L89",
       "weight": 1.0,
-      "_src": "commandsuggester_commandsuggester_formatresponse",
-      "_tgt": "collectionmanager_collectionmanager_size",
+      "_src": "collectionmanager_collectionmanager_size",
+      "_tgt": "commandsuggester_commandsuggester_formatresponse",
       "source": "collectionmanager_collectionmanager_size",
       "target": "commandsuggester_commandsuggester_formatresponse"
     },
@@ -7233,8 +7644,8 @@
       "source_file": "server\\commands\\ClearCommand.java",
       "source_location": "L62",
       "weight": 1.0,
-      "_src": "clearcommand_clearcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_size",
+      "_src": "collectionmanager_collectionmanager_size",
+      "_tgt": "clearcommand_clearcommand_execute",
       "source": "collectionmanager_collectionmanager_size",
       "target": "clearcommand_clearcommand_execute"
     },
@@ -7245,8 +7656,8 @@
       "source_file": "server\\commands\\RemoveGreaterCommand.java",
       "source_location": "L42",
       "weight": 1.0,
-      "_src": "removegreatercommand_removegreatercommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_size",
+      "_src": "collectionmanager_collectionmanager_size",
+      "_tgt": "removegreatercommand_removegreatercommand_execute",
       "source": "collectionmanager_collectionmanager_size",
       "target": "removegreatercommand_removegreatercommand_execute"
     },
@@ -7257,8 +7668,8 @@
       "source_file": "server\\commands\\SaveCommand.java",
       "source_location": "L36",
       "weight": 1.0,
-      "_src": "savecommand_savecommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_size",
+      "_src": "collectionmanager_collectionmanager_size",
+      "_tgt": "savecommand_savecommand_execute",
       "source": "collectionmanager_collectionmanager_size",
       "target": "savecommand_savecommand_execute"
     },
@@ -7293,8 +7704,8 @@
       "source_file": "server\\CommandSuggester.java",
       "source_location": "L57",
       "weight": 1.0,
-      "_src": "commandsuggester_commandsuggester_correct",
-      "_tgt": "collectionmanager_collectionmanager_isempty",
+      "_src": "collectionmanager_collectionmanager_isempty",
+      "_tgt": "commandsuggester_commandsuggester_correct",
       "source": "collectionmanager_collectionmanager_isempty",
       "target": "commandsuggester_commandsuggester_correct"
     },
@@ -7305,8 +7716,8 @@
       "source_file": "server\\commands\\AddIfMaxCommand.java",
       "source_location": "L48",
       "weight": 1.0,
-      "_src": "addifmaxcommand_addifmaxcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_isempty",
+      "_src": "collectionmanager_collectionmanager_isempty",
+      "_tgt": "addifmaxcommand_addifmaxcommand_execute",
       "source": "collectionmanager_collectionmanager_isempty",
       "target": "addifmaxcommand_addifmaxcommand_execute"
     },
@@ -7317,8 +7728,8 @@
       "source_file": "server\\commands\\AddIfMaxCommand.java",
       "source_location": "L82",
       "weight": 1.0,
-      "_src": "addifmaxcommand_addifmaxcommand_isvalidid",
-      "_tgt": "collectionmanager_collectionmanager_isempty",
+      "_src": "collectionmanager_collectionmanager_isempty",
+      "_tgt": "addifmaxcommand_addifmaxcommand_isvalidid",
       "source": "collectionmanager_collectionmanager_isempty",
       "target": "addifmaxcommand_addifmaxcommand_isvalidid"
     },
@@ -7329,8 +7740,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L43",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_isempty",
+      "_src": "collectionmanager_collectionmanager_isempty",
+      "_tgt": "addifmincommand_addifmincommand_execute",
       "source": "collectionmanager_collectionmanager_isempty",
       "target": "addifmincommand_addifmincommand_execute"
     },
@@ -7341,8 +7752,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L77",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_isvalidid",
-      "_tgt": "collectionmanager_collectionmanager_isempty",
+      "_src": "collectionmanager_collectionmanager_isempty",
+      "_tgt": "addifmincommand_addifmincommand_isvalidid",
       "source": "collectionmanager_collectionmanager_isempty",
       "target": "addifmincommand_addifmincommand_isvalidid"
     },
@@ -7353,8 +7764,8 @@
       "source_file": "server\\commands\\ClearCommand.java",
       "source_location": "L56",
       "weight": 1.0,
-      "_src": "clearcommand_clearcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_isempty",
+      "_src": "collectionmanager_collectionmanager_isempty",
+      "_tgt": "clearcommand_clearcommand_execute",
       "source": "collectionmanager_collectionmanager_isempty",
       "target": "clearcommand_clearcommand_execute"
     },
@@ -7365,8 +7776,8 @@
       "source_file": "server\\commands\\FilterContainsNameCommand.java",
       "source_location": "L42",
       "weight": 1.0,
-      "_src": "filtercontainsnamecommand_filtercontainsnamecommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_isempty",
+      "_src": "collectionmanager_collectionmanager_isempty",
+      "_tgt": "filtercontainsnamecommand_filtercontainsnamecommand_execute",
       "source": "collectionmanager_collectionmanager_isempty",
       "target": "filtercontainsnamecommand_filtercontainsnamecommand_execute"
     },
@@ -7377,8 +7788,8 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L46",
       "weight": 1.0,
-      "_src": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_isempty",
+      "_src": "collectionmanager_collectionmanager_isempty",
+      "_tgt": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
       "source": "collectionmanager_collectionmanager_isempty",
       "target": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute"
     },
@@ -7389,8 +7800,8 @@
       "source_file": "server\\commands\\FilterLessThanMinutesOfWaitingCommand.java",
       "source_location": "L43",
       "weight": 1.0,
-      "_src": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_isempty",
+      "_src": "collectionmanager_collectionmanager_isempty",
+      "_tgt": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute",
       "source": "collectionmanager_collectionmanager_isempty",
       "target": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute"
     },
@@ -7401,8 +7812,8 @@
       "source_file": "server\\commands\\FilterContainsNameCommand.java",
       "source_location": "L39",
       "weight": 1.0,
-      "_src": "filtercontainsnamecommand_filtercontainsnamecommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_contains",
+      "_src": "collectionmanager_collectionmanager_contains",
+      "_tgt": "filtercontainsnamecommand_filtercontainsnamecommand_execute",
       "source": "collectionmanager_collectionmanager_contains",
       "target": "filtercontainsnamecommand_filtercontainsnamecommand_execute"
     },
@@ -7425,8 +7836,8 @@
       "source_file": "server\\commands\\AddCommand.java",
       "source_location": "L55",
       "weight": 1.0,
-      "_src": "addcommand_addcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_add",
+      "_src": "collectionmanager_collectionmanager_add",
+      "_tgt": "addcommand_addcommand_execute",
       "source": "collectionmanager_collectionmanager_add",
       "target": "addcommand_addcommand_execute"
     },
@@ -7437,8 +7848,8 @@
       "source_file": "server\\commands\\AddIfMaxCommand.java",
       "source_location": "L49",
       "weight": 1.0,
-      "_src": "addifmaxcommand_addifmaxcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_add",
+      "_src": "collectionmanager_collectionmanager_add",
+      "_tgt": "addifmaxcommand_addifmaxcommand_execute",
       "source": "collectionmanager_collectionmanager_add",
       "target": "addifmaxcommand_addifmaxcommand_execute"
     },
@@ -7449,8 +7860,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L44",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_add",
+      "_src": "collectionmanager_collectionmanager_add",
+      "_tgt": "addifmincommand_addifmincommand_execute",
       "source": "collectionmanager_collectionmanager_add",
       "target": "addifmincommand_addifmincommand_execute"
     },
@@ -7473,8 +7884,8 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L67",
       "weight": 1.0,
-      "_src": "servermain_servermain_main",
-      "_tgt": "collectionmanager_collectionmanager_remove",
+      "_src": "collectionmanager_collectionmanager_remove",
+      "_tgt": "servermain_servermain_main",
       "source": "collectionmanager_collectionmanager_remove",
       "target": "servermain_servermain_main"
     },
@@ -7497,8 +7908,8 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L125",
       "weight": 1.0,
-      "_src": "servermain_servermain_handleread",
-      "_tgt": "collectionmanager_collectionmanager_clear",
+      "_src": "collectionmanager_collectionmanager_clear",
+      "_tgt": "servermain_servermain_handleread",
       "source": "collectionmanager_collectionmanager_clear",
       "target": "servermain_servermain_handleread"
     },
@@ -7509,8 +7920,8 @@
       "source_file": "server\\commands\\ClearCommand.java",
       "source_location": "L73",
       "weight": 1.0,
-      "_src": "clearcommand_clearcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_clear",
+      "_src": "collectionmanager_collectionmanager_clear",
+      "_tgt": "clearcommand_clearcommand_execute",
       "source": "collectionmanager_collectionmanager_clear",
       "target": "clearcommand_clearcommand_execute"
     },
@@ -7533,8 +7944,8 @@
       "source_file": "server\\commands\\InfoCommand.java",
       "source_location": "L32",
       "weight": 1.0,
-      "_src": "infocommand_infocommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_getcollectioninfo",
+      "_src": "collectionmanager_collectionmanager_getcollectioninfo",
+      "_tgt": "infocommand_infocommand_execute",
       "source": "collectionmanager_collectionmanager_getcollectioninfo",
       "target": "infocommand_infocommand_execute"
     },
@@ -7557,8 +7968,8 @@
       "source_file": "server\\commands\\HelpCommand.java",
       "source_location": "L37",
       "weight": 1.0,
-      "_src": "helpcommand_helpcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_tostring",
+      "_src": "collectionmanager_collectionmanager_tostring",
+      "_tgt": "helpcommand_helpcommand_execute",
       "source": "collectionmanager_collectionmanager_tostring",
       "target": "helpcommand_helpcommand_execute"
     },
@@ -7569,8 +7980,8 @@
       "source_file": "server\\commands\\RemoveByIdCommand.java",
       "source_location": "L34",
       "weight": 1.0,
-      "_src": "removebyidcommand_removebyidcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_tostring",
+      "_src": "collectionmanager_collectionmanager_tostring",
+      "_tgt": "removebyidcommand_removebyidcommand_execute",
       "source": "collectionmanager_collectionmanager_tostring",
       "target": "removebyidcommand_removebyidcommand_execute"
     },
@@ -7581,8 +7992,8 @@
       "source_file": "server\\commands\\FilterContainsNameCommand.java",
       "source_location": "L51",
       "weight": 1.0,
-      "_src": "filtercontainsnamecommand_filtercontainsnamecommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_show",
+      "_src": "collectionmanager_collectionmanager_show",
+      "_tgt": "filtercontainsnamecommand_filtercontainsnamecommand_execute",
       "source": "collectionmanager_collectionmanager_show",
       "target": "filtercontainsnamecommand_filtercontainsnamecommand_execute"
     },
@@ -7593,8 +8004,8 @@
       "source_file": "server\\commands\\FilterGreaterThanCarCommand.java",
       "source_location": "L55",
       "weight": 1.0,
-      "_src": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_show",
+      "_src": "collectionmanager_collectionmanager_show",
+      "_tgt": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute",
       "source": "collectionmanager_collectionmanager_show",
       "target": "filtergreaterthancarcommand_filtergreaterthancarcommand_execute"
     },
@@ -7605,8 +8016,8 @@
       "source_file": "server\\commands\\FilterLessThanMinutesOfWaitingCommand.java",
       "source_location": "L52",
       "weight": 1.0,
-      "_src": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_show",
+      "_src": "collectionmanager_collectionmanager_show",
+      "_tgt": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute",
       "source": "collectionmanager_collectionmanager_show",
       "target": "filterlessthanminutesofwaitingcommand_filterlessthanminutesofwaitingcommand_execute"
     },
@@ -7617,8 +8028,8 @@
       "source_file": "server\\commands\\ShowCommand.java",
       "source_location": "L31",
       "weight": 1.0,
-      "_src": "showcommand_showcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_show",
+      "_src": "collectionmanager_collectionmanager_show",
+      "_tgt": "showcommand_showcommand_execute",
       "source": "collectionmanager_collectionmanager_show",
       "target": "showcommand_showcommand_execute"
     },
@@ -7677,8 +8088,8 @@
       "source_file": "server\\commands\\RemoveGreaterCommand.java",
       "source_location": "L36",
       "weight": 1.0,
-      "_src": "removegreatercommand_removegreatercommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_gethumanbyid",
+      "_src": "collectionmanager_collectionmanager_gethumanbyid",
+      "_tgt": "removegreatercommand_removegreatercommand_execute",
       "source": "collectionmanager_collectionmanager_gethumanbyid",
       "target": "removegreatercommand_removegreatercommand_execute"
     },
@@ -7689,8 +8100,8 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L40",
       "weight": 1.0,
-      "_src": "updatecommand_updatecommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_gethumanbyid",
+      "_src": "collectionmanager_collectionmanager_gethumanbyid",
+      "_tgt": "updatecommand_updatecommand_execute",
       "source": "collectionmanager_collectionmanager_gethumanbyid",
       "target": "updatecommand_updatecommand_execute"
     },
@@ -7713,8 +8124,8 @@
       "source_file": "server\\commands\\RemoveByIdCommand.java",
       "source_location": "L36",
       "weight": 1.0,
-      "_src": "removebyidcommand_removebyidcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_removebyid",
+      "_src": "collectionmanager_collectionmanager_removebyid",
+      "_tgt": "removebyidcommand_removebyidcommand_execute",
       "source": "collectionmanager_collectionmanager_removebyid",
       "target": "removebyidcommand_removebyidcommand_execute"
     },
@@ -7737,8 +8148,8 @@
       "source_file": "server\\commands\\UpdateCommand.java",
       "source_location": "L63",
       "weight": 1.0,
-      "_src": "updatecommand_updatecommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_update",
+      "_src": "collectionmanager_collectionmanager_update",
+      "_tgt": "updatecommand_updatecommand_execute",
       "source": "collectionmanager_collectionmanager_update",
       "target": "updatecommand_updatecommand_execute"
     },
@@ -7761,8 +8172,8 @@
       "source_file": "server\\commands\\AddIfMaxCommand.java",
       "source_location": "L57",
       "weight": 1.0,
-      "_src": "addifmaxcommand_addifmaxcommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_getmaxid",
+      "_src": "collectionmanager_collectionmanager_getmaxid",
+      "_tgt": "addifmaxcommand_addifmaxcommand_execute",
       "source": "collectionmanager_collectionmanager_getmaxid",
       "target": "addifmaxcommand_addifmaxcommand_execute"
     },
@@ -7773,8 +8184,8 @@
       "source_file": "server\\commands\\AddIfMaxCommand.java",
       "source_location": "L81",
       "weight": 1.0,
-      "_src": "addifmaxcommand_addifmaxcommand_isvalidid",
-      "_tgt": "collectionmanager_collectionmanager_getmaxid",
+      "_src": "collectionmanager_collectionmanager_getmaxid",
+      "_tgt": "addifmaxcommand_addifmaxcommand_isvalidid",
       "source": "collectionmanager_collectionmanager_getmaxid",
       "target": "addifmaxcommand_addifmaxcommand_isvalidid"
     },
@@ -7785,8 +8196,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L52",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_getmin",
+      "_src": "collectionmanager_collectionmanager_getmin",
+      "_tgt": "addifmincommand_addifmincommand_execute",
       "source": "collectionmanager_collectionmanager_getmin",
       "target": "addifmincommand_addifmincommand_execute"
     },
@@ -7797,8 +8208,8 @@
       "source_file": "server\\commands\\AddIfMinCommand.java",
       "source_location": "L76",
       "weight": 1.0,
-      "_src": "addifmincommand_addifmincommand_isvalidid",
-      "_tgt": "collectionmanager_collectionmanager_getmin",
+      "_src": "collectionmanager_collectionmanager_getmin",
+      "_tgt": "addifmincommand_addifmincommand_isvalidid",
       "source": "collectionmanager_collectionmanager_getmin",
       "target": "addifmincommand_addifmincommand_isvalidid"
     },
@@ -7809,8 +8220,8 @@
       "source_file": "server\\commands\\RemoveGreaterCommand.java",
       "source_location": "L43",
       "weight": 1.0,
-      "_src": "removegreatercommand_removegreatercommand_execute",
-      "_tgt": "collectionmanager_collectionmanager_removegreater",
+      "_src": "collectionmanager_collectionmanager_removegreater",
+      "_tgt": "removegreatercommand_removegreatercommand_execute",
       "source": "collectionmanager_collectionmanager_removegreater",
       "target": "removegreatercommand_removegreatercommand_execute"
     },
@@ -7833,8 +8244,8 @@
       "source_file": "server\\RequestHandler.java",
       "source_location": "L33",
       "weight": 1.0,
-      "_src": "requesthandler_requesthandler_handle",
-      "_tgt": "commandmanager_commandmanager_getcommand",
+      "_src": "commandmanager_commandmanager_getcommand",
+      "_tgt": "requesthandler_requesthandler_handle",
       "source": "commandmanager_commandmanager_getcommand",
       "target": "requesthandler_requesthandler_handle"
     },
@@ -7929,8 +8340,8 @@
       "source_file": "server\\RequestHandler.java",
       "source_location": "L36",
       "weight": 1.0,
-      "_src": "requesthandler_requesthandler_handle",
-      "_tgt": "commandsuggester_commandsuggester_correct",
+      "_src": "commandsuggester_commandsuggester_correct",
+      "_tgt": "requesthandler_requesthandler_handle",
       "source": "commandsuggester_commandsuggester_correct",
       "target": "requesthandler_requesthandler_handle"
     },
@@ -8013,8 +8424,8 @@
       "source_file": "server\\ServerMain.java",
       "source_location": "L147",
       "weight": 1.0,
-      "_src": "servermain_servermain_handleread",
-      "_tgt": "requesthandler_requesthandler_handle",
+      "_src": "requesthandler_requesthandler_handle",
+      "_tgt": "servermain_servermain_handleread",
       "source": "requesthandler_requesthandler_handle",
       "target": "servermain_servermain_handleread"
     },
@@ -8022,7 +8433,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0,
       "_src": "server_servermain_java",
       "_tgt": "servermain_servermain",
@@ -8034,7 +8445,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L25",
+      "source_location": "L31",
       "weight": 1.0,
       "_src": "servermain_servermain",
       "_tgt": "servermain_servermain_main",
@@ -8046,7 +8457,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L84",
+      "source_location": "L87",
       "weight": 1.0,
       "_src": "servermain_servermain",
       "_tgt": "servermain_servermain_handleaccept",
@@ -8058,7 +8469,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L99",
+      "source_location": "L122",
       "weight": 1.0,
       "_src": "servermain_servermain",
       "_tgt": "servermain_servermain_handleread",
@@ -8070,7 +8481,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L163",
+      "source_location": "L187",
       "weight": 1.0,
       "_src": "servermain_servermain",
       "_tgt": "servermain_servermain_sendresponse",
@@ -8082,7 +8493,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L72",
+      "source_location": "L75",
       "weight": 1.0,
       "_src": "servermain_servermain_main",
       "_tgt": "servermain_servermain_handleaccept",
@@ -8094,7 +8505,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L74",
+      "source_location": "L77",
       "weight": 1.0,
       "_src": "servermain_servermain_main",
       "_tgt": "servermain_servermain_handleread",
@@ -8106,7 +8517,19 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "server\\ServerMain.java",
-      "source_location": "L148",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_src": "servermain_servermain_handleaccept",
+      "_tgt": "servermain_servermain_sendresponse",
+      "source": "servermain_servermain_handleaccept",
+      "target": "servermain_servermain_sendresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "server\\ServerMain.java",
+      "source_location": "L172",
       "weight": 1.0,
       "_src": "servermain_servermain_handleread",
       "_tgt": "servermain_servermain_sendresponse",
@@ -8223,22 +8646,10 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_src": "server_commands_clearcommand_java",
-      "_tgt": "command",
-      "source": "command",
-      "target": "server_commands_clearcommand_java",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "implements",
       "confidence": "EXTRACTED",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L17",
+      "source_location": "L14",
       "weight": 1.0,
       "_src": "clearcommand_clearcommand",
       "_tgt": "command",
@@ -8694,7 +9105,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L17",
+      "source_location": "L14",
       "weight": 1.0,
       "_src": "server_commands_clearcommand_java",
       "_tgt": "clearcommand_clearcommand",
@@ -8706,7 +9117,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L22",
+      "source_location": "L19",
       "weight": 1.0,
       "_src": "clearcommand_clearcommand",
       "_tgt": "clearcommand_clearcommand_clearcommand",
@@ -8718,7 +9129,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L27",
+      "source_location": "L24",
       "weight": 1.0,
       "_src": "clearcommand_clearcommand",
       "_tgt": "clearcommand_clearcommand_getname",
@@ -8730,7 +9141,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L32",
+      "source_location": "L29",
       "weight": 1.0,
       "_src": "clearcommand_clearcommand",
       "_tgt": "clearcommand_clearcommand_getdescription",
@@ -8742,7 +9153,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "server\\commands\\ClearCommand.java",
-      "source_location": "L54",
+      "source_location": "L51",
       "weight": 1.0,
       "_src": "clearcommand_clearcommand",
       "_tgt": "clearcommand_clearcommand_execute",

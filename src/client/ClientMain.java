@@ -21,6 +21,7 @@ public class ClientMain {
             // Use try-with-resources to auto close socket when error
             // Init output first to avoid Deadlock (server and client will be waiting header for each other => all hang)
             try (Socket socket = new Socket(Const.host, Const.port);
+//            try (Socket socket = new Socket("77.234.196.4", 1234);
                  DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
                  // Only this one communicates with Socket (read header and data => ois)
                  DataInputStream dis = new DataInputStream(socket.getInputStream())) {
@@ -61,7 +62,6 @@ public class ClientMain {
                         String input = scanner.nextLine();
 
                         if ("exit".equalsIgnoreCase(input)) break;
-
                         // Handles one or multiple spaces perfectly
 //                String[] arguments = input.split("\\s+");
 
@@ -78,6 +78,8 @@ public class ClientMain {
                         System.out.println("📩 Server response:\n" + resp.getMessage());
 //  ===========================================================================================
                     }
+                    System.out.println("Завершение работы программы...");
+                    break;
                 }
             } catch (IOException e) {
 //            System.out.println(e.getMessage());

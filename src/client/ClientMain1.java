@@ -78,6 +78,8 @@ public class ClientMain1 {
                         System.out.println("📩 Server response:\n" + resp.getMessage());
 //  ===========================================================================================
                     }
+                    System.out.println("Завершение работы программы...");
+                    break;
                 }
             } catch (IOException e) {
 //            System.out.println(e.getMessage());

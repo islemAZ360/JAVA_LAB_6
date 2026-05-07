@@ -16,6 +16,7 @@ public final class Const {
     public static final String SCRIPTFILEPATH = "scripts/scripts.csv";
     public static int port = 1234;
     public static String host = "localhost";
+//    public static String host = "0.0.0.0";
     public static final String RESET = "\u001B[0m";
     public static final String RED = "\u001B[31m";
     public static final String GREEN = "\u001B[32m";

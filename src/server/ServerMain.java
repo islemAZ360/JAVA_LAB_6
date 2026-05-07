@@ -56,7 +56,7 @@ public class ServerMain {
             // Event accept connection
             serverChannel.register(selector, SelectionKey.OP_ACCEPT);
 
-            logger.info("\uD83D\uDE80 Server NIO is running at localhost: {}", Const.port);
+            logger.info("\uD83D\uDE80 Server NIO is running at {}: {}", Const.host,Const.port);
 //            System.out.println("🚀 Server NIO is running at localhost:" + common.models.Const.port);
 
             while (true) {
