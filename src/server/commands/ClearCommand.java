@@ -74,9 +74,9 @@ public class ClearCommand implements Command {
                 );
             }
 
-//            if (flag.equals("-n")) {
-//                return new Response("Операция отменена.", StatusCode.OK, null);
-//            }
+            if (flag.equals("no") || flag.equals("-n")) {
+                return new Response("Операция отменена.", StatusCode.OK, null);
+            }
 
             return new Response(String.format("Неверный аргумент. Используйте флаги %s или %s", CommandFlag.FORCE.getLongFlag(), CommandFlag.YES.getLongFlag()), StatusCode.BAD_REQUEST, null);
         }
