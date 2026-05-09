@@ -39,17 +39,17 @@ public class ClientMain {
         reconnect();
 
         scheduler.scheduleAtFixedRate(() -> {
-            if(isReconnecting) return; // prevent call when cli is trying to reconnect to server
+            if (isReconnecting) return; // prevent call when cli is trying to reconnect to server
             boolean isSocketAlive = isSocketAlive(socket);
             if (!isSocketAlive) {
                 System.out.println("\nDisconnected to server, start reconnecting ...");
-                isConnected=reconnect();
+                isConnected = reconnect();
                 if (!isConnected) {
                     isReconnecting = true; // trigger prevent flag
                     current_timeout_index = 0;
                     triggerReconnect();
                     try {
-                        Thread.sleep(timeouts[current_timeout_index]*1000);
+                        Thread.sleep(timeouts[current_timeout_index] * 1000);
                     } catch (InterruptedException e) {
                         System.out.printf("❌ Some errors were occurred: %s.\n", e.getMessage());
                     }
@@ -70,14 +70,16 @@ public class ClientMain {
             if ("exit".equalsIgnoreCase(input)) {
                 System.out.println("Завершение работы программы...");
                 break;
-            } else if("reconnect".equalsIgnoreCase(input)) {
+            } else if ("reconnect".equalsIgnoreCase(input)) {
                 isConnected = reconnect();
                 if (currentTask != null && isConnected) {
+//                    ReconnectingEffectManager.stopEffect();
+                    Terminal.stopAnimation(false);
                     currentTask.cancel(true);
                     // false: does not cancel when executing.
                     // true: cancel even when executing (throw InterruptedException where the thread/task is running | Thread.sleep()).
                 }
-            } else if(!isConnected) {
+            } else if (!isConnected) {
                 log("❌ Connecting error: Server is not response. (If server is not running, start server first!)");
             } else {
                 try {
@@ -123,7 +125,7 @@ public class ClientMain {
             } else {
                 System.out.printf(Const.GREEN + Const.cat + Const.RESET);
                 log("✅ Connected to server successfully!");
-                System.out.println(firstRes.getMessage());
+                log(firstRes.getMessage());
             }
             return true;
         } catch (IOException e) {
@@ -135,40 +137,75 @@ public class ClientMain {
         }
     }
 
+//    private static void triggerReconnect() {
+//        boolean success = reconnect();
+//
+//        if (success) {
+//            isReconnecting = false;
+//            ReconnectingEffectManager.stopEffect();
+//        } else {
+//            int waitTime = timeouts[current_timeout_index];
+//            log(String.format("⏳ ИСПОЛЗУЙТЕ каманду (reconnect) или подождите %d сек перед началом новой попытки подключения ...", waitTime));
+//
+//            if (current_timeout_index < timeouts.length - 1) {
+//                current_timeout_index++;
+//            }
+//            System.out.println();
+//            System.out.print(">>> "); // Dòng này dành cho bạn gõ
+//            System.out.flush();
+//
+//            ReconnectingEffectManager.stopEffect();
+//            ReconnectingEffectManager.startEffect("Reconnecting to server...");
+//            // Next retry recursion (not Thread.sleep)
+//            currentTask = scheduler.schedule(ClientMain::triggerReconnect, waitTime, TimeUnit.SECONDS);
+//        }
+//    }
+
     private static void triggerReconnect() {
         boolean success = reconnect();
 
         if (success) {
             isReconnecting = false;
+            Terminal.stopAnimation();
         } else {
             int waitTime = timeouts[current_timeout_index];
-            log(String.format("⏳ ИСПОЛЗУЙТЕ каманду (reconnect) или подождите %d сек перед началом новой попытки подключения ...\n",waitTime));
+            Terminal.log(String.format(
+                    "⏳ ИСПОЛЗУЙТЕ каманду (reconnect) или подождите %d сек перед началом новой попытки подключения ...",
+                    waitTime
+            ));
 
             if (current_timeout_index < timeouts.length - 1) {
                 current_timeout_index++;
             }
 
-            // Next retry recursion (not Thread.sleep)
+            // ❌ XÓA 3 DÒNG NÀY — startAnimation() tự xử lý:
+            // System.out.println();
+            // System.out.print(">>> ");
+            // System.out.flush();
+
+            Terminal.startAnimation("Reconnecting to server...");
             currentTask = scheduler.schedule(ClientMain::triggerReconnect, waitTime, TimeUnit.SECONDS);
         }
     }
 
+
     public static synchronized void log(String message) {
-//        String currentPrompt = "\nПрограмма готова к работе! Введите 'help' для подержки || 'exit' для выхода.\n>>> \uD83E\uDD16 Что вы думаете? Чем я могу помочь?\n>>> ";
-//        System.out.print("\r" + "\u001B[1A" + "\u001B[2K" + "\u001B[1A" + "\u001B[2K" + "\u001B[1A" + "\u001B[2K");
-//        System.out.print("\r" + MOVE_UP + CLEAR_LINE + MOVE_UP + CLEAR_LINE + MOVE_UP + CLEAR_LINE); //ANSI code
-
-        String currentPrompt = ">>> ";
-//         1. \r: back to head of line
-//         2. space char: remove old line
-//         3. print log and newline
-        System.out.print("\r" + " ".repeat(currentPrompt.length() + 20) + "\r");
-
-        System.out.println(message);
-
-        // 4. reprint
-        System.out.print(currentPrompt);
-        System.out.flush();
+////        String currentPrompt = "\nПрограмма готова к работе! Введите 'help' для подержки || 'exit' для выхода.\n>>> \uD83E\uDD16 Что вы думаете? Чем я могу помочь?\n>>> ";
+////        System.out.print("\r" + "\u001B[1A" + "\u001B[2K" + "\u001B[1A" + "\u001B[2K" + "\u001B[1A" + "\u001B[2K");
+////        System.out.print("\r" + MOVE_UP + CLEAR_LINE + MOVE_UP + CLEAR_LINE + MOVE_UP + CLEAR_LINE); //ANSI code
+//
+//        String currentPrompt = ">>> ";
+////         1. \r: back to head of line
+////         2. space char: remove old line
+////         3. print log and newline
+//        System.out.print("\r" + " ".repeat(currentPrompt.length() + 20) + "\r");
+//
+//        System.out.println(message);
+//
+//        // 4. reprint
+//        System.out.print(currentPrompt);
+//        System.out.flush();
+        Terminal.log(message);
     }
 }
 
