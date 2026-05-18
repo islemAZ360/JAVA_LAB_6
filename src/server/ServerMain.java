@@ -57,7 +57,7 @@ public class ServerMain {
             serverChannel.register(selector, SelectionKey.OP_ACCEPT);
 
             logger.info("\uD83D\uDE80 Server NIO is running at {}: {}", Const.host,Const.port);
-//            System.out.println("🚀 Server NIO is running at localhost:" + common.models.Const.port);
+//            System.out.println(" Server NIO is running at localhost:" + common.models.Const.port);
 
             while (true) {
                 // Ожидание событий (тайм-аут 1 секунда)
@@ -99,7 +99,7 @@ public class ServerMain {
         //  Regist new channel to selector and raise when have data to read
             clientChannel.register(selector, SelectionKey.OP_READ, new ConnectionState());
             logger.info("\uD83E\uDD1D Sent greeting and accepted: {}", clientChannel.getRemoteAddress());
-        //  System.out.println("🤝 Sent greeting and accepted: " + clientChannel.getRemoteAddress());
+        //  System.out.println(" Sent greeting and accepted: " + clientChannel.getRemoteAddress());
             logger.info("Новое подключение принято. Всего подключений: {}", connectionCount);
             sendResponse(clientChannel, new Response(
                     String.format("Новое подключение принято. Всего подключений: %s", connectionCount),
@@ -132,15 +132,15 @@ public class ServerMain {
                     key.cancel();
                     sc.close();
                     currentConnections.getAndDecrement();
-                    logger.info("👋 Client leaved.");
-//                    System.out.println("👋 Client leaved.");
+                    logger.info(" Client leaved.");
+//                    System.out.println(" Client leaved.");
                 }
 
                 if (!state.headerBuffer.hasRemaining()) {
                     state.headerBuffer.flip();
                     int size = state.headerBuffer.getInt();
                     logger.info("\uD83D\uDCE6 Received Object: {} bytes", size);
-//                    System.out.println("📦 Received Object: " + size + " bytes");
+//                    System.out.println(" Received Object: " + size + " bytes");
 
                     if (size > 0) {
                         state.dataBuffer = ByteBuffer.allocate(size);
@@ -160,7 +160,7 @@ public class ServerMain {
                     byte[] data = state.dataBuffer.array();
                     Object requestObj = Serializer.deserialize(data);
                     logger.info("\uD83D\uDCE5 Received Request: {}", requestObj);
-//                    System.out.println("📥 Received Request: " + requestObj);
+//                    System.out.println(" Received Request: " + requestObj);
 
                     // Reset to wait new Request
                     state.headerBuffer.clear();
@@ -173,8 +173,8 @@ public class ServerMain {
                 }
             }
         } catch (Exception e) {
-            logger.error("❌ Reading data error: {}", e.getMessage());
-//            System.err.println("❌ Reading data error: " + e.getMessage());
+            logger.error(" Reading data error: {}", e.getMessage());
+//            System.err.println(" Reading data error: " + e.getMessage());
             try { sc.close(); currentConnections.getAndDecrement(); } catch (IOException ignored) {}
         }
     }
@@ -204,8 +204,8 @@ public class ServerMain {
             while (buffer.hasRemaining()) {
                 channel.write(buffer);
             }
-            logger.info("📤 Send response to Client ({} bytes)", data.length);
-//            System.out.println("📤 Send response to Client (" + data.length + " bytes)");
+            logger.info(" Send response to Client ({} bytes)", data.length);
+//            System.out.println(" Send response to Client (" + data.length + " bytes)");
 
         } catch (IOException e) {
             logger.error("❌ Response sending error: {}", e.getMessage());
