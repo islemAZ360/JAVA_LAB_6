@@ -15,8 +15,10 @@ public final class Const {
     public static final String FILEPATH = "data/data.csv";
     public static final String SCRIPTFILEPATH = "scripts/scripts.csv";
     public static int port = 1234;
-    public static String host = "localhost";
+//    public static String host = "localhost";
+    public static String host = "127.0.0.1";
 //    public static String host = "0.0.0.0";
+//    public static String host = "192.268.10.80";
     public static final String RESET = "\u001B[0m";
     public static final String RED = "\u001B[31m";
     public static final String GREEN = "\u001B[32m";
@@ -69,6 +71,8 @@ public final class Const {
         |\\  \\\\_\\  \\ \\  \\ \\  \\ \\    / /   \\ \\  \\ \\  \\       \\ \\  \\____\\ \\  \\ \\  \\ \\  \\|\\  \\       \\ \\  ___  \\\s
         \\ \\________\\ \\__\\ \\__\\ \\__/ /     \\ \\__\\ \\__\\       \\ \\_______\\ \\__\\ \\__\\ \\_______\\       \\ \\_______\\
          \\|________|\\|__|\\|__|\\|__|/       \\|__|\\|__|        \\|_______|\\|__|\\|__|\\|_______|        \\|_______|
+        
+        
         """;
 
     public static String java = """

@@ -3,27 +3,29 @@ package common;
 import java.io.Serializable;
 
 /**
- * Этот Enum — душа системы, не удаляйте его просто так!
+ * Этот Enum является основой системы.
+ * Не удалять и не изменять без согласования!
  */
+
 public enum StatusCode implements Serializable {
-    // Группа 2xx: Успешное выполнение
-    OK(200, "Operation successful"),
-    CREATED(201, "Object created successfully"),
-    CONTINUE(202, "Valid ID, continue entering data"), // Это именно то, что нужно
+    // Group 2xx: Success
+    OK(200, "Операция выполнена успешно"),
+    CREATED(201, "Объект успешно создан"),
+    CONTINUE(202, "ID валиден. Пожалуйста, продолжите ввод данных"),
 
-    // Группа 4xx: Ошибки клиента
-    BAD_REQUEST(400, "Invalid data provided"),
-    ID_INVALID(401, "ID does not satisfy the condition"),
-    ID_TAKEN(402, "ID is valid but already taken"),
-    NAME_INVALID(403, "Name does not satisfy the condition"),
-    FORMAT_INVALID(404, "FORMAT_INVALID: User entered text in a numeric field, or invalid boolean value"),
-    OUT_OF_RANGE(405, "OUT_OF_RANGE: Integer or long value is too large or too small"),
-    REQUIRED_FIELD_MISSING(406, "REQUIRED_FIELD_MISSING: Mandatory boolean field was left empty"),
+    // Group 4xx: Client errors
+    BAD_REQUEST(400, "Некорректный запрос. Данные имеют неверную структуру"),
+    ID_INVALID(401, "ID не соответствует условиям"),
+    ID_TAKEN(402, "Данный ID уже занят"),
+    NAME_INVALID(403, "Имя не соответствует условиям"),
+    FORMAT_INVALID(404, "Неверный формат данных (ошибка типа данных)"),
+    OUT_OF_RANGE(405, "Значение вне допустимого диапазона"),
+    REQUIRED_FIELD_MISSING(406, "Отсутствуют обязательные поля"),
 
-    // Группа 5xx: Ошибки сервера или системы
-    SERVER_ERROR(500, "Server is experiencing issues, try again later"),
-    SERVICE_UNAVAILABLE(503, "Server is unavailable at this time"),
-    TIMEOUT(504, "Connection timed out waiting for input");
+    // Group 5xx: Server or System errors
+    SERVER_ERROR(500, "Внутренняя ошибка сервера. Попробуйте позже"),
+    SERVICE_UNAVAILABLE(503, "Сервис временно недоступен"),
+    TIMEOUT(504, "Время ожидания истекло. Соединение закрыто");
 
     private final int code;
     private final String description;
