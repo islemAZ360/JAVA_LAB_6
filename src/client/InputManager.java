@@ -250,6 +250,9 @@ public class InputManager {
             case "remove_greater":
             case "filter_contains_name":
             case "filter_less_than_minutes_of_waiting":
+
+            case "generate":
+
             default:
                 req = new Request(commandName, argument, null);
                 break;

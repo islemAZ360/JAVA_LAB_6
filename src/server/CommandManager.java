@@ -27,6 +27,8 @@ public class CommandManager {
         commands.put("filter_less_than_minutes_of_waiting", new FilterLessThanMinutesOfWaitingCommand(collectionManager));
         commands.put("save", new SaveCommand(collectionManager, humanBeingFileManager));
         commands.put("run_script_file", new ExecuteScriptCommand(collectionManager, humanBeingFileManager));
+
+        commands.put("generate", new GenerateCommand(collectionManager));
     }
 
     public Command getCommand(String commandName) {
